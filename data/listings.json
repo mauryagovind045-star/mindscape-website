@@ -75,6 +75,71 @@
         { "img": "dining", "label": "Dining hall" },
         { "img": "aerial", "label": "Aerial view of the society", "wide": true }
       ]
+    },
+    {
+      "slug": "casa-mahua",
+      "featured": false,
+      "name": "Casa Mahua",
+      "ref": "MP-3BVANJ-01",
+      "status": "For Sale",
+      "location": "Anjuna",
+      "region": "North Goa",
+      "collection": "Signature Collection",
+      "price_display": "₹7.10 Cr",
+      "price_value": 71000000,
+      "price_note": "Guide Price · Negotiable",
+      "beds_display": "3",
+      "beds_value": 3,
+      "area_display": "3,013",
+      "area_value": 3013,
+      "badges": ["For Sale", "Private Pool", "Rooftop Terrace"],
+      "short": "A fully-furnished 3-bedroom villa with a private pool and rooftop terrace, moments from Anjuna — built by Vianaar and ready to move in.",
+      "description": [
+        "An independent three-bedroom villa in the heart of Anjuna, North Goa's most sought-after coast. Full-height glazing folds the tropical garden and private pool into every living space, while signature black-and-white patterned floors and a sculpted geometric ceiling give the home its distinct Goan-modern character.",
+        "Built by Vianaar — a developer known for design-led homes — and offered fully furnished and ready to move in. Freehold title, private parking, and a rooftop terrace for sundowners complete the package."
+      ],
+      "specs": [
+        { "v": "3", "l": "Bedrooms" },
+        { "v": "3,013", "l": "Sq Ft Carpet" },
+        { "v": "Private", "l": "Swimming Pool" },
+        { "v": "Rooftop", "l": "Terrace" },
+        { "v": "Freehold", "l": "Clear Title" },
+        { "v": "Furnished", "l": "Ready to Move" }
+      ],
+      "features": [
+        "Fully furnished, ready to move in",
+        "Private swimming pool & landscaped garden",
+        "Rooftop terrace for sundowners",
+        "Built by Vianaar, a reputed developer",
+        "Freehold title — clear ownership",
+        "Private car parking",
+        "Full-height glazing, indoor-outdoor living",
+        "Walk to Anjuna's cafés & beaches"
+      ],
+      "location_label": "Why Anjuna",
+      "location_points": [
+        { "place": "Anjuna Beach", "time": "Nearby" },
+        { "place": "Vagator & Ozran", "time": "Nearby" },
+        { "place": "Cafés & restaurants", "time": "Walkable" },
+        { "place": "Assagao & Siolim", "time": "Close by" },
+        { "place": "Mapusa town", "time": "Close by" }
+      ],
+      "location_note": "Distances are indicative and to be verified by the buyer.",
+      "brokerage_note": "Floor plans & title docs on request",
+      "hero_image": "exterior",
+      "card_image": "living",
+      "gallery": [
+        { "img": "lounge", "label": "Living & dining", "wide": true },
+        { "img": "living2", "label": "Sitting area" },
+        { "img": "ceiling", "label": "Sculpted dining ceiling" },
+        { "img": "dining", "label": "Dining & kitchen", "wide": true },
+        { "img": "kitchen", "label": "Modular kitchen" },
+        { "img": "bedroom", "label": "Garden-facing bedroom" },
+        { "img": "bedroom2", "label": "Guest bedroom" },
+        { "img": "bath", "label": "Ensuite bathroom" },
+        { "img": "pool", "label": "Private pool" },
+        { "img": "garden", "label": "Landscaped garden", "wide": true }
+      ]
     }
   ]
 }
