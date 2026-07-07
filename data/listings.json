@@ -1,0 +1,80 @@
+{
+  "site": {
+    "name": "Mindscape Properties",
+    "tagline": "Goa's Premium Real Estate",
+    "advisor": "Govind",
+    "phone_display": "+91 89566 19967",
+    "phone_href": "+918956619967",
+    "email": "hello@mindscapeproperties.in",
+    "website_display": "mindscapeproperties.in",
+    "website_url": "https://mindscapeproperties.in",
+    "address_html": "Off No. 508, 5th Floor,<br>Gera Impremium Grand, Patto,<br>Panjim, Goa",
+    "brokerage": "2% + GST",
+    "instagram": "#",
+    "linkedin": "#"
+  },
+  "listings": [
+    {
+      "slug": "casa-solis",
+      "featured": true,
+      "name": "Casa Solis",
+      "ref": "MP-4BVSIO-14",
+      "status": "For Sale",
+      "location": "Siolim",
+      "region": "North Goa",
+      "collection": "Signature Collection",
+      "price_display": "₹6.5 Cr",
+      "price_value": 65000000,
+      "price_note": "Guide Price · Negotiable",
+      "beds_display": "3 / 4",
+      "beds_value": 4,
+      "area_display": "2,611",
+      "area_value": 2611,
+      "badges": ["For Sale", "Private Pool", "Gated · 14 Villas"],
+      "short": "A private-pool villa in a gated society of just fourteen — resort living at North Goa's most desirable address.",
+      "description": [
+        "A luxury three-to-four bedroom villa in prime Siolim, wrapped around its own private swimming pool. Portuguese-arched windows, terrazzo floors and hand-laid patterned tile give every room genuine Goan character.",
+        "Set within an exclusive gated community of only fourteen villas — secure, serene, and minutes from the best beaches and tables in North Goa."
+      ],
+      "specs": [
+        { "v": "3 / 4", "l": "Bedrooms" },
+        { "v": "2,611", "l": "Sq Ft Built-up" },
+        { "v": "Private", "l": "Resort-style Pool" },
+        { "v": "14", "l": "Villa Society" },
+        { "v": "Covered", "l": "Secure Parking" },
+        { "v": "Luxury", "l": "Premium Interiors" }
+      ],
+      "features": [
+        "Luxury interiors, premium finishes",
+        "Private resort-style swimming pool",
+        "Exclusive gated society of 14 villas",
+        "24/7 gated security & privacy",
+        "Covered, secure car park",
+        "Strong rental yield potential",
+        "Excellent resale value, prime Siolim",
+        "Beaches, cafés & demand nearby"
+      ],
+      "location_label": "Why Siolim",
+      "location_points": [
+        { "place": "Vagator Beach", "time": "~15 min" },
+        { "place": "Morjim Beach", "time": "~15 min" },
+        { "place": "Anjuna Beach", "time": "~20 min" },
+        { "place": "Restaurants & cafés", "time": "Walkable" },
+        { "place": "Mopa Intl. Airport", "time": "~35 min" }
+      ],
+      "location_note": "Drive times are indicative and to be verified by the buyer.",
+      "brokerage_note": "Floor plans & title docs on request",
+      "hero_image": "pool",
+      "card_image": "exterior",
+      "gallery": [
+        { "img": "living", "label": "Living & dining", "wide": true },
+        { "img": "primary", "label": "Primary suite" },
+        { "img": "kitchen", "label": "Kitchen" },
+        { "img": "bedroom", "label": "Bedroom" },
+        { "img": "bath", "label": "Bathroom" },
+        { "img": "dining", "label": "Dining hall" },
+        { "img": "aerial", "label": "Aerial view of the society", "wide": true }
+      ]
+    }
+  ]
+}

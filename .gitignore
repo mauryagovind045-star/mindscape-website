@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Secrets / config — never publish
+.env
+credentials.json
+token.json
+
+# Source proposal PDFs & brand docs (reference only, not part of the website)
+*.pdf
+
+# Temp / build artifacts
+.tmp/
+node_modules/
+_formtest.html
+
+# Claude Code local tooling config
+.claude/
