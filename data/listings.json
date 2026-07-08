@@ -203,6 +203,70 @@
         { "img": "exterior", "label": "Villa façade" },
         { "img": "aerial", "label": "Aerial view", "wide": true }
       ]
+    },
+    {
+      "slug": "villa-quagga",
+      "featured": false,
+      "name": "Villa Quagga",
+      "ref": "MP-3BVMOR-01",
+      "status": "For Sale",
+      "location": "Morjim",
+      "region": "North Goa",
+      "collection": "Signature Collection",
+      "price_display": "₹7 Cr",
+      "price_value": 70000000,
+      "price_note": "Guide Price · Negotiable",
+      "beds_display": "3",
+      "beds_value": 3,
+      "area_display": "2,562",
+      "area_value": 2562,
+      "badges": ["For Sale", "Private Pool", "Fully Furnished"],
+      "short": "A ready-to-move 3-bedroom villa in Morjim — Portuguese arches, wooden-rafter ceilings, zellige bathrooms and a private courtyard pool, fully furnished.",
+      "description": [
+        "A characterful three-bedroom villa in the quiet townlet of Morjim, North Goa, where Portuguese whimsy meets tropical minimalism. Arched windows, wooden-rafter ceilings and hand-glazed zellige bathrooms give every room genuine Goan-Mediterranean character, while a double-height living room opens to field and garden views.",
+        "Built by Nestal Homes and offered fully furnished, ready to move in. A private courtyard pool, subtropical garden and large terrace complete the home — with round-the-clock concierge, property management and security on hand. Morjim beach is minutes away."
+      ],
+      "specs": [
+        { "v": "3", "l": "Bedrooms" },
+        { "v": "2,562", "l": "Sq Ft Built-up" },
+        { "v": "Private", "l": "Courtyard Pool" },
+        { "v": "317 m²", "l": "Plot Area" },
+        { "v": "Furnished", "l": "Ready to Move" },
+        { "v": "G+2", "l": "Three Levels" }
+      ],
+      "features": [
+        "Fully furnished, ready to move in",
+        "Private courtyard swimming pool",
+        "Portuguese arches & wooden-rafter ceilings",
+        "Hand-glazed zellige designer bathrooms",
+        "Double-height living with field views",
+        "Subtropical garden & landscaped sit-out",
+        "24/7 concierge, management & security",
+        "Built by Nestal Homes"
+      ],
+      "location_label": "Why Morjim",
+      "location_points": [
+        { "place": "Morjim Beach", "time": "~7 min" },
+        { "place": "Ashwem & Mandrem", "time": "~10–15 min" },
+        { "place": "Cafés & restaurants", "time": "~8 min" },
+        { "place": "Siolim market", "time": "~10 min" },
+        { "place": "Mopa Intl. Airport", "time": "~40 min" }
+      ],
+      "location_note": "Drive times are indicative and to be verified by the buyer.",
+      "brokerage_note": "Floor plans & title docs on request",
+      "hero_image": "pool",
+      "card_image": "exterior",
+      "gallery": [
+        { "img": "living", "label": "Living & dining" },
+        { "img": "bedroom", "label": "Primary bedroom", "wide": true },
+        { "img": "views", "label": "Field views", "wide": true },
+        { "img": "bedroom2", "label": "Guest bedroom", "wide": true },
+        { "img": "bath-master", "label": "Primary bathroom" },
+        { "img": "bath-green", "label": "Ensuite bathroom" },
+        { "img": "bath-blue", "label": "Powder room" },
+        { "img": "entrance", "label": "Arched entrance" },
+        { "img": "garden", "label": "Garden path" }
+      ]
     }
   ]
 }
