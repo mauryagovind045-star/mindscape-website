@@ -93,10 +93,10 @@
       "area_display": "3,013",
       "area_value": 3013,
       "badges": ["For Sale", "Private Pool", "Rooftop Terrace"],
-      "short": "A fully-furnished 3-bedroom villa with a private pool and rooftop terrace, moments from Anjuna — built by Vianaar and ready to move in.",
+      "short": "A fully-furnished 3-bedroom villa with a private pool and rooftop terrace, moments from Anjuna — ready to move in.",
       "description": [
         "An independent three-bedroom villa in the heart of Anjuna, North Goa's most sought-after coast. Full-height glazing folds the tropical garden and private pool into every living space, while signature black-and-white patterned floors and a sculpted geometric ceiling give the home its distinct Goan-modern character.",
-        "Built by Vianaar — a developer known for design-led homes — and offered fully furnished and ready to move in. Freehold title, private parking, and a rooftop terrace for sundowners complete the package."
+        "Offered fully furnished and ready to move in. Freehold title, private parking, and a rooftop terrace for sundowners complete the package."
       ],
       "specs": [
         { "v": "3", "l": "Bedrooms" },
@@ -110,7 +110,6 @@
         "Fully furnished, ready to move in",
         "Private swimming pool & landscaped garden",
         "Rooftop terrace for sundowners",
-        "Built by Vianaar, a reputed developer",
         "Freehold title — clear ownership",
         "Private car parking",
         "Full-height glazing, indoor-outdoor living",
@@ -224,7 +223,7 @@
       "short": "A ready-to-move 3-bedroom villa in Morjim — Portuguese arches, wooden-rafter ceilings, zellige bathrooms and a private courtyard pool, fully furnished.",
       "description": [
         "A characterful three-bedroom villa in the quiet townlet of Morjim, North Goa, where Portuguese whimsy meets tropical minimalism. Arched windows, wooden-rafter ceilings and hand-glazed zellige bathrooms give every room genuine Goan-Mediterranean character, while a double-height living room opens to field and garden views.",
-        "Built by Nestal Homes and offered fully furnished, ready to move in. A private courtyard pool, subtropical garden and large terrace complete the home — with round-the-clock concierge, property management and security on hand. Morjim beach is minutes away."
+        "Offered fully furnished and ready to move in. A private courtyard pool, subtropical garden and large terrace complete the home — with round-the-clock concierge, property management and security on hand. Morjim beach is minutes away."
       ],
       "specs": [
         { "v": "3", "l": "Bedrooms" },
@@ -241,8 +240,7 @@
         "Hand-glazed zellige designer bathrooms",
         "Double-height living with field views",
         "Subtropical garden & landscaped sit-out",
-        "24/7 concierge, management & security",
-        "Built by Nestal Homes"
+        "24/7 concierge, management & security"
       ],
       "location_label": "Why Morjim",
       "location_points": [
@@ -288,7 +286,7 @@
       "short": "Our most substantial residence — a Portuguese-Mediterranean villa in Siolim across four levels, with five suites, a home theatre, spa, lift and private pool.",
       "description": [
         "A landmark residence under construction in Siolim, North Goa — a Portuguese-Mediterranean villa arranged over four levels, from a lower-ground garden suite to a rooftop terrace bar. Arched colonnades, terracotta-tiled roofs and full-height windows frame a private pool and sun deck at its heart.",
-        "Five bedroom suites, a home theatre, a spa with steam room, and a passenger lift serving every floor make this the most substantial home in our collection. Set on an 800 sq.m plot with sub-tropical gardens, staff quarters and covered parking, and built by Mercy Construction LLP.",
+        "Five bedroom suites, a home theatre, a spa with steam room, and a passenger lift serving every floor make this the most substantial home in our collection. Set on an 800 sq.m plot with sub-tropical gardens, staff quarters and covered parking.",
         "Currently under construction. Floor plans and the full area statement are available on request; price on application."
       ],
       "specs": [
