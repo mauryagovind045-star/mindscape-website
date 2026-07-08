@@ -267,6 +267,67 @@
         { "img": "entrance", "label": "Arched entrance" },
         { "img": "garden", "label": "Garden path" }
       ]
+    },
+    {
+      "slug": "grand-villa-siolim",
+      "featured": false,
+      "name": "5 BHK Luxury Villa",
+      "ref": "MP-5BVSIO-01",
+      "status": "For Sale",
+      "location": "Siolim",
+      "region": "North Goa",
+      "collection": "Signature Collection",
+      "price_display": "Price on Request",
+      "price_value": 250000000,
+      "price_note": "On Application",
+      "beds_display": "5",
+      "beds_value": 5,
+      "area_display": "9,148",
+      "area_value": 9148,
+      "badges": ["For Sale", "Private Pool", "Under Construction"],
+      "short": "Our most substantial residence — a Portuguese-Mediterranean villa in Siolim across four levels, with five suites, a home theatre, spa, lift and private pool.",
+      "description": [
+        "A landmark residence under construction in Siolim, North Goa — a Portuguese-Mediterranean villa arranged over four levels, from a lower-ground garden suite to a rooftop terrace bar. Arched colonnades, terracotta-tiled roofs and full-height windows frame a private pool and sun deck at its heart.",
+        "Five bedroom suites, a home theatre, a spa with steam room, and a passenger lift serving every floor make this the most substantial home in our collection. Set on an 800 sq.m plot with sub-tropical gardens, staff quarters and covered parking, and built by Mercy Construction LLP.",
+        "Currently under construction. Floor plans and the full area statement are available on request; price on application."
+      ],
+      "specs": [
+        { "v": "5", "l": "Bedroom Suites" },
+        { "v": "9,148", "l": "Sq Ft Built-up" },
+        { "v": "Private", "l": "Swimming Pool" },
+        { "v": "800 m²", "l": "Plot Area" },
+        { "v": "4", "l": "Levels + Terrace" },
+        { "v": "Lift", "l": "Serves All Floors" }
+      ],
+      "features": [
+        "Five bedroom suites across four levels",
+        "Private swimming pool & sun deck",
+        "Passenger lift to every floor",
+        "Home theatre / audio-visual room",
+        "Spa with shower & steam room",
+        "Rooftop terrace with bar",
+        "Staff quarters & covered parking",
+        "Sub-tropical landscaped gardens"
+      ],
+      "location_label": "Why Siolim",
+      "location_points": [
+        { "place": "Vagator & Morjim beaches", "time": "~15 min" },
+        { "place": "Anjuna & Assagao", "time": "~20 min" },
+        { "place": "Chapora river & Siolim", "time": "Nearby" },
+        { "place": "Cafés & restaurants", "time": "Close by" },
+        { "place": "Mopa Intl. Airport", "time": "~35 min" }
+      ],
+      "location_note": "Drive times are indicative and to be verified by the buyer.",
+      "brokerage_note": "Floor plans & area statement on request",
+      "hero_image": "aerial",
+      "card_image": "elevation",
+      "gallery": [
+        { "img": "elevation", "label": "Front elevation", "wide": true },
+        { "img": "plan-lower", "label": "Lower ground floor plan", "wide": true },
+        { "img": "plan-upper", "label": "Upper ground floor plan", "wide": true },
+        { "img": "plan-first", "label": "First floor plan", "wide": true },
+        { "img": "plan-terrace", "label": "Terrace floor plan", "wide": true }
+      ]
     }
   ]
 }
