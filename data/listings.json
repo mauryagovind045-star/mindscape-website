@@ -140,6 +140,69 @@
         { "img": "pool", "label": "Private pool" },
         { "img": "garden", "label": "Landscaped garden", "wide": true }
       ]
+    },
+    {
+      "slug": "vila-solelle",
+      "featured": false,
+      "name": "4 BHK Independent Villa",
+      "ref": "MP-4BVALD-01",
+      "status": "For Sale",
+      "location": "Aldona",
+      "region": "North Goa",
+      "collection": "Signature Collection",
+      "price_display": "₹5.20 Cr",
+      "price_value": 52000000,
+      "price_note": "Guide Price · Negotiable",
+      "beds_display": "4",
+      "beds_value": 4,
+      "area_display": "3,229",
+      "area_value": 3229,
+      "badges": ["For Sale", "Plunge Pool", "Fully Furnished"],
+      "short": "A four-bedroom villa in leafy Aldona — twin master suites with skylight baths, a private plunge pool, and a rooftop terrace over the river-green valley.",
+      "description": [
+        "An independent four-bedroom villa in Aldona, one of North Goa's greenest and most storied villages, where the Mapusa river and Portuguese-era lanes set an unhurried pace. Laid out over three levels (G+2), the home opens onto a private landscaped garden, a plunge pool, and wide balconies that frame the valley.",
+        "The ground floor holds an open living and dining space, a modern kitchen, a guest bedroom and a powder room. Above sit two master suites — each with its own skylit bathroom — a family lounge, and a rooftop terrace made for sundowners. A servant room and covered parking complete the home, which is offered fully furnished on completion."
+      ],
+      "specs": [
+        { "v": "4", "l": "Bedrooms" },
+        { "v": "3,229", "l": "Sq Ft Built-up" },
+        { "v": "Private", "l": "Plunge Pool" },
+        { "v": "G+2", "l": "Three Levels" },
+        { "v": "275 m²", "l": "Plot Area" },
+        { "v": "Furnished", "l": "On Handover" }
+      ],
+      "features": [
+        "Twin master suites with skylight bathrooms",
+        "Private plunge pool & landscaped garden",
+        "Rooftop terrace lounge for sundowners",
+        "Double-height living with valley views",
+        "Modern kitchen, guest bedroom & powder room",
+        "Wide balconies across every level",
+        "Servant room & covered parking",
+        "Offered fully furnished on completion"
+      ],
+      "location_label": "Why Aldona",
+      "location_points": [
+        { "place": "Mapusa river & valley", "time": "On the doorstep" },
+        { "place": "Aldona village & churches", "time": "Nearby" },
+        { "place": "Assagao & Anjuna", "time": "Close by" },
+        { "place": "Mapusa town", "time": "Close by" },
+        { "place": "Cafés & restaurants", "time": "Nearby" }
+      ],
+      "location_note": "Distances are indicative and to be verified by the buyer.",
+      "brokerage_note": "Floor plans & title docs on request",
+      "hero_image": "pool",
+      "card_image": "exterior",
+      "gallery": [
+        { "img": "living", "label": "Double-height living", "wide": true },
+        { "img": "media", "label": "Family lounge" },
+        { "img": "primary", "label": "Master suite, valley view" },
+        { "img": "bedroom-suite", "label": "Pool-facing bedroom" },
+        { "img": "bath-skylight", "label": "Skylight bathroom" },
+        { "img": "bath", "label": "Shower room" },
+        { "img": "exterior", "label": "Villa façade" },
+        { "img": "aerial", "label": "Aerial view", "wide": true }
+      ]
     }
   ]
 }
