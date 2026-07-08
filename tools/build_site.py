@@ -311,7 +311,7 @@ def feature_block(l, root, site, mode, detail_href=""):
         <div class="gallery">{gallery}</div>
         <div class="feature-split">
           <div>
-            <div class="kf-title"><span class="diamond"></span>Why this villa</div>
+            <div class="kf-title"><span class="diamond"></span>{e(l.get('feature_heading', 'Why this villa'))}</div>
             <ul class="kf-list">{features}</ul>
           </div>
           <div>

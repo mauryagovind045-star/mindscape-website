@@ -30,19 +30,41 @@
       "beds_value": 4,
       "area_display": "2,611",
       "area_value": 2611,
-      "badges": ["For Sale", "Private Pool", "Gated · 14 Villas"],
+      "badges": [
+        "For Sale",
+        "Private Pool",
+        "Gated · 14 Villas"
+      ],
       "short": "A private-pool villa in a gated society of just fourteen — resort living at North Goa's most desirable address.",
       "description": [
         "A luxury three-to-four bedroom villa in prime Siolim, wrapped around its own private swimming pool. Portuguese-arched windows, terrazzo floors and hand-laid patterned tile give every room genuine Goan character.",
         "Set within an exclusive gated community of only fourteen villas — secure, serene, and minutes from the best beaches and tables in North Goa."
       ],
       "specs": [
-        { "v": "3 / 4", "l": "Bedrooms" },
-        { "v": "2,611", "l": "Sq Ft Built-up" },
-        { "v": "Private", "l": "Resort-style Pool" },
-        { "v": "14", "l": "Villa Society" },
-        { "v": "Covered", "l": "Secure Parking" },
-        { "v": "Luxury", "l": "Premium Interiors" }
+        {
+          "v": "3 / 4",
+          "l": "Bedrooms"
+        },
+        {
+          "v": "2,611",
+          "l": "Sq Ft Built-up"
+        },
+        {
+          "v": "Private",
+          "l": "Resort-style Pool"
+        },
+        {
+          "v": "14",
+          "l": "Villa Society"
+        },
+        {
+          "v": "Covered",
+          "l": "Secure Parking"
+        },
+        {
+          "v": "Luxury",
+          "l": "Premium Interiors"
+        }
       ],
       "features": [
         "Luxury interiors, premium finishes",
@@ -56,24 +78,62 @@
       ],
       "location_label": "Why Siolim",
       "location_points": [
-        { "place": "Vagator Beach", "time": "~15 min" },
-        { "place": "Morjim Beach", "time": "~15 min" },
-        { "place": "Anjuna Beach", "time": "~20 min" },
-        { "place": "Restaurants & cafés", "time": "Walkable" },
-        { "place": "Mopa Intl. Airport", "time": "~35 min" }
+        {
+          "place": "Vagator Beach",
+          "time": "~15 min"
+        },
+        {
+          "place": "Morjim Beach",
+          "time": "~15 min"
+        },
+        {
+          "place": "Anjuna Beach",
+          "time": "~20 min"
+        },
+        {
+          "place": "Restaurants & cafés",
+          "time": "Walkable"
+        },
+        {
+          "place": "Mopa Intl. Airport",
+          "time": "~35 min"
+        }
       ],
       "location_note": "Drive times are indicative and to be verified by the buyer.",
       "brokerage_note": "Floor plans & title docs on request",
       "hero_image": "pool",
       "card_image": "exterior",
       "gallery": [
-        { "img": "living", "label": "Living & dining", "wide": true },
-        { "img": "primary", "label": "Primary suite" },
-        { "img": "kitchen", "label": "Kitchen" },
-        { "img": "bedroom", "label": "Bedroom" },
-        { "img": "bath", "label": "Bathroom" },
-        { "img": "dining", "label": "Dining hall" },
-        { "img": "aerial", "label": "Aerial view of the society", "wide": true }
+        {
+          "img": "living",
+          "label": "Living & dining",
+          "wide": true
+        },
+        {
+          "img": "primary",
+          "label": "Primary suite"
+        },
+        {
+          "img": "kitchen",
+          "label": "Kitchen"
+        },
+        {
+          "img": "bedroom",
+          "label": "Bedroom"
+        },
+        {
+          "img": "bath",
+          "label": "Bathroom"
+        },
+        {
+          "img": "dining",
+          "label": "Dining hall"
+        },
+        {
+          "img": "aerial",
+          "label": "Aerial view of the society",
+          "wide": true
+        }
       ]
     },
     {
@@ -92,19 +152,41 @@
       "beds_value": 3,
       "area_display": "3,013",
       "area_value": 3013,
-      "badges": ["For Sale", "Private Pool", "Rooftop Terrace"],
+      "badges": [
+        "For Sale",
+        "Private Pool",
+        "Rooftop Terrace"
+      ],
       "short": "A fully-furnished 3-bedroom villa with a private pool and rooftop terrace, moments from Anjuna — ready to move in.",
       "description": [
         "An independent three-bedroom villa in the heart of Anjuna, North Goa's most sought-after coast. Full-height glazing folds the tropical garden and private pool into every living space, while signature black-and-white patterned floors and a sculpted geometric ceiling give the home its distinct Goan-modern character.",
         "Offered fully furnished and ready to move in. Freehold title, private parking, and a rooftop terrace for sundowners complete the package."
       ],
       "specs": [
-        { "v": "3", "l": "Bedrooms" },
-        { "v": "3,013", "l": "Sq Ft Carpet" },
-        { "v": "Private", "l": "Swimming Pool" },
-        { "v": "Rooftop", "l": "Terrace" },
-        { "v": "Freehold", "l": "Clear Title" },
-        { "v": "Furnished", "l": "Ready to Move" }
+        {
+          "v": "3",
+          "l": "Bedrooms"
+        },
+        {
+          "v": "3,013",
+          "l": "Sq Ft Carpet"
+        },
+        {
+          "v": "Private",
+          "l": "Swimming Pool"
+        },
+        {
+          "v": "Rooftop",
+          "l": "Terrace"
+        },
+        {
+          "v": "Freehold",
+          "l": "Clear Title"
+        },
+        {
+          "v": "Furnished",
+          "l": "Ready to Move"
+        }
       ],
       "features": [
         "Fully furnished, ready to move in",
@@ -117,27 +199,75 @@
       ],
       "location_label": "Why Anjuna",
       "location_points": [
-        { "place": "Anjuna Beach", "time": "Nearby" },
-        { "place": "Vagator & Ozran", "time": "Nearby" },
-        { "place": "Cafés & restaurants", "time": "Walkable" },
-        { "place": "Assagao & Siolim", "time": "Close by" },
-        { "place": "Mapusa town", "time": "Close by" }
+        {
+          "place": "Anjuna Beach",
+          "time": "Nearby"
+        },
+        {
+          "place": "Vagator & Ozran",
+          "time": "Nearby"
+        },
+        {
+          "place": "Cafés & restaurants",
+          "time": "Walkable"
+        },
+        {
+          "place": "Assagao & Siolim",
+          "time": "Close by"
+        },
+        {
+          "place": "Mapusa town",
+          "time": "Close by"
+        }
       ],
       "location_note": "Distances are indicative and to be verified by the buyer.",
       "brokerage_note": "Floor plans & title docs on request",
       "hero_image": "exterior",
       "card_image": "living",
       "gallery": [
-        { "img": "lounge", "label": "Living & dining", "wide": true },
-        { "img": "living2", "label": "Sitting area" },
-        { "img": "ceiling", "label": "Sculpted dining ceiling" },
-        { "img": "dining", "label": "Dining & kitchen", "wide": true },
-        { "img": "kitchen", "label": "Modular kitchen" },
-        { "img": "bedroom", "label": "Garden-facing bedroom" },
-        { "img": "bedroom2", "label": "Guest bedroom" },
-        { "img": "bath", "label": "Ensuite bathroom" },
-        { "img": "pool", "label": "Private pool" },
-        { "img": "garden", "label": "Landscaped garden", "wide": true }
+        {
+          "img": "lounge",
+          "label": "Living & dining",
+          "wide": true
+        },
+        {
+          "img": "living2",
+          "label": "Sitting area"
+        },
+        {
+          "img": "ceiling",
+          "label": "Sculpted dining ceiling"
+        },
+        {
+          "img": "dining",
+          "label": "Dining & kitchen",
+          "wide": true
+        },
+        {
+          "img": "kitchen",
+          "label": "Modular kitchen"
+        },
+        {
+          "img": "bedroom",
+          "label": "Garden-facing bedroom"
+        },
+        {
+          "img": "bedroom2",
+          "label": "Guest bedroom"
+        },
+        {
+          "img": "bath",
+          "label": "Ensuite bathroom"
+        },
+        {
+          "img": "pool",
+          "label": "Private pool"
+        },
+        {
+          "img": "garden",
+          "label": "Landscaped garden",
+          "wide": true
+        }
       ]
     },
     {
@@ -156,19 +286,41 @@
       "beds_value": 4,
       "area_display": "3,229",
       "area_value": 3229,
-      "badges": ["For Sale", "Plunge Pool", "Fully Furnished"],
+      "badges": [
+        "For Sale",
+        "Plunge Pool",
+        "Fully Furnished"
+      ],
       "short": "A four-bedroom villa in leafy Aldona — twin master suites with skylight baths, a private plunge pool, and a rooftop terrace over the river-green valley.",
       "description": [
         "An independent four-bedroom villa in Aldona, one of North Goa's greenest and most storied villages, where the Mapusa river and Portuguese-era lanes set an unhurried pace. Laid out over three levels (G+2), the home opens onto a private landscaped garden, a plunge pool, and wide balconies that frame the valley.",
         "The ground floor holds an open living and dining space, a modern kitchen, a guest bedroom and a powder room. Above sit two master suites — each with its own skylit bathroom — a family lounge, and a rooftop terrace made for sundowners. A servant room and covered parking complete the home, which is offered fully furnished on completion."
       ],
       "specs": [
-        { "v": "4", "l": "Bedrooms" },
-        { "v": "3,229", "l": "Sq Ft Built-up" },
-        { "v": "Private", "l": "Plunge Pool" },
-        { "v": "G+2", "l": "Three Levels" },
-        { "v": "275 m²", "l": "Plot Area" },
-        { "v": "Furnished", "l": "On Handover" }
+        {
+          "v": "4",
+          "l": "Bedrooms"
+        },
+        {
+          "v": "3,229",
+          "l": "Sq Ft Built-up"
+        },
+        {
+          "v": "Private",
+          "l": "Plunge Pool"
+        },
+        {
+          "v": "G+2",
+          "l": "Three Levels"
+        },
+        {
+          "v": "275 m²",
+          "l": "Plot Area"
+        },
+        {
+          "v": "Furnished",
+          "l": "On Handover"
+        }
       ],
       "features": [
         "Twin master suites with skylight bathrooms",
@@ -182,25 +334,66 @@
       ],
       "location_label": "Why Aldona",
       "location_points": [
-        { "place": "Mapusa river & valley", "time": "On the doorstep" },
-        { "place": "Aldona village & churches", "time": "Nearby" },
-        { "place": "Assagao & Anjuna", "time": "Close by" },
-        { "place": "Mapusa town", "time": "Close by" },
-        { "place": "Cafés & restaurants", "time": "Nearby" }
+        {
+          "place": "Mapusa river & valley",
+          "time": "On the doorstep"
+        },
+        {
+          "place": "Aldona village & churches",
+          "time": "Nearby"
+        },
+        {
+          "place": "Assagao & Anjuna",
+          "time": "Close by"
+        },
+        {
+          "place": "Mapusa town",
+          "time": "Close by"
+        },
+        {
+          "place": "Cafés & restaurants",
+          "time": "Nearby"
+        }
       ],
       "location_note": "Distances are indicative and to be verified by the buyer.",
       "brokerage_note": "Floor plans & title docs on request",
       "hero_image": "pool",
       "card_image": "exterior",
       "gallery": [
-        { "img": "living", "label": "Double-height living", "wide": true },
-        { "img": "media", "label": "Family lounge" },
-        { "img": "primary", "label": "Master suite, valley view" },
-        { "img": "bedroom-suite", "label": "Pool-facing bedroom" },
-        { "img": "bath-skylight", "label": "Skylight bathroom" },
-        { "img": "bath", "label": "Shower room" },
-        { "img": "exterior", "label": "Villa façade" },
-        { "img": "aerial", "label": "Aerial view", "wide": true }
+        {
+          "img": "living",
+          "label": "Double-height living",
+          "wide": true
+        },
+        {
+          "img": "media",
+          "label": "Family lounge"
+        },
+        {
+          "img": "primary",
+          "label": "Master suite, valley view"
+        },
+        {
+          "img": "bedroom-suite",
+          "label": "Pool-facing bedroom"
+        },
+        {
+          "img": "bath-skylight",
+          "label": "Skylight bathroom"
+        },
+        {
+          "img": "bath",
+          "label": "Shower room"
+        },
+        {
+          "img": "exterior",
+          "label": "Villa façade"
+        },
+        {
+          "img": "aerial",
+          "label": "Aerial view",
+          "wide": true
+        }
       ]
     },
     {
@@ -219,19 +412,41 @@
       "beds_value": 3,
       "area_display": "2,562",
       "area_value": 2562,
-      "badges": ["For Sale", "Private Pool", "Fully Furnished"],
+      "badges": [
+        "For Sale",
+        "Private Pool",
+        "Fully Furnished"
+      ],
       "short": "A ready-to-move 3-bedroom villa in Morjim — Portuguese arches, wooden-rafter ceilings, zellige bathrooms and a private courtyard pool, fully furnished.",
       "description": [
         "A characterful three-bedroom villa in the quiet townlet of Morjim, North Goa, where Portuguese whimsy meets tropical minimalism. Arched windows, wooden-rafter ceilings and hand-glazed zellige bathrooms give every room genuine Goan-Mediterranean character, while a double-height living room opens to field and garden views.",
         "Offered fully furnished and ready to move in. A private courtyard pool, subtropical garden and large terrace complete the home — with round-the-clock concierge, property management and security on hand. Morjim beach is minutes away."
       ],
       "specs": [
-        { "v": "3", "l": "Bedrooms" },
-        { "v": "2,562", "l": "Sq Ft Built-up" },
-        { "v": "Private", "l": "Courtyard Pool" },
-        { "v": "317 m²", "l": "Plot Area" },
-        { "v": "Furnished", "l": "Ready to Move" },
-        { "v": "G+2", "l": "Three Levels" }
+        {
+          "v": "3",
+          "l": "Bedrooms"
+        },
+        {
+          "v": "2,562",
+          "l": "Sq Ft Built-up"
+        },
+        {
+          "v": "Private",
+          "l": "Courtyard Pool"
+        },
+        {
+          "v": "317 m²",
+          "l": "Plot Area"
+        },
+        {
+          "v": "Furnished",
+          "l": "Ready to Move"
+        },
+        {
+          "v": "G+2",
+          "l": "Three Levels"
+        }
       ],
       "features": [
         "Fully furnished, ready to move in",
@@ -244,26 +459,71 @@
       ],
       "location_label": "Why Morjim",
       "location_points": [
-        { "place": "Morjim Beach", "time": "~7 min" },
-        { "place": "Ashwem & Mandrem", "time": "~10–15 min" },
-        { "place": "Cafés & restaurants", "time": "~8 min" },
-        { "place": "Siolim market", "time": "~10 min" },
-        { "place": "Mopa Intl. Airport", "time": "~40 min" }
+        {
+          "place": "Morjim Beach",
+          "time": "~7 min"
+        },
+        {
+          "place": "Ashwem & Mandrem",
+          "time": "~10–15 min"
+        },
+        {
+          "place": "Cafés & restaurants",
+          "time": "~8 min"
+        },
+        {
+          "place": "Siolim market",
+          "time": "~10 min"
+        },
+        {
+          "place": "Mopa Intl. Airport",
+          "time": "~40 min"
+        }
       ],
       "location_note": "Drive times are indicative and to be verified by the buyer.",
       "brokerage_note": "Floor plans & title docs on request",
       "hero_image": "pool",
       "card_image": "exterior",
       "gallery": [
-        { "img": "living", "label": "Living & dining" },
-        { "img": "bedroom", "label": "Primary bedroom", "wide": true },
-        { "img": "views", "label": "Field views", "wide": true },
-        { "img": "bedroom2", "label": "Guest bedroom", "wide": true },
-        { "img": "bath-master", "label": "Primary bathroom" },
-        { "img": "bath-green", "label": "Ensuite bathroom" },
-        { "img": "bath-blue", "label": "Powder room" },
-        { "img": "entrance", "label": "Arched entrance" },
-        { "img": "garden", "label": "Garden path" }
+        {
+          "img": "living",
+          "label": "Living & dining"
+        },
+        {
+          "img": "bedroom",
+          "label": "Primary bedroom",
+          "wide": true
+        },
+        {
+          "img": "views",
+          "label": "Field views",
+          "wide": true
+        },
+        {
+          "img": "bedroom2",
+          "label": "Guest bedroom",
+          "wide": true
+        },
+        {
+          "img": "bath-master",
+          "label": "Primary bathroom"
+        },
+        {
+          "img": "bath-green",
+          "label": "Ensuite bathroom"
+        },
+        {
+          "img": "bath-blue",
+          "label": "Powder room"
+        },
+        {
+          "img": "entrance",
+          "label": "Arched entrance"
+        },
+        {
+          "img": "garden",
+          "label": "Garden path"
+        }
       ]
     },
     {
@@ -282,7 +542,11 @@
       "beds_value": 5,
       "area_display": "9,148",
       "area_value": 9148,
-      "badges": ["For Sale", "Private Pool", "Under Construction"],
+      "badges": [
+        "For Sale",
+        "Private Pool",
+        "Under Construction"
+      ],
       "short": "Our most substantial residence — a Portuguese-Mediterranean villa in Siolim across four levels, with five suites, a home theatre, spa, lift and private pool.",
       "description": [
         "A landmark residence under construction in Siolim, North Goa — a Portuguese-Mediterranean villa arranged over four levels, from a lower-ground garden suite to a rooftop terrace bar. Arched colonnades, terracotta-tiled roofs and full-height windows frame a private pool and sun deck at its heart.",
@@ -290,12 +554,30 @@
         "Currently under construction. Floor plans and the full area statement are available on request; price on application."
       ],
       "specs": [
-        { "v": "5", "l": "Bedroom Suites" },
-        { "v": "9,148", "l": "Sq Ft Built-up" },
-        { "v": "Private", "l": "Swimming Pool" },
-        { "v": "800 m²", "l": "Plot Area" },
-        { "v": "4", "l": "Levels + Terrace" },
-        { "v": "Lift", "l": "Serves All Floors" }
+        {
+          "v": "5",
+          "l": "Bedroom Suites"
+        },
+        {
+          "v": "9,148",
+          "l": "Sq Ft Built-up"
+        },
+        {
+          "v": "Private",
+          "l": "Swimming Pool"
+        },
+        {
+          "v": "800 m²",
+          "l": "Plot Area"
+        },
+        {
+          "v": "4",
+          "l": "Levels + Terrace"
+        },
+        {
+          "v": "Lift",
+          "l": "Serves All Floors"
+        }
       ],
       "features": [
         "Five bedroom suites across four levels",
@@ -309,36 +591,214 @@
       ],
       "location_label": "Why Siolim",
       "location_points": [
-        { "place": "Vagator & Morjim beaches", "time": "~15 min" },
-        { "place": "Anjuna & Assagao", "time": "~20 min" },
-        { "place": "Chapora river & Siolim", "time": "Nearby" },
-        { "place": "Cafés & restaurants", "time": "Close by" },
-        { "place": "Mopa Intl. Airport", "time": "~35 min" }
+        {
+          "place": "Vagator & Morjim beaches",
+          "time": "~15 min"
+        },
+        {
+          "place": "Anjuna & Assagao",
+          "time": "~20 min"
+        },
+        {
+          "place": "Chapora river & Siolim",
+          "time": "Nearby"
+        },
+        {
+          "place": "Cafés & restaurants",
+          "time": "Close by"
+        },
+        {
+          "place": "Mopa Intl. Airport",
+          "time": "~35 min"
+        }
       ],
       "location_note": "Drive times are indicative and to be verified by the buyer.",
       "brokerage_note": "Floor plans & area statement on request",
       "hero_image": "aerial",
       "card_image": "elevation",
       "gallery": [
-        { "img": "elevation", "label": "Front elevation", "wide": true },
-        { "img": "plan-lower", "label": "Lower ground floor plan", "wide": true },
-        { "img": "plan-upper", "label": "Upper ground floor plan", "wide": true },
-        { "img": "plan-first", "label": "First floor plan", "wide": true },
-        { "img": "plan-terrace", "label": "Terrace floor plan", "wide": true }
+        {
+          "img": "elevation",
+          "label": "Front elevation",
+          "wide": true
+        },
+        {
+          "img": "plan-lower",
+          "label": "Lower ground floor plan",
+          "wide": true
+        },
+        {
+          "img": "plan-upper",
+          "label": "Upper ground floor plan",
+          "wide": true
+        },
+        {
+          "img": "plan-first",
+          "label": "First floor plan",
+          "wide": true
+        },
+        {
+          "img": "plan-terrace",
+          "label": "Terrace floor plan",
+          "wide": true
+        }
       ],
       "inspiration": {
         "note": "The villa is under construction, so its interiors are yet to be built. These are reference visuals — chosen with the architects to convey the intended Portuguese-Mediterranean design language, materials and mood. They are not photographs of this home.",
         "images": [
-          { "img": "insp-entrance", "label": "Entrance" },
-          { "img": "insp-living", "label": "Living room" },
-          { "img": "insp-living2", "label": "Double-height living" },
-          { "img": "insp-dining", "label": "Dining" },
-          { "img": "insp-bedroom", "label": "Bedroom suite" },
-          { "img": "insp-bedroom2", "label": "Primary bedroom" },
-          { "img": "insp-outdoor", "label": "Loggia & terrace" },
-          { "img": "insp-bath", "label": "Bathroom" }
+          {
+            "img": "insp-entrance",
+            "label": "Entrance"
+          },
+          {
+            "img": "insp-living",
+            "label": "Living room"
+          },
+          {
+            "img": "insp-living2",
+            "label": "Double-height living"
+          },
+          {
+            "img": "insp-dining",
+            "label": "Dining"
+          },
+          {
+            "img": "insp-bedroom",
+            "label": "Bedroom suite"
+          },
+          {
+            "img": "insp-bedroom2",
+            "label": "Primary bedroom"
+          },
+          {
+            "img": "insp-outdoor",
+            "label": "Loggia & terrace"
+          },
+          {
+            "img": "insp-bath",
+            "label": "Bathroom"
+          }
         ]
       }
+    },
+    {
+      "slug": "d7-oceans",
+      "featured": false,
+      "name": "D7 Oceans",
+      "ref": "MP-D7O-01",
+      "status": "New Launch",
+      "location": "Orlim",
+      "region": "South Goa",
+      "collection": "Wellness Residences",
+      "price_display": "Price on Request",
+      "price_value": 9000000,
+      "price_note": "On Application",
+      "beds_display": "Studio",
+      "beds_value": 0,
+      "area_display": "Studio format",
+      "area_value": 0,
+      "badges": [
+        "New Launch",
+        "Wellness Retreat",
+        "Managed Rentals"
+      ],
+      "short": "A boutique gated collection of wellness studio residences in Orlim, South Goa — conceived as turnkey retreats with certified air, acoustic and thermal comfort, and a managed short-stay rental programme.",
+      "description": [
+        "D7 Oceans is a boutique, gated low-rise in Orlim — a quiet riverside pocket of South Goa's Salcete belt. Its studio residences are conceived not as ordinary units but as turnkey wellness retreats: calm, self-contained spaces designed to host, heal and rest, wrapped in a warm Indo-Portuguese architecture of pitched terracotta roofs, arched detailing and rattan interiors.",
+        "What sets the project apart is how it is built and tested. Each home is delivered to a measured standard of comfort — certified indoor air quality, acoustic insulation for genuinely quiet stays, thermal-insulated green-building construction that keeps interiors cool through the Goan summer, and Vaastu-aligned layouts intended to support clarity and better sleep.",
+        "For an owner, it is designed to work as much as it rests. A plug-and-play managed programme handles listing, hosting and upkeep, positioning each studio for the premium short-stay and wellness-travel market — a lifestyle asset that can be enjoyed and let with equal ease."
+      ],
+      "feature_heading": "Why D7 Oceans",
+      "specs": [
+        {
+          "v": "Studio",
+          "l": "Configuration"
+        },
+        {
+          "v": "Wellness",
+          "l": "Concept"
+        },
+        {
+          "v": "Orlim",
+          "l": "South Goa"
+        },
+        {
+          "v": "New Launch",
+          "l": "Status"
+        },
+        {
+          "v": "G + 2",
+          "l": "Low-rise"
+        },
+        {
+          "v": "Gated",
+          "l": "Community"
+        }
+      ],
+      "features": [
+        "Studio residences designed as turnkey wellness retreats",
+        "Certified indoor air-quality standards",
+        "Acoustic insulation engineered for genuinely quiet stays",
+        "Thermal-insulated, green-building construction — cooler interiors, lower power bills",
+        "Vaastu-aligned layouts and energy flow",
+        "Plug-and-play managed-rental programme — listing, hosting and upkeep handled",
+        "Boutique gated low-rise with landscaped grounds",
+        "Positioned for the premium short-stay and wellness-travel market"
+      ],
+      "location_label": "Orlim, Salcete — South Goa",
+      "location_points": [
+        {
+          "place": "Sal River waterfront",
+          "time": "3 min"
+        },
+        {
+          "place": "Betalbatim Beach",
+          "time": "12 min"
+        },
+        {
+          "place": "Colva Beach",
+          "time": "15 min"
+        },
+        {
+          "place": "Margao town",
+          "time": "15 min"
+        },
+        {
+          "place": "Dabolim Airport",
+          "time": "35 min"
+        }
+      ],
+      "location_note": "Orlim sits in the calm riverside heart of Salcete, minutes from the Sal River and South Goa's quieter beaches, yet within an easy drive of Margao and the airport — a restful base with genuine rental pull.",
+      "brokerage_note": "Full title, approvals and specification pack shared on enquiry.",
+      "hero_image": "exterior-dusk",
+      "card_image": "facade",
+      "gallery": [
+        {
+          "img": "foyer",
+          "label": "Entrance Foyer & Staircase"
+        },
+        {
+          "img": "lobby",
+          "label": "Reception Lobby"
+        },
+        {
+          "img": "stair",
+          "label": "Stairwell & Skylight"
+        },
+        {
+          "img": "exterior-day",
+          "label": "Facade by Day",
+          "wide": true
+        },
+        {
+          "img": "exterior-dusk",
+          "label": "Elevation at Dusk"
+        },
+        {
+          "img": "facade",
+          "label": "Gated Frontage"
+        }
+      ]
     }
   ]
 }
