@@ -172,6 +172,14 @@ section{position:relative}
 .loc-note{font-size:11px;color:var(--dark-text);margin-top:16px}
 .feature-cta{display:flex;gap:18px;align-items:center;margin-top:44px;padding-top:40px;border-top:1px solid var(--edge-soft);flex-wrap:wrap}
 .feature-cta .brokerage{margin-left:auto;font-size:12px;letter-spacing:.04em;color:var(--dim);text-align:right}
+.inspo{margin-top:56px;padding-top:46px;border-top:1px solid var(--edge-soft)}
+.inspo-head{max-width:660px;margin-bottom:32px}
+.inspo-note{color:var(--dim);font-size:13.5px;line-height:1.65;margin-top:6px}
+.inspo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.inspo figure{margin:0}
+.inspo-img{height:190px;background-color:var(--dark-3);background-size:cover;background-position:center;border:1px solid var(--edge-soft)}
+.inspo figcaption{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-top:10px}
+@media(max-width:760px){.inspo-grid{grid-template-columns:repeat(2,1fr)}}
 .props-foot{margin-top:40px;text-align:center;color:var(--dim);font-size:13px;letter-spacing:.03em}
 .props-foot .btn{margin-bottom:22px}
 

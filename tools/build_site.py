@@ -97,7 +97,7 @@ def links(root, on_home):
 
 # Bump ASSET_VER whenever site.css / site.js change, so browsers re-fetch
 # them instead of serving a stale cached copy.
-ASSET_VER = "4"
+ASSET_VER = "5"
 
 
 def head(title, desc, root, page_js=""):
@@ -328,6 +328,28 @@ def feature_block(l, root, site, mode, detail_href=""):
     </article>"""
 
 
+def inspiration_block(l, root):
+    """Design-inspiration band — reference visuals, clearly not the actual home.
+    Rendered on the detail page only, and kept out of the photo lightbox."""
+    insp = l.get("inspiration")
+    if not insp:
+        return ""
+    slug = l["slug"]
+    tiles = ""
+    for g in insp["images"]:
+        src = img_path(root, slug, g["img"])
+        tiles += (f'<figure><div class="inspo-img" style="background-image:url(\'{src}\')"></div>'
+                  f'<figcaption>{e(g["label"])}</figcaption></figure>')
+    return f"""
+      <div class="inspo reveal">
+        <div class="inspo-head">
+          <div class="kf-title"><span class="diamond"></span>Design Inspiration</div>
+          <p class="inspo-note">{e(insp["note"])}</p>
+        </div>
+        <div class="inspo-grid">{tiles}</div>
+      </div>"""
+
+
 def property_card(l, root):
     slug = l["slug"]
     img = img_path(root, slug, l["card_image"])
@@ -525,6 +547,7 @@ def build_detail(site, l, listings):
     body = f"""
 <section class="props" style="padding:70px 0 110px;border-top:0"><div class="wrap">
   {feature_block(l, root, site, mode='detail')}
+  {inspiration_block(l, root)}
   <div class="props-foot reveal"><a href="{lk['properties']}" class="btn"><span>Back to All Properties</span></a></div>
 </div></section>"""
 

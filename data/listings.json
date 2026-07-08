@@ -327,7 +327,20 @@
         { "img": "plan-upper", "label": "Upper ground floor plan", "wide": true },
         { "img": "plan-first", "label": "First floor plan", "wide": true },
         { "img": "plan-terrace", "label": "Terrace floor plan", "wide": true }
-      ]
+      ],
+      "inspiration": {
+        "note": "The villa is under construction, so its interiors are yet to be built. These are reference visuals — chosen with the architects to convey the intended Portuguese-Mediterranean design language, materials and mood. They are not photographs of this home.",
+        "images": [
+          { "img": "insp-entrance", "label": "Entrance" },
+          { "img": "insp-living", "label": "Living room" },
+          { "img": "insp-living2", "label": "Double-height living" },
+          { "img": "insp-dining", "label": "Dining" },
+          { "img": "insp-bedroom", "label": "Bedroom suite" },
+          { "img": "insp-bedroom2", "label": "Primary bedroom" },
+          { "img": "insp-outdoor", "label": "Loggia & terrace" },
+          { "img": "insp-bath", "label": "Bathroom" }
+        ]
+      }
     }
   ]
 }
