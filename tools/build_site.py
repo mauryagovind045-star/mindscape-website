@@ -17,11 +17,13 @@ Usage:
 import html
 import json
 import os
+import re
 import sys
 import urllib.parse
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_FILE = os.path.join(ROOT_DIR, "data", "listings.json")
+BLOG_FILE = os.path.join(ROOT_DIR, "data", "blog.json")
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com" />\n'
          '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\n'
@@ -89,27 +91,59 @@ def links(root, on_home):
     return {
         "home": home,
         "properties": f"{root}properties/",
+        "journal": f"{root}journal/",
         "about": "#about" if on_home else f"{root}#about",
         "approach": "#approach" if on_home else f"{root}#approach",
         "contact": "#contact",
     }
 
 
+def abs_url(site, path=""):
+    """Absolute canonical URL from a root-relative path (no leading slash)."""
+    return site["website_url"].rstrip("/") + "/" + path.lstrip("/")
+
+
+def seo_tags(site, canonical_path, title, desc, image_abs, og_type="website"):
+    """Canonical + Open Graph + Twitter card tags for a page."""
+    canon = abs_url(site, canonical_path)
+    return (
+        f'<link rel="canonical" href="{e(canon)}" />\n'
+        f'<meta property="og:type" content="{og_type}" />\n'
+        f'<meta property="og:site_name" content="{e(site["name"])}" />\n'
+        f'<meta property="og:title" content="{e(title)}" />\n'
+        f'<meta property="og:description" content="{e(desc)}" />\n'
+        f'<meta property="og:url" content="{e(canon)}" />\n'
+        f'<meta property="og:image" content="{e(image_abs)}" />\n'
+        f'<meta name="twitter:card" content="summary_large_image" />\n'
+        f'<meta name="twitter:title" content="{e(title)}" />\n'
+        f'<meta name="twitter:description" content="{e(desc)}" />\n'
+        f'<meta name="twitter:image" content="{e(image_abs)}" />'
+    )
+
+
+def jsonld(obj):
+    """Render a JSON-LD structured-data script tag."""
+    return ('<script type="application/ld+json">'
+            + json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
+            + "</script>")
+
+
 # Bump ASSET_VER whenever site.css / site.js change, so browsers re-fetch
 # them instead of serving a stale cached copy.
-ASSET_VER = "6"
+ASSET_VER = "7"
 
 
-def head(title, desc, root, page_js=""):
+def head(title, desc, root, page_js="", extra_head=""):
     v = ASSET_VER
     extra = (f'<script defer src="{root}assets/js/{page_js}?v={v}"></script>' if page_js else "")
+    seo = f"\n{extra_head}" if extra_head else ""
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{e(title)}</title>
-<meta name="description" content="{e(desc)}" />
+<meta name="description" content="{e(desc)}" />{seo}
 {FONTS}
 <link rel="stylesheet" href="{root}assets/css/site.css?v={v}" />
 <script defer src="{root}assets/js/site.js?v={v}"></script>
@@ -130,6 +164,7 @@ def nav(site, lk, root, active, solid=False):
     </a>
     <nav class="nav-links" id="navLinks">
       <a href="{lk['properties']}"{cls('properties')}>Properties</a>
+      <a href="{lk['journal']}"{cls('journal')}>Journal</a>
       <a href="{lk['about']}"{cls('about')}>About</a>
       <a href="{lk['approach']}"{cls('approach')}>Our Approach</a>
       <a href="{lk['contact']}"{cls('contact')}>Contact</a>
@@ -220,6 +255,7 @@ def footer(site, lk, root):
       </div>
       <div class="foot-col"><h4>Explore</h4>
         <a href="{lk['properties']}">Properties</a>
+        <a href="{lk['journal']}">Journal</a>
         <a href="{lk['about']}">About Us</a>
         <a href="{lk['approach']}">Our Approach</a>
         <a href="{lk['contact']}">Contact</a>
@@ -373,6 +409,80 @@ def property_card(l, root):
 
 
 # --------------------------------------------------------------------------- #
+#  Journal / blog blocks                                                      #
+# --------------------------------------------------------------------------- #
+_LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+_BOLD_RE = re.compile(r"\*\*([^*]+)\*\*")
+
+
+def inline(text, root=""):
+    """Escape text, then re-enable a tiny safe subset of inline markup:
+    **bold** and [label](href). Internal links (starting '/') are rooted."""
+    out = e(text)
+
+    def link(m):
+        label, href = m.group(1), m.group(2)
+        if href.startswith("/"):
+            href = root + href.lstrip("/")
+        return f'<a href="{href}">{label}</a>'
+
+    out = _LINK_RE.sub(link, out)
+    out = _BOLD_RE.sub(r"<strong>\1</strong>", out)
+    return out
+
+
+def blog_img(root, img):
+    return f"{root}assets/blog/{img}.jpg"
+
+
+def render_block(b, root):
+    t = b.get("type")
+    if t == "h2":
+        return f'<h2 class="post-h2"><span class="diamond"></span>{inline(b["text"], root)}</h2>'
+    if t == "h3":
+        return f'<h3 class="post-h3">{inline(b["text"], root)}</h3>'
+    if t == "p":
+        return f"<p>{inline(b['text'], root)}</p>"
+    if t == "ul":
+        items = "".join(f'<li><span class="diamond"></span><span>{inline(i, root)}</span></li>'
+                        for i in b["items"])
+        return f'<ul class="post-list">{items}</ul>'
+    if t == "quote":
+        cite = f'<cite>{inline(b["cite"], root)}</cite>' if b.get("cite") else ""
+        return f'<blockquote class="post-quote">{inline(b["text"], root)}{cite}</blockquote>'
+    if t == "img":
+        cap = f'<figcaption>{inline(b["label"], root)}</figcaption>' if b.get("label") else ""
+        return (f'<figure class="post-fig"><div class="post-fig-img" '
+                f'style="background-image:url(\'{blog_img(root, b["img"])}\')"></div>{cap}</figure>')
+    if t == "cta":
+        href = b["href"]
+        if href.startswith("/"):
+            href = root + href.lstrip("/")
+        return (f'<div class="post-cta"><p>{inline(b["text"], root)}</p>'
+                f'<a href="{href}" class="btn solid"><span>{e(b["label"])}</span></a></div>')
+    return ""
+
+
+def blog_card(p, root, featured=False):
+    href = f"{root}journal/{p['slug']}/"
+    img = blog_img(root, p["hero_image"])
+    cls = "bcard feat" if featured else "bcard"
+    return f"""
+      <article class="{cls}">
+        <a href="{href}" class="bcard-imgwrap">
+          <div class="bcard-img" style="background-image:url('{img}')"></div>
+          <span class="bcard-cat">{e(p['category'])}</span>
+        </a>
+        <div class="bcard-body">
+          <div class="bcard-meta">{e(p['date_display'])}<span class="dot">·</span>{e(p['read_time'])}</div>
+          <h3><a href="{href}">{e(p['title'])}</a></h3>
+          <p>{e(p['excerpt'])}</p>
+          <a href="{href}" class="btn-arrow">Read article →</a>
+        </div>
+      </article>"""
+
+
+# --------------------------------------------------------------------------- #
 #  Pages                                                                      #
 # --------------------------------------------------------------------------- #
 def build_home(site, listings):
@@ -473,7 +583,18 @@ def build_home(site, listings):
     title = f"{site['name']} — {site['tagline']}"
     desc = ("Mindscape Properties is a premium boutique real estate brokerage in Panjim, Goa. "
             "Engineer-led, curated luxury villas. Where luxury meets the Arabian Sea.")
-    return (head(title, desc, root)
+    org_ld = jsonld({
+        "@context": "https://schema.org", "@type": "RealEstateAgent",
+        "name": site["name"], "url": abs_url(site),
+        "image": abs_url(site, hero_img), "priceRange": "₹₹₹",
+        "logo": abs_url(site, "assets/mindscape-logo-dark-600x200.png"),
+        "telephone": site["phone_display"], "email": site["email"],
+        "areaServed": "Goa, India",
+        "address": {"@type": "PostalAddress", "addressLocality": "Panjim",
+                    "addressRegion": "Goa", "addressCountry": "IN"},
+    })
+    seo = seo_tags(site, "", title, desc, abs_url(site, hero_img)) + "\n" + org_ld
+    return (head(title, desc, root, extra_head=seo)
             + nav(site, lk, root, active="home")
             + hero + strip + pillars + featured_section + LIGHTBOX
             + about + values + quote + contact_section(site) + footer(site, lk, root)
@@ -522,7 +643,9 @@ def build_listings(site, listings):
 
     title = f"Properties — {site['name']}"
     desc = "Browse Mindscape Properties' curated collection of premium villas and homes across Goa. Filter by location, price and bedrooms."
-    return (head(title, desc, root, page_js="listings.js")
+    og_img = abs_url(site, img_path("", listings[0]["slug"], listings[0]["card_image"]))
+    seo = seo_tags(site, "properties/", title, desc, og_img)
+    return (head(title, desc, root, page_js="listings.js", extra_head=seo)
             + nav(site, lk, root, active="properties", solid=True)
             + header_block + listings_block + contact_section(site) + footer(site, lk, root)
             + whatsapp_fab(site, WA_GENERIC)
@@ -555,12 +678,205 @@ def build_detail(site, l, listings):
     desc = l["short"]
     wa_text = (f"Hi Mindscape, I'm interested in {l['name']} (Ref {l['ref']}), "
                f"{l['location']}, {l['region']}. Please share more details.")
-    return (head(title, desc, root)
+    canon = f"properties/{l['slug']}/"
+    og_img = abs_url(site, img_path("", l["slug"], l["hero_image"]))
+    prod_ld = jsonld({
+        "@context": "https://schema.org", "@type": "Residence",
+        "name": l["name"], "url": abs_url(site, canon), "image": og_img,
+        "description": l["short"],
+        "address": {"@type": "PostalAddress", "addressLocality": l["location"],
+                    "addressRegion": l["region"], "addressCountry": "IN"},
+    })
+    seo = seo_tags(site, canon, title, desc, og_img, og_type="article") + "\n" + prod_ld
+    return (head(title, desc, root, extra_head=seo)
             + nav(site, lk, root, active="properties", solid=True)
             + breadcrumb + body + LIGHTBOX
             + contact_section(site, property_name=l["name"]) + footer(site, lk, root)
             + whatsapp_fab(site, wa_text)
             + "\n</body>\n</html>\n")
+
+
+def build_blog_index(site, posts):
+    root = "../"
+    lk = links(root, on_home=False)
+
+    ordered = sorted(posts, key=lambda p: p["date"], reverse=True)
+    featured = next((p for p in ordered if p.get("featured")), ordered[0])
+    rest = [p for p in ordered if p["slug"] != featured["slug"]]
+
+    lead = blog_card(featured, root, featured=True)
+    cards = "".join(blog_card(p, root) for p in rest)
+
+    header_block = f"""
+<section class="page-header"><div class="glow"></div><div class="wrap">
+  <div class="breadcrumb reveal in"><a href="{lk['home']}">Home</a><span class="sep">/</span><span>Journal</span></div>
+  <span class="eyebrow reveal in">The Journal</span>
+  <h1 class="reveal in d1">Notes on buying<br>well <em>in Goa.</em></h1>
+  <p class="reveal in d2">Guides, area intelligence and hard-won due-diligence lessons from an engineer-led brokerage — so you buy on this coast with clarity, not guesswork.</p>
+</div></section>"""
+
+    body = f"""
+<section class="journal"><div class="wrap">
+  <div class="journal-lead reveal">{lead}</div>
+  <div class="journal-grid">{cards}</div>
+</div></section>"""
+
+    title = f"Journal — Goa Property Guides & Insights · {site['name']}"
+    desc = ("Expert guides on buying property in Goa — NRI eligibility, RERA, title and "
+            "due diligence, North vs South Goa, and choosing villas, apartments or plots.")
+    breadcrumbs = jsonld({
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": abs_url(site)},
+            {"@type": "ListItem", "position": 2, "name": "Journal", "item": abs_url(site, "journal/")},
+        ],
+    })
+    blog_ld = jsonld({
+        "@context": "https://schema.org", "@type": "Blog",
+        "name": f"{site['name']} Journal", "url": abs_url(site, "journal/"),
+        "description": desc,
+        "blogPost": [{
+            "@type": "BlogPosting", "headline": p["title"],
+            "url": abs_url(site, f"journal/{p['slug']}/"),
+            "datePublished": p["date"], "description": p["excerpt"],
+        } for p in ordered],
+    })
+    seo = seo_tags(site, "journal/", title, desc,
+                   abs_url(site, blog_img("", featured["hero_image"]))) + "\n" + breadcrumbs + "\n" + blog_ld
+    return (head(title, desc, root, extra_head=seo)
+            + nav(site, lk, root, active="journal", solid=True)
+            + header_block + body + contact_section(site) + footer(site, lk, root)
+            + whatsapp_fab(site, WA_GENERIC)
+            + "\n</body>\n</html>\n")
+
+
+def build_post(site, post, posts):
+    root = "../../"
+    lk = links(root, on_home=False)
+    slug = post["slug"]
+
+    article = "".join(render_block(b, root) for b in post["body"])
+
+    takeaways = ""
+    if post.get("key_takeaways"):
+        items = "".join(f'<li><span class="diamond"></span><span>{inline(t, root)}</span></li>'
+                        for t in post["key_takeaways"])
+        takeaways = f"""
+      <aside class="post-takeaways">
+        <div class="kf-title"><span class="diamond"></span>Key Takeaways</div>
+        <ul>{items}</ul>
+      </aside>"""
+
+    faqs_html = ""
+    if post.get("faqs"):
+        rows = "".join(
+            f'<div class="faq"><h3>{inline(f["q"], root)}</h3><p>{inline(f["a"], root)}</p></div>'
+            for f in post["faqs"])
+        faqs_html = f"""
+      <div class="post-faqs">
+        <div class="kf-title"><span class="diamond"></span>Frequently Asked</div>
+        {rows}
+      </div>"""
+
+    # Up to two related posts (most recent others)
+    others = [p for p in sorted(posts, key=lambda p: p["date"], reverse=True) if p["slug"] != slug][:2]
+    related = ""
+    if others:
+        related = f"""
+<section class="journal related"><div class="wrap">
+  <div class="lead-mark reveal"><span class="diamond"></span><span class="coord">More from the Journal</span></div>
+  <div class="journal-grid">{"".join(blog_card(p, root) for p in others)}</div>
+</div></section>"""
+
+    hero = blog_img(root, post["hero_image"])
+    breadcrumb = f"""
+<section class="page-header post-header"><div class="glow"></div><div class="wrap">
+  <div class="breadcrumb reveal in">
+    <a href="{lk['home']}">Home</a><span class="sep">/</span>
+    <a href="{lk['journal']}">Journal</a><span class="sep">/</span><span>{e(post['category'])}</span>
+  </div>
+  <span class="eyebrow reveal in">{e(post['category'])}</span>
+  <h1 class="reveal in d1">{e(post['title'])}</h1>
+  <div class="post-meta reveal in d2">
+    <span>{e(post['date_display'])}</span><span class="dot">·</span><span>{e(post['read_time'])}</span>
+    <span class="dot">·</span><span>{e(site['name'])}</span>
+  </div>
+</div></section>"""
+
+    body = f"""
+<section class="post"><div class="wrap">
+  <div class="post-hero reveal" style="background-image:url('{hero}')"></div>
+  <div class="post-shell">
+    <article class="post-body reveal">
+      <p class="post-lede">{inline(post['excerpt'], root)}</p>
+      {takeaways}
+      {article}
+      {faqs_html}
+      <div class="post-sign">
+        <span class="diamond"></span>
+        <div><div class="name">{e(site['name'])}</div>
+        <div class="role">Engineer-led advisory · Panjim, Goa</div></div>
+      </div>
+    </article>
+  </div>
+</div></section>
+{related}"""
+
+    title = f"{post['title']} · {site['name']}"
+    desc = post["excerpt"]
+    img_abs = abs_url(site, blog_img("", post["hero_image"]))
+    posting = {
+        "@context": "https://schema.org", "@type": "BlogPosting",
+        "headline": post["title"], "description": desc,
+        "image": img_abs, "datePublished": post["date"], "dateModified": post["date"],
+        "articleSection": post["category"],
+        "keywords": post.get("keywords", ""),
+        "mainEntityOfPage": abs_url(site, f"journal/{slug}/"),
+        "author": {"@type": "Organization", "name": site["name"]},
+        "publisher": {"@type": "Organization", "name": site["name"],
+                      "logo": {"@type": "ImageObject",
+                               "url": abs_url(site, "assets/mindscape-logo-dark-600x200.png")}},
+    }
+    crumbs = {
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": abs_url(site)},
+            {"@type": "ListItem", "position": 2, "name": "Journal", "item": abs_url(site, "journal/")},
+            {"@type": "ListItem", "position": 3, "name": post["title"],
+             "item": abs_url(site, f"journal/{slug}/")},
+        ],
+    }
+    ld = jsonld(posting) + "\n" + jsonld(crumbs)
+    if post.get("faqs"):
+        faq_ld = {
+            "@context": "https://schema.org", "@type": "FAQPage",
+            "mainEntity": [{"@type": "Question", "name": f["q"],
+                            "acceptedAnswer": {"@type": "Answer", "text": f["a"]}}
+                           for f in post["faqs"]],
+        }
+        ld += "\n" + jsonld(faq_ld)
+    seo = seo_tags(site, f"journal/{slug}/", title, desc, img_abs, og_type="article") + "\n" + ld
+    return (head(title, desc, root, extra_head=seo)
+            + nav(site, lk, root, active="journal", solid=True)
+            + breadcrumb + body + contact_section(site) + footer(site, lk, root)
+            + whatsapp_fab(site, WA_GENERIC)
+            + "\n</body>\n</html>\n")
+
+
+def build_sitemap(site, listings, posts):
+    urls = ["", "properties/", "journal/"]
+    urls += [f"properties/{l['slug']}/" for l in listings]
+    urls += [f"journal/{p['slug']}/" for p in posts]
+    body = "".join(f"  <url><loc>{e(abs_url(site, u))}</loc></url>\n" for u in urls)
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+            f"{body}</urlset>\n")
+
+
+def build_robots(site):
+    return ("User-agent: *\n"
+            "Allow: /\n\n"
+            f"Sitemap: {abs_url(site, 'sitemap.xml')}\n")
 
 
 # --------------------------------------------------------------------------- #
@@ -578,12 +894,26 @@ def main():
     if not listings:
         sys.exit("No listings found in data/listings.json")
 
-    print(f"Building {site['name']} — {len(listings)} listing(s):")
+    posts = []
+    if os.path.exists(BLOG_FILE):
+        with open(BLOG_FILE, encoding="utf-8") as f:
+            posts = json.load(f).get("posts", [])
+
+    print(f"Building {site['name']} — {len(listings)} listing(s), {len(posts)} post(s):")
     write(os.path.join(ROOT_DIR, "index.html"), build_home(site, listings))
     write(os.path.join(ROOT_DIR, "properties", "index.html"), build_listings(site, listings))
     for l in listings:
         write(os.path.join(ROOT_DIR, "properties", l["slug"], "index.html"),
               build_detail(site, l, listings))
+
+    if posts:
+        write(os.path.join(ROOT_DIR, "journal", "index.html"), build_blog_index(site, posts))
+        for p in posts:
+            write(os.path.join(ROOT_DIR, "journal", p["slug"], "index.html"),
+                  build_post(site, p, posts))
+
+    write(os.path.join(ROOT_DIR, "sitemap.xml"), build_sitemap(site, listings, posts))
+    write(os.path.join(ROOT_DIR, "robots.txt"), build_robots(site))
     print("Done.")
 
 
