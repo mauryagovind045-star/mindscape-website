@@ -799,6 +799,135 @@
           "label": "Gated Frontage"
         }
       ]
+    },
+    {
+      "slug": "horizon-14",
+      "featured": false,
+      "name": "Horizon 14",
+      "ref": "MP-2BABM-14",
+      "status": "Under Construction",
+      "location": "Bambolim",
+      "region": "North Goa",
+      "collection": "Holiday Homes",
+      "price_display": "From ₹1.04 Cr",
+      "price_value": 10400000,
+      "price_note": "2 BHK · Possession May 2028",
+      "beds_display": "2",
+      "beds_value": 2,
+      "area_display": "1,137 – 1,262",
+      "area_value": 1137,
+      "badges": [
+        "Under Construction",
+        "Private Pool",
+        "Possession 2028"
+      ],
+      "short": "Contemporary 2 BHK holiday homes in upmarket Bambolim — a boutique gated low-rise with a resort-style pool, minutes from Panjim and the Atal Setu bridge.",
+      "description": [
+        "Horizon 14 is a boutique collection of contemporary 2 BHK holiday homes in Bambolim — one of North Goa's best-connected addresses, moments from Panjim, the NH-66 and the landmark Atal Setu bridge. Its sculpted, organic architecture, with curved balconies and warm laterite-stone accents, gives the building a character all its own amid the tropical greenery.",
+        "Inside, light-filled living spaces open through wide sliding glass to private balconies, framed by wood-slat feature walls, gold accent lighting and modular kitchens. Well-proportioned bedrooms, vitrified flooring, teak main doors and a warm contemporary palette carry the same considered detailing through every home.",
+        "Conceived to live as easily as it lets, Horizon 14 pairs a resort-style swimming pool, gated security, covered stilt parking and lifts with power backup — close to Goa Medical College, Goa University and Dabolim airport. A holiday home with genuine rental pull, ready for possession in May 2028."
+      ],
+      "feature_heading": "Why Horizon 14",
+      "specs": [
+        {
+          "v": "2 BHK",
+          "l": "Configuration"
+        },
+        {
+          "v": "1,137–1,262",
+          "l": "Sq Ft SBUA"
+        },
+        {
+          "v": "Private",
+          "l": "Swimming Pool"
+        },
+        {
+          "v": "May 2028",
+          "l": "Possession"
+        },
+        {
+          "v": "Covered",
+          "l": "Stilt Parking"
+        },
+        {
+          "v": "Gated",
+          "l": "Secure Complex"
+        }
+      ],
+      "features": [
+        "Contemporary 2 BHK holiday homes in upmarket Bambolim",
+        "Resort-style swimming pool",
+        "Boutique gated low-rise (G + 4) with covered stilt parking",
+        "Sculpted architecture — curved balconies & laterite accents",
+        "Light-filled living, wood-slat feature walls & modular kitchens",
+        "Minutes from Panjim, the NH-66 & the Atal Setu bridge",
+        "Automatic lifts with power backup, CCTV & 24/7 security",
+        "Strong holiday-let and rental appeal — possession May 2028"
+      ],
+      "location_label": "Why Bambolim",
+      "location_points": [
+        {
+          "place": "Atal Setu / Panjim",
+          "time": "~10 min"
+        },
+        {
+          "place": "Goa Medical College",
+          "time": "~5 min"
+        },
+        {
+          "place": "Goa University / Dona Paula",
+          "time": "~15 min"
+        },
+        {
+          "place": "NH-66 Highway",
+          "time": "Minutes"
+        },
+        {
+          "place": "Dabolim Airport",
+          "time": "~30 min"
+        }
+      ],
+      "location_note": "Bambolim sits on the doorstep of Panjim in North Goa, wrapped in tropical greenery yet moments from the NH-66, the Atal Setu bridge and the city — a rare balance of calm and connectivity. Drive times are indicative and to be verified by the buyer.",
+      "brokerage_note": "Rate sheet, floor plans, RERA & title documents shared on enquiry.",
+      "hero_image": "exterior",
+      "card_image": "living",
+      "gallery": [
+        {
+          "img": "living",
+          "label": "Living Room",
+          "wide": true
+        },
+        {
+          "img": "lounge",
+          "label": "Living & Lounge"
+        },
+        {
+          "img": "dining",
+          "label": "Open Kitchen & Dining"
+        },
+        {
+          "img": "kitchen",
+          "label": "Modular Kitchen"
+        },
+        {
+          "img": "primary",
+          "label": "Master Bedroom",
+          "wide": true
+        },
+        {
+          "img": "bedroom",
+          "label": "Second Bedroom"
+        },
+        {
+          "img": "suite",
+          "label": "Bedroom & Dresser"
+        },
+        {
+          "img": "exterior",
+          "label": "Building Elevation",
+          "wide": true
+        }
+      ]
     }
   ]
 }
