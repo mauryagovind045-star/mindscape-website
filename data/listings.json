@@ -1184,6 +1184,131 @@
           "wide": true
         }
       ]
+    },
+    {
+      "slug": "sanctuary-108",
+      "featured": false,
+      "name": "Sanctuary at 108",
+      "ref": "MP-3BFAT-01",
+      "status": "New Launch",
+      "location": "Fatrade, South Goa",
+      "region": "South Goa",
+      "collection": "Signature Villas",
+      "price_display": "Price on Request",
+      "price_value": 55000000,
+      "price_note": "On Application",
+      "beds_display": "3",
+      "beds_value": 3,
+      "area_display": "~2,690",
+      "area_value": 2690,
+      "badges": [
+        "New Launch",
+        "Private 9 × 14 m Pool",
+        "650 m to the Beach"
+      ],
+      "short": "A 3-bedroom Balinese-inspired villa just 650 m from Fatrade Beach in South Goa — soft arches, open courtyards and a 9 × 14 metre private pool on a 750 sqm freehold plot.",
+      "description": [
+        "Sanctuary at 108 is a private Balinese-inspired villa set just 650 metres from Fatrade Beach, in one of South Goa's most pristine and quietly tucked-away coastal settings. Inspired by the tranquil elegance of Balinese design, the home embraces open spaces, natural light and a seamless connection to the tropical landscape — a rhythm of calm and simplicity, a sanctuary by the sea.",
+        "Soft arches and open volumes give way to seamless indoor–outdoor living, finished in natural materials and a warm tropical palette. Full-height windows and skylights flood every room with daylight, framing views of greenery and sky, while landscaped gardens, quiet sit-outs and open courtyards create intimate spaces to relax and entertain amid lush greenery.",
+        "The three-bedroom villa sits on a 750 sqm freehold plot, with 250 sqm of built space designed around light and openness and 300 sqm of landscaped gardens. A 9 × 14 metre private pool forms the heart of the home, complemented by detached staff quarters, power backup and security infrastructure for effortless everyday living. Freehold land ownership with a bespoke villa — priced significantly below prevailing luxury market rates, with strong early-buyer potential."
+      ],
+      "feature_heading": "Why Sanctuary at 108",
+      "specs": [
+        {
+          "v": "3 BHK",
+          "l": "Configuration"
+        },
+        {
+          "v": "750 Sq M",
+          "l": "Freehold Plot"
+        },
+        {
+          "v": "~2,690",
+          "l": "Sq Ft Built-up"
+        },
+        {
+          "v": "9 × 14 m",
+          "l": "Private Pool"
+        },
+        {
+          "v": "Balinese",
+          "l": "Design Language"
+        },
+        {
+          "v": "650 m",
+          "l": "To Fatrade Beach"
+        }
+      ],
+      "features": [
+        "Balinese-inspired architecture with soft arches & open volumes",
+        "Seamless indoor–outdoor living in natural materials",
+        "9 × 14 metre private pool at the heart of the home",
+        "Full-height windows & skylights framing greenery and sky",
+        "750 sqm freehold plot with 300 sqm of landscaped gardens",
+        "Detached staff quarters, power backup & security infrastructure",
+        "Just 650 m from Fatrade Beach in pristine South Goa",
+        "Freehold ownership, priced below prevailing luxury rates"
+      ],
+      "location_label": "Why Fatrade",
+      "location_points": [
+        {
+          "place": "Fatrade Beach",
+          "time": "650 m"
+        },
+        {
+          "place": "Varca Beach",
+          "time": "~5 min"
+        },
+        {
+          "place": "Benaulim",
+          "time": "~15 min"
+        },
+        {
+          "place": "Colva",
+          "time": "~20 min"
+        },
+        {
+          "place": "Dabolim Airport",
+          "time": "~45 min"
+        }
+      ],
+      "location_note": "Fatrade sits along South Goa's most pristine stretch of coast — quietly tucked away just off the main highway, wrapped in lush natural greenery yet minutes from Varca, Benaulim and Colva. Drive times are indicative and to be verified by the buyer.",
+      "brokerage_note": "Floor plans, RERA & title documents shared on enquiry.",
+      "hero_image": "exterior-pool",
+      "card_image": "facade",
+      "gallery": [
+        {
+          "img": "facade",
+          "label": "Poolside Pavilion",
+          "wide": true
+        },
+        {
+          "img": "living",
+          "label": "Courtyard & Living"
+        },
+        {
+          "img": "courtyard",
+          "label": "Central Courtyard"
+        },
+        {
+          "img": "bathroom",
+          "label": "Ensuite Bath"
+        },
+        {
+          "img": "exterior-pool",
+          "label": "Pool & Gardens",
+          "wide": true
+        },
+        {
+          "img": "poolside",
+          "label": "Pool Terrace"
+        },
+        {
+          "img": "beach",
+          "label": "Fatrade Beach",
+          "wide": true
+        }
+      ]
     }
   ]
 }
