@@ -1433,6 +1433,134 @@
           "wide": true
         }
       ]
+    },
+    {
+      "slug": "city-of-joy",
+      "featured": false,
+      "name": "City of Joy",
+      "ref": "MP-345PIL-01",
+      "status": "New Launch",
+      "location": "Pilerne, North Goa",
+      "region": "North Goa",
+      "collection": "Signature Villas",
+      "price_display": "Price on Request",
+      "price_value": 70000000,
+      "price_note": "On Application",
+      "beds_display": "3 – 5",
+      "beds_value": 3,
+      "area_display": "2,664 – 4,771",
+      "area_value": 2664,
+      "badges": [
+        "New Launch",
+        "Private Pool per Villa",
+        "Gated Community"
+      ],
+      "short": "A gated Mediterranean-style community in Pilerne — 3, 4 & 5 bedroom independent villas each with a private pool, wrap-around penthouses and a branded retail high street, ideally placed between Panjim, Mapusa and both airports.",
+      "description": [
+        "City of Joy is a complete gated development of luxurious villas, penthouses and branded retail outlets set in the picturesque village of Pilerne — a few minutes from the ever-popular beaches of Calangute and Candolim, yet close to the fast-developing commercial hub of Porvorim. Wrapped in green paddy fields and hillocks and beside the Pilerne lake, it enjoys excellent highway connectivity to Panjim on the Mandovi, the market town of Mapusa, and both the Dabolim and Mopa airports.",
+        "With modern architecture reminiscent of the Mediterranean, the community offers 3, 4 and 5 bedroom independent villas within the safety of a gated enclave — each with its own private swimming pool, ample parking and verandah sit-outs framing landscaped gardens. Arched windows, tiled roofs and double-height living rooms give every home genuine character, while the larger five-bedroom villas add a private lift and staff quarters for families with help. Villa built-up sizes range from roughly 2,664 sq ft for a three-bedroom home to 4,771 sq ft for a five-bedroom.",
+        "For those who prefer apartment living, wrap-around penthouses open onto private terrace gardens and share a common pool at the first-floor terrace level. The commercial section brings a branded retail high street and shops arranged around a spacious central plaza. Homes are finished with Kohler and Hansgrohe fittings, teak-wood doors, granite kitchens, concealed fibre-optic cabling, CCTV, DG power back-up and air-conditioning provision — with landscaped gardens, individual car parks, visitor parking and 24-hour security throughout. Experience the lap of luxury at a prestigious Pilerne address."
+      ],
+      "feature_heading": "Why City of Joy",
+      "specs": [
+        {
+          "v": "3, 4 & 5 BHK",
+          "l": "Independent Villas"
+        },
+        {
+          "v": "3 BHK",
+          "l": "Penthouses"
+        },
+        {
+          "v": "2,664–4,771",
+          "l": "Sq Ft Villa SBA"
+        },
+        {
+          "v": "Private",
+          "l": "Pool per Villa"
+        },
+        {
+          "v": "Gated",
+          "l": "Community"
+        },
+        {
+          "v": "Mediterranean",
+          "l": "Architecture"
+        }
+      ],
+      "features": [
+        "3, 4 & 5 bedroom independent villas, each with a private pool",
+        "Mediterranean styling — arched windows, tiled roofs & verandahs",
+        "Gated community with 24-hour security & CCTV surveillance",
+        "Five-bedroom villas with a private lift & staff quarters",
+        "Wrap-around penthouses with terrace gardens & a common terrace pool",
+        "Branded retail high street & shops around a central plaza",
+        "Landscaped gardens, individual car parks & visitor parking",
+        "Kohler/Hansgrohe fittings, granite kitchens, fibre-optic, DG & AC provision",
+        "1.6 km to Mall de Goa; 7.5 km to Panjim, between Mopa & Dabolim airports"
+      ],
+      "location_label": "Why Pilerne",
+      "location_points": [
+        {
+          "place": "Mall de Goa, Porvorim",
+          "time": "1.6 km"
+        },
+        {
+          "place": "Panjim (capital)",
+          "time": "7.5 km"
+        },
+        {
+          "place": "Candolim Beach",
+          "time": "8.5 km"
+        },
+        {
+          "place": "Mapusa",
+          "time": "8.6 km"
+        },
+        {
+          "place": "Mopa Airport",
+          "time": "28 km"
+        }
+      ],
+      "location_note": "Pilerne sits amid green paddy fields, hillocks and the Pilerne lake, minutes from the Calangute–Candolim beach belt and the Porvorim commercial hub, with excellent highway links to Panjim, Mapusa and both airports. Distances are indicative and to be verified by the buyer.",
+      "brokerage_note": "Floor plans, unit sizes, RERA & pricing shared on enquiry.",
+      "hero_image": "villa-pool",
+      "card_image": "aerial",
+      "gallery": [
+        {
+          "img": "villa-pool",
+          "label": "Villa & Private Pool",
+          "wide": true
+        },
+        {
+          "img": "aerial",
+          "label": "The Gated Community",
+          "wide": true
+        },
+        {
+          "img": "villa",
+          "label": "Villa Facade"
+        },
+        {
+          "img": "villa-terrace",
+          "label": "Verandahs & Balconies"
+        },
+        {
+          "img": "courtyard",
+          "label": "Penthouse Courtyard",
+          "wide": true
+        },
+        {
+          "img": "commercial",
+          "label": "The Retail Arcade",
+          "wide": true
+        },
+        {
+          "img": "street",
+          "label": "Branded High Street",
+          "wide": true
+        }
+      ]
     }
   ]
 }
