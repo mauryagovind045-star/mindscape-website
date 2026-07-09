@@ -928,6 +928,136 @@
           "wide": true
         }
       ]
+    },
+    {
+      "slug": "tamega",
+      "featured": false,
+      "name": "Tamega",
+      "ref": "MP-3BMSL-01",
+      "status": "New Launch",
+      "location": "Marna, Siolim",
+      "region": "North Goa",
+      "collection": "Signature Villas",
+      "price_display": "Price on Request",
+      "price_value": 45000000,
+      "price_note": "On Application",
+      "beds_display": "3",
+      "beds_value": 3,
+      "area_display": "~3,580",
+      "area_value": 3580,
+      "badges": [
+        "New Launch",
+        "Private Infinity Pool",
+        "Paddy-Field Facing"
+      ],
+      "short": "A gated enclave of seven paddy-field-facing villas in Marna, Siolim — 3-bedroom homes with double-height living, private infinity pools and Portuguese-inspired architecture.",
+      "description": [
+        "Tamega is a serene residential enclave of just seven homes, set across 2,475 square metres in the coveted village of Marna, Siolim. Each villa is thoughtfully composed to exude quiet luxury and a deep connection to Goa's landscape — framed by open paddy fields and lush countryside, yet minutes from the beaches and bars of the north.",
+        "The architecture draws on Goa's Portuguese heritage — earthy tones, timeless proportions and modern comfort in equal measure. Inside, a double-height living area is bathed in natural light and opens through an open-plan layout to a contemporary kitchen and dining space. Three inviting bedrooms, including a master suite, are finished with soft hues and modern en-suite bathrooms with upscale fittings.",
+        "Every home is wrapped around its own private infinity pool and landscaped garden, with a generous pool deck for slow Goan evenings. Managed hospitality — from 24/7 concierge and housekeeping to airport transfers and a private butler on request — makes each villa as easy to own as it is to enjoy."
+      ],
+      "feature_heading": "Why Tamega",
+      "specs": [
+        {
+          "v": "3 BHK",
+          "l": "Configuration"
+        },
+        {
+          "v": "~3,580",
+          "l": "Sq Ft Built-up"
+        },
+        {
+          "v": "Private",
+          "l": "Infinity Pool"
+        },
+        {
+          "v": "Double Height",
+          "l": "Living Area"
+        },
+        {
+          "v": "7 Homes",
+          "l": "Gated Enclave"
+        },
+        {
+          "v": "Managed",
+          "l": "Hospitality"
+        }
+      ],
+      "features": [
+        "Boutique gated enclave of only seven villas",
+        "Private infinity pool & landscaped garden to every home",
+        "Double-height living area filled with natural light",
+        "3 large bedrooms with modern en-suite bathrooms",
+        "Portuguese-inspired architecture in warm, earthy tones",
+        "Paddy-field-facing plots across a 2,475 sq m enclave",
+        "24/7 concierge, housekeeping & security",
+        "Airport transfers & private butler service on request"
+      ],
+      "location_label": "Why Marna, Siolim",
+      "location_points": [
+        {
+          "place": "Vagator",
+          "time": "~19 min"
+        },
+        {
+          "place": "Anjuna Beach",
+          "time": "~22 min"
+        },
+        {
+          "place": "Morjim",
+          "time": "~24 min"
+        },
+        {
+          "place": "Baga Beach",
+          "time": "~25 min"
+        },
+        {
+          "place": "Mopa Airport",
+          "time": "~29 min"
+        }
+      ],
+      "location_note": "Marna, Siolim sits in Goa's peaceful northern countryside — lush, green and unhurried, yet close to the lively beaches, restaurants and cultural landmarks of the north. A rare balance of seclusion and connectivity. Drive times are indicative and to be verified by the buyer.",
+      "brokerage_note": "Floor plans, pricing, RERA & title documents shared on enquiry.",
+      "hero_image": "exterior-pool",
+      "card_image": "facade",
+      "gallery": [
+        {
+          "img": "living",
+          "label": "Double-Height Living",
+          "wide": true
+        },
+        {
+          "img": "lounge",
+          "label": "Living & Lounge"
+        },
+        {
+          "img": "courtyard",
+          "label": "Poolside Elevation",
+          "wide": true
+        },
+        {
+          "img": "primary",
+          "label": "Master Bedroom",
+          "wide": true
+        },
+        {
+          "img": "bedroom",
+          "label": "Guest Bedroom"
+        },
+        {
+          "img": "bathroom",
+          "label": "En-suite Bathroom"
+        },
+        {
+          "img": "entrance",
+          "label": "Villa Entrance"
+        },
+        {
+          "img": "poolside",
+          "label": "Private Infinity Pool",
+          "wide": true
+        }
+      ]
     }
   ]
 }
