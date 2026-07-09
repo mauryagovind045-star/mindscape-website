@@ -1309,6 +1309,129 @@
           "wide": true
         }
       ]
+    },
+    {
+      "slug": "elite-square",
+      "featured": false,
+      "name": "Elite Square",
+      "ref": "MP-23BPO-01",
+      "status": "Under Construction",
+      "location": "Alto Porvorim",
+      "region": "North Goa",
+      "collection": "Holiday Homes",
+      "price_display": "From ₹1.33 Cr",
+      "price_value": 13285000,
+      "price_note": "2 & 3 BHK Apartments",
+      "beds_display": "2 – 3",
+      "beds_value": 2,
+      "area_display": "1,265 – 1,518",
+      "area_value": 1265,
+      "badges": [
+        "Under Construction",
+        "Gated Complex",
+        "Swimming Pool"
+      ],
+      "short": "Contemporary 2 & 3 BHK apartments in a gated, amenity-rich enclave on the fringes of upmarket Porvorim — resort-style pool, landscaped gardens and clubhouse, minutes from Panjim and Mall de Goa.",
+      "description": [
+        "Elite Square is a gated residential enclave of contemporary 2 and 3 BHK apartments set on the fringes of Porvorim, one of North Goa's most upmarket and best-connected addresses. Laid out across four low-rise blocks around landscaped gardens, a fountain plaza and a resort-style swimming pool, it commands open views of gorgeous natural greenery while keeping the city moments away.",
+        "The homes are designed around light and space — a spacious living room set apart from the dining area, well-proportioned bedrooms with ample natural light, and private covered terraces that open to the serenity of nature. Apartments come fitted with a modular kitchen, air-conditioning and fans, with 2 BHK homes from ~117 sq m and 3 BHK homes at ~141 sq m of built-up area.",
+        "A full suite of amenities serves the whole family — a fully-equipped gymnasium, yoga and meditation zone, badminton and half-basketball courts, indoor games, a children's play area, a party hall and clubhouse, and a senior-citizens' zone. The gated complex adds 24-hour security, CCTV, video phones, power back-up, EV charging and an earthquake-resistant structure. With shopping, malls, schools, banks and hospitals right outside the gate, daily life is effortless."
+      ],
+      "feature_heading": "Why Elite Square",
+      "specs": [
+        {
+          "v": "2 & 3 BHK",
+          "l": "Configuration"
+        },
+        {
+          "v": "1,265–1,518",
+          "l": "Sq Ft SBUA"
+        },
+        {
+          "v": "Resort-Style",
+          "l": "Swimming Pool"
+        },
+        {
+          "v": "4 Blocks",
+          "l": "Gated Enclave"
+        },
+        {
+          "v": "Clubhouse",
+          "l": "& Party Hall"
+        },
+        {
+          "v": "G + 4",
+          "l": "Low-Rise"
+        }
+      ],
+      "features": [
+        "Contemporary 2 & 3 BHK apartments in upmarket Porvorim",
+        "Gated enclave of four low-rise blocks around landscaped gardens",
+        "Resort-style swimming pool & fountain plaza",
+        "Clubhouse, party hall, gym, yoga & indoor games zones",
+        "Badminton & half-basketball courts, children's play area",
+        "Private covered terraces opening to greenery",
+        "Modular kitchen, air-conditioning & fans included",
+        "24-hr security, CCTV, power back-up, EV charging & lifts",
+        "Minutes from Panjim, Mall de Goa & the NH-66 highway"
+      ],
+      "location_label": "Why Porvorim",
+      "location_points": [
+        {
+          "place": "Mall de Goa",
+          "time": "~5 min"
+        },
+        {
+          "place": "Panjim (capital)",
+          "time": "~10 min"
+        },
+        {
+          "place": "Mapusa",
+          "time": "~10 min"
+        },
+        {
+          "place": "North Goa beach belt",
+          "time": "~20 min"
+        },
+        {
+          "place": "Dabolim Airport",
+          "time": "~40 min"
+        }
+      ],
+      "location_note": "Set just off the Panaji–Mapusa highway in Alto Porvorim, Elite Square balances a tranquil, greenery-wrapped setting with rare proximity to the capital, Mall de Goa and North Goa's vibrant beach belt — with schools, banks, hospitals and markets close at hand. Drive times are indicative and to be verified by the buyer.",
+      "brokerage_note": "Goa RERA registered. Cost sheet, floor plans & registration details shared on enquiry.",
+      "hero_image": "exterior-pool",
+      "card_image": "aerial",
+      "gallery": [
+        {
+          "img": "exterior-pool",
+          "label": "Pool & Residences",
+          "wide": true
+        },
+        {
+          "img": "aerial",
+          "label": "Aerial View",
+          "wide": true
+        },
+        {
+          "img": "courtyard",
+          "label": "Fountain Plaza"
+        },
+        {
+          "img": "living",
+          "label": "Living Room"
+        },
+        {
+          "img": "amenities",
+          "label": "Landscaped Amenities",
+          "wide": true
+        },
+        {
+          "img": "view",
+          "label": "Views from Site",
+          "wide": true
+        }
+      ]
     }
   ]
 }
