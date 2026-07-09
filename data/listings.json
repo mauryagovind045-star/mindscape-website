@@ -1058,6 +1058,132 @@
           "wide": true
         }
       ]
+    },
+    {
+      "slug": "caladium",
+      "featured": false,
+      "name": "Caladium",
+      "ref": "MP-4BVSL-09",
+      "status": "New Launch",
+      "location": "Vaddo, Siolim",
+      "region": "North Goa",
+      "collection": "Signature Villas",
+      "price_display": "Price on Request",
+      "price_value": 65000000,
+      "price_note": "On Application",
+      "beds_display": "4",
+      "beds_value": 4,
+      "area_display": "3,630 – 6,395",
+      "area_value": 3630,
+      "badges": [
+        "New Launch",
+        "Private Pool",
+        "Gated Enclave"
+      ],
+      "short": "An intimate enclave of nine Portuguese-inspired villas in Vaddo, Siolim — 4-bedroom homes across three levels, each with a private pool, double-height living and hand-finished heritage detailing.",
+      "description": [
+        "Caladium is an intimate gated enclave of just nine Portuguese-inspired villas, tucked into the palm-shaded countryside of Vaddo, Siolim. Arched façades, terracotta Mangalore-tiled roofs and hand-finished details blend effortlessly into Goa's landscape, while each home stands on its own generous plot for genuine privacy and space.",
+        "Every villa unfolds across three levels around soaring double-height living areas, tall French doors and graceful arched openings that pull in natural light. A rich material palette — lime-finished walls, cement-tile and natural-stone floors, exposed timber beams and imported marble — carries through four en-suite bedrooms, a spa-inspired master and a modular kitchen with premium appliances. Integrated smart-home automation and split air-conditioning are built in throughout.",
+        "Outdoors, a private swimming pool with an anti-skid limestone deck sits amid landscaped gardens, gazebos and shaded verandahs made for alfresco dining. With private parking, a staff room and power backup — and Siolim's beaches, riverside and dining moments away — Caladium is equally a graceful family home and a high-yield holiday-let investment."
+      ],
+      "feature_heading": "Why Caladium",
+      "specs": [
+        {
+          "v": "4 BHK",
+          "l": "Configuration"
+        },
+        {
+          "v": "9 Villas",
+          "l": "Gated Enclave"
+        },
+        {
+          "v": "Private",
+          "l": "Swimming Pool"
+        },
+        {
+          "v": "G + 2",
+          "l": "Three Levels"
+        },
+        {
+          "v": "337–594",
+          "l": "Sq M Plot"
+        },
+        {
+          "v": "Smart Home",
+          "l": "Automation"
+        }
+      ],
+      "features": [
+        "Intimate gated enclave of only nine villas",
+        "Portuguese-inspired architecture — arched façades & terracotta roofs",
+        "Private swimming pool with anti-skid limestone deck to every villa",
+        "Soaring double-height living with tall French doors",
+        "Four en-suite bedrooms including a spa-inspired master",
+        "Modular kitchen with premium appliances & integrated smart-home automation",
+        "Landscaped gardens, gazebos & shaded verandahs for alfresco living",
+        "Private parking, staff room & power backup — strong holiday-let appeal"
+      ],
+      "location_label": "Why Siolim",
+      "location_points": [
+        {
+          "place": "Anjuna",
+          "time": "~7 min"
+        },
+        {
+          "place": "Morjim",
+          "time": "~8 min"
+        },
+        {
+          "place": "Arpora",
+          "time": "~8 min"
+        },
+        {
+          "place": "Vagator",
+          "time": "~10 min"
+        },
+        {
+          "place": "Mopa International Airport",
+          "time": "~20 min"
+        }
+      ],
+      "location_note": "Cradled in the bends of the Chapora River, Siolim is one of North Goa's most sought-after villages — heritage charm and riverside calm, minutes from Morjim, Vagator, Anjuna and Arambol, and just 20 minutes from Mopa International Airport. Drive times are indicative and to be verified by the buyer.",
+      "brokerage_note": "Floor plans, plot-wise pricing, specifications, RERA & title documents shared on enquiry.",
+      "hero_image": "exterior-dusk",
+      "card_image": "facade",
+      "gallery": [
+        {
+          "img": "living",
+          "label": "Double-Height Living",
+          "wide": true
+        },
+        {
+          "img": "lounge",
+          "label": "Living & Lounge"
+        },
+        {
+          "img": "courtyard",
+          "label": "Poolside & Gazebo"
+        },
+        {
+          "img": "primary",
+          "label": "Master Bedroom",
+          "wide": true
+        },
+        {
+          "img": "verandah",
+          "label": "Verandah & Courtyard"
+        },
+        {
+          "img": "garden-elevation",
+          "label": "Garden Elevation",
+          "wide": true
+        },
+        {
+          "img": "enclave",
+          "label": "The Enclave",
+          "wide": true
+        }
+      ]
     }
   ]
 }
