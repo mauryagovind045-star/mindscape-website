@@ -97,7 +97,7 @@ def links(root, on_home):
 
 # Bump ASSET_VER whenever site.css / site.js change, so browsers re-fetch
 # them instead of serving a stale cached copy.
-ASSET_VER = "5"
+ASSET_VER = "6"
 
 
 def head(title, desc, root, page_js=""):

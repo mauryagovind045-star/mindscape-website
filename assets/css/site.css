@@ -359,6 +359,8 @@ footer{background:var(--black);border-top:1px solid var(--edge-soft);padding:80p
   .sec{padding:88px 0}
   .sec-head{flex-direction:column;align-items:flex-start;gap:20px;margin-bottom:44px}
   .pillar-grid,.val-grid,.listings-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr;gap:34px}
+  .foot-brand p{max-width:none}
   .pillar{border-right:0}
   .val{border-right:0}
   .stat{border-right:0;border-bottom:1px solid var(--edge-soft);flex-basis:100%}
