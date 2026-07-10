@@ -12,63 +12,126 @@
       "featured": true,
       "keywords": "buying property in Goa, NRI property Goa, Goa real estate guide, FEMA property India, RERA Goa, stamp duty Goa, how to buy villa in Goa",
       "body": [
-        {"type": "p", "text": "Goa remains one of India's most sought-after places to own a home — a rare mix of coastline, Portuguese heritage and genuine lifestyle value. But buying here is unlike buying in a metro. Land titles carry centuries of history, zoning is tightly regulated, and the difference between a sound purchase and a costly mistake almost always comes down to diligence done **before** the money moves."},
-        {"type": "p", "text": "This guide walks through what actually matters — who can buy, how Goan title works, the documents that protect you, and the real cost and timeline of a purchase."},
-
-        {"type": "h2", "text": "Who can buy property in Goa?"},
-        {"type": "p", "text": "Eligibility is governed by the Foreign Exchange Management Act (FEMA), not by Goa itself:"},
-        {"type": "ul", "items": [
-          "**Resident Indians** can buy any residential or commercial property freely.",
-          "**NRIs and OCIs** can buy residential and commercial property in India, and pay through normal banking channels or NRE/NRO/FCNR accounts. They **cannot** buy agricultural land, plantation property or farmhouses without specific approval.",
-          "**Foreign nationals** (who are not OCIs) generally cannot purchase immovable property in India without prior Reserve Bank of India approval — long-term leasing is the usual route."
-        ]},
-        {"type": "p", "text": "If you are an NRI, keep your passport, OCI card (if applicable), PAN and proof of overseas address ready — they will be needed at registration."},
-
-        {"type": "h2", "text": "Why Goan title is different"},
-        {"type": "p", "text": "Goa's land records descend from Portuguese-era systems, and a handful of local concepts have no equivalent elsewhere in India. Understanding them is the single most important part of buying here:"},
-        {"type": "ul", "items": [
-          "**Communidade land** — historically community-owned village land. Title and transfer rights need careful verification.",
-          "**Mundkar & tenancy rights** — occupants or cultivators may hold protected rights over land they don't own, which can encumber a sale.",
-          "**Form I & XIV** — the record of rights showing ownership, cultivation and any tenancy entries in the survey records.",
-          "**Sanad / conversion** — agricultural land must be legally converted to settlement (non-agricultural) use before a home can be built on it.",
-          "**Zoning under the Regional Plan** — whether a plot is in a settlement, orchard, eco-sensitive (No Development) or CRZ coastal zone determines what — if anything — can be built."
-        ]},
-        {"type": "quote", "text": "In Goa, you are not just buying a building — you are buying a chain of title that can run back generations. The survey number tells the real story.", "cite": "Mindscape Properties"},
-
-        {"type": "h2", "text": "The documents that protect you"},
-        {"type": "p", "text": "Before any advance is paid, insist on seeing — and independently verifying — the following:"},
-        {"type": "ul", "items": [
-          "**Title deed & 30-year title search** confirming a clear, marketable chain of ownership.",
-          "**Form I & XIV** and the survey plan, matched against what is physically on site.",
-          "**Sanad / conversion order** if the land was agricultural.",
-          "**RERA registration** for any under-construction or newly launched project — verifiable on the Goa RERA portal.",
-          "**Occupancy / completion certificate** for a ready property, plus approved building plans.",
-          "**Encumbrance certificate** showing the property is free of loans or charges.",
-          "**Nil-dues** on property tax, water and electricity."
-        ]},
-        {"type": "p", "text": "For under-construction homes, RERA registration is not optional — it is your legal protection on timelines, carpet-area and the developer's commitments. Always cross-check the RERA number yourself."},
-
-        {"type": "h2", "text": "What a purchase actually costs"},
-        {"type": "p", "text": "Beyond the headline price, budget for:"},
-        {"type": "ul", "items": [
-          "**Stamp duty & registration** — charged on the higher of the agreement value or government-notified rate; Goa's rates are tiered by property value, so confirm the current slab for your bracket.",
-          "**GST** — applicable on under-construction property (not on ready, completed homes with an occupancy certificate).",
-          "**Legal & due-diligence fees** for the title search and documentation.",
-          "**Brokerage** — at Mindscape, a transparent 2% + GST.",
-          "**Society / maintenance corpus** and, for NRIs, any TDS and repatriation formalities."
-        ]},
-        {"type": "p", "text": "Rates and slabs change with each state budget — treat any percentage you read online as indicative and confirm the live figure before you sign."},
-
-        {"type": "h2", "text": "The typical timeline"},
-        {"type": "ul", "items": [
-          "**Week 1–2** — shortlist, site visits, and a first look at title documents.",
-          "**Week 2–4** — legal due diligence, RERA and encumbrance checks, price and terms agreed.",
-          "**Week 4–6** — agreement to sell / sale deed drafted, advance paid, funds arranged.",
-          "**Week 6–8** — registration at the sub-registrar, stamp duty paid, possession and mutation of records."
-        ]},
-        {"type": "p", "text": "A clean, ready property with clear title can close in under a month. Anything with a title complication takes as long as it takes — and that patience is exactly what protects you."},
-
-        {"type": "cta", "text": "Thinking of buying in Goa? We assess structure, title and land before we ever discuss price.", "label": "Talk to an advisor", "href": "#contact"}
+        {
+          "type": "p",
+          "text": "Goa remains one of India's most sought-after places to own a home — a rare mix of coastline, Portuguese heritage and genuine lifestyle value. But buying here is unlike buying in a metro. Land titles carry centuries of history, zoning is tightly regulated, and the difference between a sound purchase and a costly mistake almost always comes down to diligence done **before** the money moves."
+        },
+        {
+          "type": "p",
+          "text": "This guide walks through what actually matters — who can buy, how Goan title works, the documents that protect you, and the real cost and timeline of a purchase."
+        },
+        {
+          "type": "h2",
+          "text": "Who can buy property in Goa?"
+        },
+        {
+          "type": "p",
+          "text": "Eligibility is governed by the Foreign Exchange Management Act (FEMA), not by Goa itself:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Resident Indians** can buy any residential or commercial property freely.",
+            "**NRIs and OCIs** can buy residential and commercial property in India, and pay through normal banking channels or NRE/NRO/FCNR accounts. They **cannot** buy agricultural land, plantation property or farmhouses without specific approval.",
+            "**Foreign nationals** (who are not OCIs) generally cannot purchase immovable property in India without prior Reserve Bank of India approval — long-term leasing is the usual route."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "If you are an NRI, keep your passport, OCI card (if applicable), PAN and proof of overseas address ready — they will be needed at registration."
+        },
+        {
+          "type": "h2",
+          "text": "Why Goan title is different"
+        },
+        {
+          "type": "p",
+          "text": "Goa's land records descend from Portuguese-era systems, and a handful of local concepts have no equivalent elsewhere in India. Understanding them is the single most important part of buying here:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Communidade land** — historically community-owned village land. Title and transfer rights need careful verification.",
+            "**Mundkar & tenancy rights** — occupants or cultivators may hold protected rights over land they don't own, which can encumber a sale.",
+            "**Form I & XIV** — the record of rights showing ownership, cultivation and any tenancy entries in the survey records.",
+            "**Sanad / conversion** — agricultural land must be legally converted to settlement (non-agricultural) use before a home can be built on it.",
+            "**Zoning under the Regional Plan** — whether a plot is in a settlement, orchard, eco-sensitive (No Development) or CRZ coastal zone determines what — if anything — can be built."
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "In Goa, you are not just buying a building — you are buying a chain of title that can run back generations. The survey number tells the real story.",
+          "cite": "Mindscape Properties"
+        },
+        {
+          "type": "h2",
+          "text": "The documents that protect you"
+        },
+        {
+          "type": "p",
+          "text": "Before any advance is paid, insist on seeing — and independently verifying — the following:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Title deed & 30-year title search** confirming a clear, marketable chain of ownership.",
+            "**Form I & XIV** and the survey plan, matched against what is physically on site.",
+            "**Sanad / conversion order** if the land was agricultural.",
+            "**RERA registration** for any under-construction or newly launched project — verifiable on the Goa RERA portal.",
+            "**Occupancy / completion certificate** for a ready property, plus approved building plans.",
+            "**Encumbrance certificate** showing the property is free of loans or charges.",
+            "**Nil-dues** on property tax, water and electricity."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "For under-construction homes, RERA registration is not optional — it is your legal protection on timelines, carpet-area and the developer's commitments. Always cross-check the RERA number yourself."
+        },
+        {
+          "type": "h2",
+          "text": "What a purchase actually costs"
+        },
+        {
+          "type": "p",
+          "text": "Beyond the headline price, budget for:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Stamp duty & registration** — charged on the higher of the agreement value or government-notified rate; Goa's rates are tiered by property value, so confirm the current slab for your bracket.",
+            "**GST** — applicable on under-construction property (not on ready, completed homes with an occupancy certificate).",
+            "**Legal & due-diligence fees** for the title search and documentation.",
+            "**Brokerage** — at Mindscape, a transparent 2% + GST.",
+            "**Society / maintenance corpus** and, for NRIs, any TDS and repatriation formalities."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Rates and slabs change with each state budget — treat any percentage you read online as indicative and confirm the live figure before you sign."
+        },
+        {
+          "type": "h2",
+          "text": "The typical timeline"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Week 1–2** — shortlist, site visits, and a first look at title documents.",
+            "**Week 2–4** — legal due diligence, RERA and encumbrance checks, price and terms agreed.",
+            "**Week 4–6** — agreement to sell / sale deed drafted, advance paid, funds arranged.",
+            "**Week 6–8** — registration at the sub-registrar, stamp duty paid, possession and mutation of records."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A clean, ready property with clear title can close in under a month. Anything with a title complication takes as long as it takes — and that patience is exactly what protects you."
+        },
+        {
+          "type": "cta",
+          "text": "Thinking of buying in Goa? We assess structure, title and land before we ever discuss price.",
+          "label": "Talk to an advisor",
+          "href": "#contact"
+        }
       ],
       "key_takeaways": [
         "NRIs and OCIs can buy residential and commercial property — but not agricultural land or farmhouses without approval.",
@@ -77,12 +140,20 @@
         "Budget for stamp duty, registration, GST (on under-construction) and legal fees on top of the price."
       ],
       "faqs": [
-        {"q": "Can an NRI buy a villa in Goa?", "a": "Yes. NRIs and OCIs may freely purchase residential and commercial property in India, including Goa, paying through normal banking channels or NRE/NRO/FCNR accounts. They cannot buy agricultural land, plantation property or farmhouses without specific approval."},
-        {"q": "Is RERA registration mandatory in Goa?", "a": "Yes, for under-construction and newly launched projects above the notified size threshold. The registration number can be verified on the Goa RERA portal, and it protects buyers on timelines, carpet area and the developer's commitments."},
-        {"q": "What is Communidade land in Goa?", "a": "Communidade land is historically community-owned village land descending from the Portuguese era. Its ownership and transferability need careful verification, which is why an independent title search is essential before buying."}
+        {
+          "q": "Can an NRI buy a villa in Goa?",
+          "a": "Yes. NRIs and OCIs may freely purchase residential and commercial property in India, including Goa, paying through normal banking channels or NRE/NRO/FCNR accounts. They cannot buy agricultural land, plantation property or farmhouses without specific approval."
+        },
+        {
+          "q": "Is RERA registration mandatory in Goa?",
+          "a": "Yes, for under-construction and newly launched projects above the notified size threshold. The registration number can be verified on the Goa RERA portal, and it protects buyers on timelines, carpet area and the developer's commitments."
+        },
+        {
+          "q": "What is Communidade land in Goa?",
+          "a": "Communidade land is historically community-owned village land descending from the Portuguese era. Its ownership and transferability need careful verification, which is why an independent title search is essential before buying."
+        }
       ]
     },
-
     {
       "slug": "north-goa-vs-south-goa",
       "title": "North Goa vs South Goa: Where Should You Buy?",
@@ -95,42 +166,87 @@
       "featured": false,
       "keywords": "North Goa vs South Goa, where to buy property Goa, best area to buy villa Goa, North Goa real estate, South Goa real estate, Goa property investment",
       "body": [
-        {"type": "p", "text": "The first real decision when buying in Goa isn't the house — it's the half. North and South Goa are barely an hour apart, yet they offer almost opposite lifestyles and very different investment profiles. Here's how to choose."},
-
-        {"type": "h2", "text": "North Goa: energy, demand and rental yield"},
-        {"type": "p", "text": "North Goa is the state's commercial and social engine — Panjim, Porvorim, Mapusa and the beach belt from Candolim to Morjim. It draws the crowds, the restaurants, the nightlife and the bulk of short-stay tourism."},
-        {"type": "ul", "items": [
-          "**Best for** — holiday-home rental income, an active social scene, and proximity to work and amenities.",
-          "**Lifestyle** — vibrant, walkable villages, cafés and co-working; busier roads in season.",
-          "**Property** — strong demand for villas and branded apartments; higher rental occupancy, especially near Assagao, Anjuna, Siolim and Porvorim.",
-          "**Trade-off** — premium pricing in the hotspots, and peak-season congestion."
-        ]},
-
-        {"type": "h2", "text": "South Goa: space, calm and long-term value"},
-        {"type": "p", "text": "South Goa — Margao, Fatorda and the long, quiet beaches from Colva to Palolem — is greener, more spacious and noticeably calmer. It attracts second-home owners and buyers who want room to breathe."},
-        {"type": "ul", "items": [
-          "**Best for** — permanent living, retirement, large plots and privacy.",
-          "**Lifestyle** — uncrowded beaches, heritage villages, a slower rhythm year-round.",
-          "**Property** — more land for the money, larger villa plots, and an emerging luxury segment near Varca, Benaulim and Fatrade.",
-          "**Trade-off** — quieter rental market and fewer late-night amenities."
-        ]},
-
-        {"type": "h2", "text": "Connectivity: the Mopa effect"},
-        {"type": "p", "text": "The opening of Mopa (Manohar International) Airport in the north has reshaped access. North Goa is now minutes from Mopa, while South Goa is best served by Dabolim. For most buyers the practical question is simple: which airport will you fly into most, and how far is the house from it?"},
-
-        {"type": "h2", "text": "Price and investment profile"},
-        {"type": "p", "text": "As a rule of thumb, North Goa commands higher per-square-foot prices and delivers stronger short-stay rental yield, while South Goa offers more space and land per rupee with steadier, long-hold appreciation. Neither is 'better' — they suit different goals."},
-        {"type": "quote", "text": "Buy North for yield and buzz; buy South for space and calm. The mistake is buying the right house in the wrong half.", "cite": "Mindscape Properties"},
-
-        {"type": "h2", "text": "So which is right for you?"},
-        {"type": "ul", "items": [
-          "Want rental income and a social base? **North Goa.**",
-          "Want a peaceful primary home or a large private plot? **South Goa.**",
-          "Splitting the difference? The **Porvorim–Panjim corridor** offers city access with a calmer footing, while **Siolim** balances beach-belt demand with a village feel."
-        ]},
-        {"type": "p", "text": "Whichever way you lean, the fundamentals — clear title, correct zoning, honest pricing — matter far more than the postcode."},
-
-        {"type": "cta", "text": "Not sure which coast fits your plans? Tell us your goals and we'll shortlist across both.", "label": "Get a tailored shortlist", "href": "#contact"}
+        {
+          "type": "p",
+          "text": "The first real decision when buying in Goa isn't the house — it's the half. North and South Goa are barely an hour apart, yet they offer almost opposite lifestyles and very different investment profiles. Here's how to choose."
+        },
+        {
+          "type": "h2",
+          "text": "North Goa: energy, demand and rental yield"
+        },
+        {
+          "type": "p",
+          "text": "North Goa is the state's commercial and social engine — Panjim, Porvorim, Mapusa and the beach belt from Candolim to Morjim. It draws the crowds, the restaurants, the nightlife and the bulk of short-stay tourism."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Best for** — holiday-home rental income, an active social scene, and proximity to work and amenities.",
+            "**Lifestyle** — vibrant, walkable villages, cafés and co-working; busier roads in season.",
+            "**Property** — strong demand for villas and branded apartments; higher rental occupancy, especially near Assagao, Anjuna, Siolim and Porvorim.",
+            "**Trade-off** — premium pricing in the hotspots, and peak-season congestion."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "South Goa: space, calm and long-term value"
+        },
+        {
+          "type": "p",
+          "text": "South Goa — Margao, Fatorda and the long, quiet beaches from Colva to Palolem — is greener, more spacious and noticeably calmer. It attracts second-home owners and buyers who want room to breathe."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Best for** — permanent living, retirement, large plots and privacy.",
+            "**Lifestyle** — uncrowded beaches, heritage villages, a slower rhythm year-round.",
+            "**Property** — more land for the money, larger villa plots, and an emerging luxury segment near Varca, Benaulim and Fatrade.",
+            "**Trade-off** — quieter rental market and fewer late-night amenities."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Connectivity: the Mopa effect"
+        },
+        {
+          "type": "p",
+          "text": "The opening of Mopa (Manohar International) Airport in the north has reshaped access. North Goa is now minutes from Mopa, while South Goa is best served by Dabolim. For most buyers the practical question is simple: which airport will you fly into most, and how far is the house from it?"
+        },
+        {
+          "type": "h2",
+          "text": "Price and investment profile"
+        },
+        {
+          "type": "p",
+          "text": "As a rule of thumb, North Goa commands higher per-square-foot prices and delivers stronger short-stay rental yield, while South Goa offers more space and land per rupee with steadier, long-hold appreciation. Neither is 'better' — they suit different goals."
+        },
+        {
+          "type": "quote",
+          "text": "Buy North for yield and buzz; buy South for space and calm. The mistake is buying the right house in the wrong half.",
+          "cite": "Mindscape Properties"
+        },
+        {
+          "type": "h2",
+          "text": "So which is right for you?"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Want rental income and a social base? **North Goa.**",
+            "Want a peaceful primary home or a large private plot? **South Goa.**",
+            "Splitting the difference? The **Porvorim–Panjim corridor** offers city access with a calmer footing, while **Siolim** balances beach-belt demand with a village feel."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Whichever way you lean, the fundamentals — clear title, correct zoning, honest pricing — matter far more than the postcode."
+        },
+        {
+          "type": "cta",
+          "text": "Not sure which coast fits your plans? Tell us your goals and we'll shortlist across both.",
+          "label": "Get a tailored shortlist",
+          "href": "#contact"
+        }
       ],
       "key_takeaways": [
         "North Goa suits rental yield, amenities and an active lifestyle — at premium prices.",
@@ -139,11 +255,16 @@
         "Match the half to your goal — income vs. living — before you shortlist homes."
       ],
       "faqs": [
-        {"q": "Is North or South Goa better for investment?", "a": "North Goa typically offers stronger short-stay rental yield and higher demand, while South Goa offers more land per rupee and steadier long-term appreciation. The better choice depends on whether your goal is rental income or a peaceful primary/second home."},
-        {"q": "Which part of Goa is quieter to live in?", "a": "South Goa is generally quieter and greener, with uncrowded beaches and a slower pace, making it popular for permanent living and retirement. North Goa is busier and more commercial."}
+        {
+          "q": "Is North or South Goa better for investment?",
+          "a": "North Goa typically offers stronger short-stay rental yield and higher demand, while South Goa offers more land per rupee and steadier long-term appreciation. The better choice depends on whether your goal is rental income or a peaceful primary/second home."
+        },
+        {
+          "q": "Which part of Goa is quieter to live in?",
+          "a": "South Goa is generally quieter and greener, with uncrowded beaches and a slower pace, making it popular for permanent living and retirement. North Goa is busier and more commercial."
+        }
       ]
     },
-
     {
       "slug": "goa-property-due-diligence-checklist",
       "title": "Title, RERA & Due Diligence: The Goa Buyer's Checklist",
@@ -156,51 +277,108 @@
       "featured": false,
       "keywords": "Goa property due diligence, title search Goa, RERA Goa check, Form I and XIV, CRZ Goa, property documents Goa, land conversion sanad Goa",
       "body": [
-        {"type": "p", "text": "Most property disputes in Goa are not about the building — they're about the land beneath it. A beautiful villa on a title you didn't fully verify is a liability, not an asset. This checklist is the process we run, in order, before we let a client sign anything."},
-
-        {"type": "h2", "text": "1. Trace the chain of title"},
-        {"type": "p", "text": "Commission a title search going back at least 30 years to confirm a clear, unbroken and marketable chain of ownership. Every transfer in that chain should be properly documented and free of gaps, disputes or unexplained parties."},
-
-        {"type": "h2", "text": "2. Read the record of rights (Form I & XIV)"},
-        {"type": "p", "text": "Form I & XIV is the heart of Goan land records. It shows the survey number, area, ownership and — critically — any **tenancy or cultivation entries**. If a name other than the seller's appears in the tenant column, stop and investigate: mundkar and tenancy rights can quietly encumber a sale."},
-
-        {"type": "h2", "text": "3. Confirm zoning and land use"},
-        {"type": "p", "text": "Check the plot's designation under the Regional Plan and the local Outline Development Plan:"},
-        {"type": "ul", "items": [
-          "**Settlement zone** — construction is generally permitted.",
-          "**Orchard / green zone** — limited construction, lower FAR.",
-          "**No Development / eco-sensitive zone** — building is heavily restricted or prohibited.",
-          "**CRZ (Coastal Regulation Zone)** — special rules apply near the coast; the CRZ category dictates what can be built and how close to the water."
-        ]},
-        {"type": "p", "text": "A cheap beachfront plot is often cheap for a reason — verify the CRZ line before you fall in love with the view."},
-
-        {"type": "h2", "text": "4. Check conversion (Sanad)"},
-        {"type": "p", "text": "If the land was agricultural, it must be legally converted to non-agricultural (settlement) use via a Sanad before a home can be built. No conversion means no legal construction — regardless of what a broker promises is 'easily done later'."},
-
-        {"type": "h2", "text": "5. Verify RERA for new projects"},
-        {"type": "p", "text": "For any under-construction or newly launched development, look up the project's registration on the Goa RERA portal and confirm:"},
-        {"type": "ul", "items": [
-          "The registration number is genuine and active.",
-          "The promoter, land details and sanctioned plans match what you've been shown.",
-          "The declared completion date and carpet-area definitions are on record.",
-          "There are no complaints or orders flagged against the project."
-        ]},
-
-        {"type": "h2", "text": "6. Inspect approvals and certificates"},
-        {"type": "ul", "items": [
-          "**Approved building plans** stamped by the local authority.",
-          "**Construction licence** and, for a ready home, the **occupancy / completion certificate**.",
-          "**Encumbrance certificate** confirming no outstanding loans or charges.",
-          "**Nil-dues** on property tax, electricity and water connections."
-        ]},
-
-        {"type": "h2", "text": "7. Match paper to ground"},
-        {"type": "p", "text": "Finally, walk the site with the survey plan in hand. Boundaries, access roads and actual built area should match the documents exactly. Encroachments, shared access and unrecorded structures are far easier to spot on foot than on paper."},
-        {"type": "quote", "text": "We were founded by civil engineers for exactly this reason: we read the structure, the soil, the title and the plan before anyone discusses price.", "cite": "Mindscape Properties"},
-
-        {"type": "p", "text": "None of this is meant to scare you off Goa — it's meant to let you buy here with total confidence. Done properly, due diligence turns an emotional purchase into a sound one."},
-
-        {"type": "cta", "text": "Want a property vetted before you commit? Our engineer-led review covers title, zoning and structure.", "label": "Request a due-diligence review", "href": "#contact"}
+        {
+          "type": "p",
+          "text": "Most property disputes in Goa are not about the building — they're about the land beneath it. A beautiful villa on a title you didn't fully verify is a liability, not an asset. This checklist is the process we run, in order, before we let a client sign anything."
+        },
+        {
+          "type": "h2",
+          "text": "1. Trace the chain of title"
+        },
+        {
+          "type": "p",
+          "text": "Commission a title search going back at least 30 years to confirm a clear, unbroken and marketable chain of ownership. Every transfer in that chain should be properly documented and free of gaps, disputes or unexplained parties."
+        },
+        {
+          "type": "h2",
+          "text": "2. Read the record of rights (Form I & XIV)"
+        },
+        {
+          "type": "p",
+          "text": "Form I & XIV is the heart of Goan land records. It shows the survey number, area, ownership and — critically — any **tenancy or cultivation entries**. If a name other than the seller's appears in the tenant column, stop and investigate: mundkar and tenancy rights can quietly encumber a sale."
+        },
+        {
+          "type": "h2",
+          "text": "3. Confirm zoning and land use"
+        },
+        {
+          "type": "p",
+          "text": "Check the plot's designation under the Regional Plan and the local Outline Development Plan:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Settlement zone** — construction is generally permitted.",
+            "**Orchard / green zone** — limited construction, lower FAR.",
+            "**No Development / eco-sensitive zone** — building is heavily restricted or prohibited.",
+            "**CRZ (Coastal Regulation Zone)** — special rules apply near the coast; the CRZ category dictates what can be built and how close to the water."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A cheap beachfront plot is often cheap for a reason — verify the CRZ line before you fall in love with the view."
+        },
+        {
+          "type": "h2",
+          "text": "4. Check conversion (Sanad)"
+        },
+        {
+          "type": "p",
+          "text": "If the land was agricultural, it must be legally converted to non-agricultural (settlement) use via a Sanad before a home can be built. No conversion means no legal construction — regardless of what a broker promises is 'easily done later'."
+        },
+        {
+          "type": "h2",
+          "text": "5. Verify RERA for new projects"
+        },
+        {
+          "type": "p",
+          "text": "For any under-construction or newly launched development, look up the project's registration on the Goa RERA portal and confirm:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "The registration number is genuine and active.",
+            "The promoter, land details and sanctioned plans match what you've been shown.",
+            "The declared completion date and carpet-area definitions are on record.",
+            "There are no complaints or orders flagged against the project."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "6. Inspect approvals and certificates"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Approved building plans** stamped by the local authority.",
+            "**Construction licence** and, for a ready home, the **occupancy / completion certificate**.",
+            "**Encumbrance certificate** confirming no outstanding loans or charges.",
+            "**Nil-dues** on property tax, electricity and water connections."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "7. Match paper to ground"
+        },
+        {
+          "type": "p",
+          "text": "Finally, walk the site with the survey plan in hand. Boundaries, access roads and actual built area should match the documents exactly. Encroachments, shared access and unrecorded structures are far easier to spot on foot than on paper."
+        },
+        {
+          "type": "quote",
+          "text": "We were founded by civil engineers for exactly this reason: we read the structure, the soil, the title and the plan before anyone discusses price.",
+          "cite": "Mindscape Properties"
+        },
+        {
+          "type": "p",
+          "text": "None of this is meant to scare you off Goa — it's meant to let you buy here with total confidence. Done properly, due diligence turns an emotional purchase into a sound one."
+        },
+        {
+          "type": "cta",
+          "text": "Want a property vetted before you commit? Our engineer-led review covers title, zoning and structure.",
+          "label": "Request a due-diligence review",
+          "href": "#contact"
+        }
       ],
       "key_takeaways": [
         "Run a 30-year title search — most Goa disputes trace back to the land, not the building.",
@@ -209,12 +387,20 @@
         "Confirm conversion (Sanad) for former agricultural land and cross-check RERA for new projects."
       ],
       "faqs": [
-        {"q": "What documents should I check before buying property in Goa?", "a": "At minimum: the title deed with a 30-year title search, Form I & XIV, the survey plan, any Sanad/conversion order, RERA registration for new projects, approved building plans, the occupancy or completion certificate, an encumbrance certificate, and nil-dues on taxes and utilities."},
-        {"q": "What is CRZ and why does it matter in Goa?", "a": "CRZ (Coastal Regulation Zone) is a set of rules governing construction near the coastline. The CRZ category of a plot determines whether and how you can build near the water, so it must be verified before purchasing any coastal property."},
-        {"q": "What is a Sanad in Goa?", "a": "A Sanad is the order converting agricultural land to non-agricultural (settlement) use. Without it, legal residential construction is not permitted on former agricultural land."}
+        {
+          "q": "What documents should I check before buying property in Goa?",
+          "a": "At minimum: the title deed with a 30-year title search, Form I & XIV, the survey plan, any Sanad/conversion order, RERA registration for new projects, approved building plans, the occupancy or completion certificate, an encumbrance certificate, and nil-dues on taxes and utilities."
+        },
+        {
+          "q": "What is CRZ and why does it matter in Goa?",
+          "a": "CRZ (Coastal Regulation Zone) is a set of rules governing construction near the coastline. The CRZ category of a plot determines whether and how you can build near the water, so it must be verified before purchasing any coastal property."
+        },
+        {
+          "q": "What is a Sanad in Goa?",
+          "a": "A Sanad is the order converting agricultural land to non-agricultural (settlement) use. Without it, legal residential construction is not permitted on former agricultural land."
+        }
       ]
     },
-
     {
       "slug": "villa-apartment-or-plot-goa",
       "title": "Villa, Apartment or Plot? Choosing Your Goa Investment",
@@ -227,45 +413,88 @@
       "featured": false,
       "keywords": "villa vs apartment Goa, buy plot in Goa, Goa property investment, gated apartment Goa, holiday home Goa, real estate returns Goa",
       "body": [
-        {"type": "p", "text": "Once you've settled on a location, the next question shapes everything about your investment: what **type** of property? Each of the three main options — an independent villa, a gated apartment, or a plot of land — rewards a different kind of buyer. Here's how they compare."},
-
-        {"type": "h2", "text": "The independent villa"},
-        {"type": "p", "text": "The classic Goa dream: your own house, garden and private pool."},
-        {"type": "ul", "items": [
-          "**Upside** — privacy, space, a private pool, strong holiday-rental appeal and the highest lifestyle value.",
-          "**Returns** — attractive short-stay rental yield in the right North Goa micro-markets; solid appreciation when title and location are sound.",
-          "**Consider** — higher upkeep (garden, pool, security), and the importance of a clean plot title.",
-          "**Best for** — buyers wanting a lifestyle asset that can also earn."
-        ]},
-
-        {"type": "h2", "text": "The gated apartment"},
-        {"type": "p", "text": "A managed home in a community with shared amenities — increasingly popular in Porvorim, Panjim and the Porvorim–Mapusa belt."},
-        {"type": "ul", "items": [
-          "**Upside** — lower maintenance, professional security, shared pool and clubhouse, and a lower entry price than a villa.",
-          "**Returns** — steady long-stay rental demand and easier resale liquidity in well-located projects.",
-          "**Consider** — monthly maintenance charges and less privacy than a standalone home.",
-          "**Best for** — first-time buyers, lock-up-and-leave second homes, and hands-off investors."
-        ]},
-
-        {"type": "h2", "text": "The plot of land"},
-        {"type": "p", "text": "Raw land to build on later — or simply to hold."},
-        {"type": "ul", "items": [
-          "**Upside** — the lowest entry point, no maintenance, and full control to build to your own design.",
-          "**Returns** — potentially the highest long-term appreciation, especially near growth corridors.",
-          "**Consider** — zoning and conversion are everything; a plot you cannot legally build on is worth a fraction of one you can. No rental income while you hold it.",
-          "**Best for** — patient investors and self-builders comfortable with due diligence."
-        ]},
-
-        {"type": "h2", "text": "Matching type to goal"},
-        {"type": "ul", "items": [
-          "Want lifestyle **and** rental income? A **villa** in a proven micro-market.",
-          "Want low-effort ownership and liquidity? A **gated apartment**.",
-          "Want maximum long-term upside and control? A **plot** — with zoning verified first."
-        ]},
-        {"type": "quote", "text": "There is no best property type — only the best fit for your budget, appetite for upkeep, and time horizon.", "cite": "Mindscape Properties"},
-        {"type": "p", "text": "Whatever the type, the non-negotiables are the same: clear title, correct zoning, and a price that reflects genuine value. Get those right and any of the three can be an excellent investment."},
-
-        {"type": "cta", "text": "Tell us your budget and horizon — we'll show you the type and location that fit.", "label": "Explore the collection", "href": "/properties/"}
+        {
+          "type": "p",
+          "text": "Once you've settled on a location, the next question shapes everything about your investment: what **type** of property? Each of the three main options — an independent villa, a gated apartment, or a plot of land — rewards a different kind of buyer. Here's how they compare."
+        },
+        {
+          "type": "h2",
+          "text": "The independent villa"
+        },
+        {
+          "type": "p",
+          "text": "The classic Goa dream: your own house, garden and private pool."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Upside** — privacy, space, a private pool, strong holiday-rental appeal and the highest lifestyle value.",
+            "**Returns** — attractive short-stay rental yield in the right North Goa micro-markets; solid appreciation when title and location are sound.",
+            "**Consider** — higher upkeep (garden, pool, security), and the importance of a clean plot title.",
+            "**Best for** — buyers wanting a lifestyle asset that can also earn."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "The gated apartment"
+        },
+        {
+          "type": "p",
+          "text": "A managed home in a community with shared amenities — increasingly popular in Porvorim, Panjim and the Porvorim–Mapusa belt."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Upside** — lower maintenance, professional security, shared pool and clubhouse, and a lower entry price than a villa.",
+            "**Returns** — steady long-stay rental demand and easier resale liquidity in well-located projects.",
+            "**Consider** — monthly maintenance charges and less privacy than a standalone home.",
+            "**Best for** — first-time buyers, lock-up-and-leave second homes, and hands-off investors."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "The plot of land"
+        },
+        {
+          "type": "p",
+          "text": "Raw land to build on later — or simply to hold."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Upside** — the lowest entry point, no maintenance, and full control to build to your own design.",
+            "**Returns** — potentially the highest long-term appreciation, especially near growth corridors.",
+            "**Consider** — zoning and conversion are everything; a plot you cannot legally build on is worth a fraction of one you can. No rental income while you hold it.",
+            "**Best for** — patient investors and self-builders comfortable with due diligence."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Matching type to goal"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Want lifestyle **and** rental income? A **villa** in a proven micro-market.",
+            "Want low-effort ownership and liquidity? A **gated apartment**.",
+            "Want maximum long-term upside and control? A **plot** — with zoning verified first."
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "There is no best property type — only the best fit for your budget, appetite for upkeep, and time horizon.",
+          "cite": "Mindscape Properties"
+        },
+        {
+          "type": "p",
+          "text": "Whatever the type, the non-negotiables are the same: clear title, correct zoning, and a price that reflects genuine value. Get those right and any of the three can be an excellent investment."
+        },
+        {
+          "type": "cta",
+          "text": "Tell us your budget and horizon — we'll show you the type and location that fit.",
+          "label": "Explore the collection",
+          "href": "/properties/"
+        }
       ],
       "key_takeaways": [
         "Villas offer lifestyle and rental appeal, but demand more upkeep and a clean plot title.",
@@ -274,8 +503,173 @@
         "Choose the type by your budget, appetite for upkeep and time horizon — not by trend."
       ],
       "faqs": [
-        {"q": "Is a villa or apartment a better investment in Goa?", "a": "A villa typically offers higher lifestyle value and strong holiday-rental yield but needs more upkeep and a carefully verified plot title. A gated apartment is lower-maintenance, cheaper to enter and more liquid on resale. The better choice depends on your budget and how hands-on you want to be."},
-        {"q": "Is buying a plot in Goa a good idea?", "a": "It can be, if the zoning and conversion status permit construction. A plot has the lowest entry cost and potentially the highest appreciation, but a plot you cannot legally build on is worth far less — so verify zoning, CRZ and Sanad before buying."}
+        {
+          "q": "Is a villa or apartment a better investment in Goa?",
+          "a": "A villa typically offers higher lifestyle value and strong holiday-rental yield but needs more upkeep and a carefully verified plot title. A gated apartment is lower-maintenance, cheaper to enter and more liquid on resale. The better choice depends on your budget and how hands-on you want to be."
+        },
+        {
+          "q": "Is buying a plot in Goa a good idea?",
+          "a": "It can be, if the zoning and conversion status permit construction. A plot has the lowest entry cost and potentially the highest appreciation, but a plot you cannot legally build on is worth far less — so verify zoning, CRZ and Sanad before buying."
+        }
+      ]
+    },
+    {
+      "slug": "documents-to-check-before-buying-land-in-goa",
+      "title": "Documents to Check Before Buying Land in Goa",
+      "category": "Legal & Due Diligence",
+      "excerpt": "Buying a plot is riskier than buying a house — the paperwork is the asset. The complete, engineer-led list of documents to verify before you buy land in Goa, from the title chain and Form I & XIV to conversion, zoning and access.",
+      "date": "2026-07-10",
+      "date_display": "July 2026",
+      "read_time": "8 min read",
+      "hero_image": "land-documents",
+      "featured": false,
+      "keywords": "documents to check before buying land, documents required to buy land in Goa, land purchase checklist Goa, Form I and XIV, Sanad conversion Goa, land title verification, encumbrance certificate, buying plot in Goa",
+      "body": [
+        {
+          "type": "p",
+          "text": "With a finished home, a lot is visible — you can see the construction quality, the finishes, the occupancy certificate. With **bare land, the paperwork is the asset.** A plot with a beautiful sea view but a broken title, wrong zoning or no legal access can be worth a fraction of what you pay — or nothing you can build on. This is the exact list of documents we verify before letting a client buy land in Goa."
+        },
+        {
+          "type": "p",
+          "text": "It pairs with our broader [Goa buyer's due-diligence checklist](/journal/goa-property-due-diligence-checklist/) — this one focuses specifically on **land**."
+        },
+        {
+          "type": "h2",
+          "text": "1. The title deed and chain of title"
+        },
+        {
+          "type": "p",
+          "text": "Start with the **mother deed** (the original document that created the title) and every sale, gift, partition or inheritance deed since. Commission a **title search going back at least 30 years** to confirm a clear, unbroken, marketable chain of ownership. Every transfer should be documented, stamped and registered — with no gaps or unexplained parties."
+        },
+        {
+          "type": "h2",
+          "text": "2. Form I & XIV — the record of rights"
+        },
+        {
+          "type": "p",
+          "text": "In Goa, **Form I & XIV** is the single most important land record. It shows the survey number, the area, the registered owner, and — critically — any **tenancy or cultivation entries**. If a name other than the seller's appears in the tenant column, stop: **mundkar and tenancy rights** can silently encumber a plot and block a clean sale. Also obtain the **property card** where applicable."
+        },
+        {
+          "type": "h2",
+          "text": "3. Survey plan and physical boundaries"
+        },
+        {
+          "type": "p",
+          "text": "Get the official **survey plan / plan showing the plot** from the Directorate of Survey and Land Records, then have a **licensed surveyor physically demarcate** the boundaries on site. Paper area and ground reality must match exactly."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Confirm the plot's shape, area and boundaries against the survey plan.",
+            "Check for **encroachments**, disputed edges or missing boundary stones.",
+            "Verify the plot is not partly a **nullah, water body, khazan (reclaimed) land or under a high-tension line** — all of which restrict or prevent building."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "4. Conversion (Sanad) and zoning"
+        },
+        {
+          "type": "p",
+          "text": "This is where most land buyers get caught. **What you can build is decided by documents, not by the seller's promises.**"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Sanad / conversion order** — agricultural land must be legally converted to non-agricultural (settlement) use *before* a home can be built. No Sanad means no legal construction.",
+            "**Zoning under the Regional Plan and Outline Development Plan** — a plot may sit in a settlement, orchard, No-Development or eco-sensitive zone. Only settlement zoning reliably permits building.",
+            "**CRZ category** — for anything near the coast, the Coastal Regulation Zone line dictates whether, and how close to the water, you can build."
+          ]
+        },
+        {
+          "type": "quote",
+          "text": "A cheap plot is often cheap for a reason. In Goa, the zoning certificate is worth more than the view.",
+          "cite": "Mindscape Properties"
+        },
+        {
+          "type": "h2",
+          "text": "5. Encumbrances, dues and disputes"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Encumbrance certificate** — confirms the land is free of mortgages, loans or charges.",
+            "**Mutation records** — show ownership changes are properly recorded in the revenue records.",
+            "**Latest land-revenue / property-tax receipts** — proving nil outstanding dues.",
+            "**No pending litigation (lis pendens)** — confirm the plot is not the subject of a court case or injunction."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "6. Ownership complications to clear"
+        },
+        {
+          "type": "p",
+          "text": "Land is often jointly or ancestrally held, which is fine — as long as it's documented:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Co-owners / partition deed** — every co-owner must consent and sign; get a registered partition or a no-objection from each.",
+            "**Inheritance / succession** — a clear family tree and succession documents where the land was inherited.",
+            "**Communidade NOC** — if the land is Communidade (community-owned) land, verify transfer rights and obtain the required no-objection.",
+            "**Power of Attorney** — if the seller acts through a POA, confirm it is registered, valid, and genuinely authorises the sale."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "7. Legal access and feasibility"
+        },
+        {
+          "type": "p",
+          "text": "A landlocked plot with no legal road access is very hard to build on or resell. Confirm a **registered right of way or a legal access road** to the plot, and check the practical feasibility of **water and electricity connections** before you commit."
+        },
+        {
+          "type": "h2",
+          "text": "8. If it's a plot in a layout"
+        },
+        {
+          "type": "p",
+          "text": "Buying a sub-divided plot in a developed layout adds a few documents:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Approved sub-division / layout plan** sanctioned by the local authority.",
+            "**RERA registration** — plotted developments above the notified threshold must be registered; verify the number on the Goa RERA portal.",
+            "Clarity on **internal roads, drainage and utilities** — who provides and maintains them."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "None of this should deter you from buying land in Goa — done right, a plot is one of the most rewarding investments on this coast. But land rewards patience and paperwork. Verify every document above (with a good local property lawyer and a licensed surveyor) and you turn a speculative buy into a sound one. Rules and rates change, so always confirm the current position before you sign."
+        },
+        {
+          "type": "cta",
+          "text": "Considering a plot in Goa? We'll vet the title, zoning and boundaries before you commit a rupee.",
+          "label": "Request a land review",
+          "href": "#contact"
+        }
+      ],
+      "key_takeaways": [
+        "With land, the documents are the asset — verify them before you fall for the view.",
+        "In Goa, Form I & XIV and the Sanad (conversion) status make or break a plot.",
+        "Confirm zoning and CRZ: only the right zone lets you legally build.",
+        "Clear co-owners, tenancy, access and encumbrances — and use a lawyer and licensed surveyor."
+      ],
+      "faqs": [
+        {
+          "q": "What documents are required to buy land in Goa?",
+          "a": "At minimum: the title deed with a 30-year title search, Form I & XIV, the official survey plan, the Sanad/conversion order (for former agricultural land), a zoning and CRZ confirmation, an encumbrance certificate, mutation records, latest land-revenue receipts, and — for inherited or jointly held land — partition or succession documents and co-owner consent."
+        },
+        {
+          "q": "What is Form I & XIV and why does it matter for land?",
+          "a": "Form I & XIV is Goa's record of rights. It lists the survey number, area, owner and any tenancy or cultivation entries. It matters because a tenancy or mundkar entry in the name of someone other than the seller can encumber the land and block a clean sale."
+        },
+        {
+          "q": "Can I build a house on agricultural land in Goa?",
+          "a": "Not without first converting it to non-agricultural (settlement) use through a Sanad, and only if the zoning permits it. Buying agricultural land expecting to build later, without confirming that conversion and zoning are achievable, is a common and costly mistake."
+        }
       ]
     }
   ]
