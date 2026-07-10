@@ -1731,11 +1731,11 @@
         "Walk-in plunge pool stepped straight from the living room",
         "Private lift serving all four levels of the villa",
         "Rooftop jacuzzi & open courtyard, open to the stars",
-        "Steam room and a lavish spa-style master bath in every villa",
+        "Skylight lounge crowning the top floor",
         "Vaulted, dome-topped architecture with arched windows & wide balconies",
-        "Skylight lounge, walk-in wardrobes & a hardwood staircase",
-        "Semi-furnished with a premium modular kitchen & smart-home automation",
-        "GRIHA-certified biophilic design, 24/7 power back-up & EV charging"
+        "Spa-like bathrooms & a lavish master bath in every home",
+        "GRIHA-certified biophilic design that reconnects you with nature",
+        "Semi-furnished & turnkey — designed for effortless living or letting"
       ],
       "location_label": "Why Socorro",
       "location_points": [
@@ -1795,7 +1795,73 @@
           "label": "Spa-style Bathroom",
           "wide": true
         }
-      ]
+      ],
+      "amenities_note": "At Amara the amenities are the address. Each villa is a self-contained spa and hospitality suite — engineered so that everything, from a morning swim to a chef-cooked dinner, happens entirely within your own walls.",
+      "amenities": [
+        {
+          "group": "Spa & Wellness",
+          "items": [
+            "Walk-in plunge pool off the living room",
+            "Steam room in every villa",
+            "Jacuzzi to unwind anytime",
+            "Lavish master bath spa",
+            "Luxury bathroom fittings"
+          ]
+        },
+        {
+          "group": "Interiors & Living",
+          "items": [
+            "Semi-furnished villas",
+            "Premium modular kitchen",
+            "Dedicated home theatre",
+            "Hardwood staircase",
+            "Energy-efficient air conditioning",
+            "Private lift to all levels"
+          ]
+        },
+        {
+          "group": "Smart & Secure",
+          "items": [
+            "Smart-home automation",
+            "Video surveillance & secure access control",
+            "24/7 power back-up",
+            "EV charging point"
+          ]
+        },
+        {
+          "group": "Services & Grounds",
+          "items": [
+            "Chef on call",
+            "Nanny on call",
+            "Serene landscaped gardens",
+            "Barbecue station",
+            "Water feature at entrance"
+          ]
+        }
+      ],
+      "rental": {
+        "label": "The Investment Case",
+        "headline": "Purpose-built for North Goa's luxury short-stay market.",
+        "stats": [
+          {
+            "v": "~6–8%",
+            "l": "Indicative Gross Yield p.a."
+          },
+          {
+            "v": "Turnkey",
+            "l": "Managed Short-Stay Rental"
+          },
+          {
+            "v": "Peak",
+            "l": "Premium Season Tariffs"
+          },
+          {
+            "v": "1 of 8",
+            "l": "Scarcity Holds Value"
+          }
+        ],
+        "note": "With a private plunge pool, steam room, home theatre and chef- and nanny-on-call, each villa is built to command premium nightly tariffs in one of North Goa's most sought-after belts — five minutes from Porvorim and fifteen from Baga & Calangute. Indicative gross rental yields for comparable managed luxury villas here typically run ~6–8% p.a. with strong peak-season occupancy, while a scarcity of only eight sanctuaries supports long-term capital appreciation. Figures are indicative and depend on furnishing, management and occupancy — detailed rental projections and a managed-let plan are shared on enquiry."
+      }
     }
   ]
 }

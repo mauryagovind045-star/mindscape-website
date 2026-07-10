@@ -172,6 +172,23 @@ section{position:relative}
 .loc-note{font-size:11px;color:var(--dark-text);margin-top:16px}
 .feature-cta{display:flex;gap:18px;align-items:center;margin-top:44px;padding-top:40px;border-top:1px solid var(--edge-soft);flex-wrap:wrap}
 .feature-cta .brokerage{margin-left:auto;font-size:12px;letter-spacing:.04em;color:var(--dim);text-align:right}
+/* Amenities showcase — the USP band */
+.amenities{margin-top:66px;padding-top:52px;border-top:1px solid var(--edge-soft)}
+.am-head{max-width:660px;margin-bottom:42px}
+.am-note{color:var(--muted);font-size:15px;line-height:1.62;margin-top:8px}
+.am-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:36px 30px}
+.am-col h4{font-family:var(--sans);font-weight:500;font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:var(--ivory);padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid var(--edge)}
+.am-col ul{list-style:none}
+.am-col li{display:flex;gap:11px;align-items:flex-start;color:var(--muted);font-size:13.5px;line-height:1.45;padding:7px 0}
+.am-col li .diamond{width:7px;height:7px;margin-top:5px}
+/* Rental yield / investment case */
+.rental{margin-top:64px;padding:50px 46px;border:1px solid var(--edge);background:linear-gradient(158deg,var(--dark-2),var(--black))}
+.ry-head h3{font-family:var(--serif);font-weight:400;font-size:28px;color:var(--ivory);line-height:1.24;margin-top:10px;max-width:640px}
+.ry-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin:36px 0 28px;padding:34px 0;border-top:1px solid var(--edge-soft);border-bottom:1px solid var(--edge-soft)}
+.ry-stat{display:flex;flex-direction:column;gap:7px}
+.ry-stat b{font-family:var(--serif);font-size:33px;font-weight:400;color:var(--gold);line-height:1}
+.ry-stat small{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--dim)}
+.ry-note{color:var(--muted);font-size:12.5px;line-height:1.66;max-width:880px}
 .inspo{margin-top:56px;padding-top:46px;border-top:1px solid var(--edge-soft)}
 .inspo-head{max-width:660px;margin-bottom:32px}
 .inspo-note{color:var(--dim);font-size:13.5px;line-height:1.65;margin-top:6px}
@@ -454,6 +471,9 @@ footer{background:var(--black);border-top:1px solid var(--edge-soft);padding:80p
   .gallery a.wide{grid-column:span 2}
   .kf-list{grid-template-columns:1fr}
   .feature-cta .brokerage{margin-left:0;text-align:left;width:100%}
+  .am-grid{grid-template-columns:1fr 1fr}
+  .ry-stats{grid-template-columns:1fr 1fr}
+  .rental{padding:36px 22px}
   .form-shell{padding:32px 24px}
   .field.row2{grid-template-columns:1fr;gap:0}
   .hero{padding-bottom:56px}

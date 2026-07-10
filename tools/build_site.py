@@ -386,6 +386,46 @@ def inspiration_block(l, root):
       </div>"""
 
 
+def amenities_block(l, root):
+    """Full amenities showcase — this project's core USP. Data-driven; renders only
+    when the listing defines an 'amenities' list of {group, items} categories."""
+    ams = l.get("amenities")
+    if not ams:
+        return ""
+    cols, total = "", 0
+    for cat in ams:
+        items = "".join(f'<li><span class="diamond"></span>{e(it)}</li>' for it in cat["items"])
+        total += len(cat["items"])
+        cols += f'<div class="am-col"><h4>{e(cat["group"])}</h4><ul>{items}</ul></div>'
+    intro = e(l.get("amenities_note", ""))
+    return f"""
+      <div class="amenities reveal">
+        <div class="am-head">
+          <div class="kf-title"><span class="diamond"></span>The Amenities · {total} Reasons to Never Leave</div>
+          {f'<p class="am-note">{intro}</p>' if intro else ''}
+        </div>
+        <div class="am-grid">{cols}</div>
+      </div>"""
+
+
+def rental_block(l, root):
+    """Rental-yield / investment case. Data-driven via optional 'rental' field."""
+    r = l.get("rental")
+    if not r:
+        return ""
+    stats = "".join(f'<div class="ry-stat"><b>{e(s["v"])}</b><small>{e(s["l"])}</small></div>'
+                    for s in r.get("stats", []))
+    return f"""
+      <div class="rental reveal">
+        <div class="ry-head">
+          <div class="kf-title"><span class="diamond"></span>{e(r.get("label", "The Investment Case"))}</div>
+          <h3>{e(r["headline"])}</h3>
+        </div>
+        <div class="ry-stats">{stats}</div>
+        <p class="ry-note">{e(r["note"])}</p>
+      </div>"""
+
+
 def property_card(l, root):
     slug = l["slug"]
     img = img_path(root, slug, l["card_image"])
@@ -670,6 +710,8 @@ def build_detail(site, l, listings):
     body = f"""
 <section class="props" style="padding:70px 0 110px;border-top:0"><div class="wrap">
   {feature_block(l, root, site, mode='detail')}
+  {amenities_block(l, root)}
+  {rental_block(l, root)}
   {inspiration_block(l, root)}
   <div class="props-foot reveal"><a href="{lk['properties']}" class="btn"><span>Back to All Properties</span></a></div>
 </div></section>"""
