@@ -1671,6 +1671,131 @@
           "wide": true
         }
       ]
+    },
+    {
+      "slug": "amara-socorro",
+      "featured": false,
+      "name": "Amara",
+      "ref": "MP-3VSOC-01",
+      "status": "New Launch",
+      "location": "Socorro",
+      "region": "North Goa",
+      "collection": "Spa Villa Collection",
+      "price_display": "Price on Request",
+      "price_value": 65000000,
+      "price_note": "On Application",
+      "beds_display": "3",
+      "beds_value": 3,
+      "area_display": "G+3 Villa",
+      "area_value": 3,
+      "badges": [
+        "New Launch",
+        "Grand 3 BHK Villas",
+        "Only 8 Sanctuaries"
+      ],
+      "short": "A rare collection of just eight grand three-bedroom spa villas in Socorro, North Goa — each a four-level sanctuary with its own walk-in plunge pool, private lift, steam room and rooftop jacuzzi, minutes from Porvorim and the beaches beyond.",
+      "description": [
+        "Amara is a limited collection of only eight spa villas set among the paddy fields and heritage homes of Socorro — a serene village in North Goa where rolling green fields meet the buzz of Porvorim, just five minutes away. Conceived as soulful sanctuaries rather than mere homes, each residence is a study in biophilic, GRIHA-certified design that reconnects you with nature without asking you to compromise on comfort. Only eight will ever exist.",
+        "Every villa is a grand three-bedroom residence rising over four levels, wrapped around a walk-in plunge pool you step into straight from the living room — no barriers, just liquid luxury. Vaulted, dome-topped architecture frames arched windows and wide balconies, while a private lift connects the ground-floor living, dining and kitchen up through en-suite bedrooms to a top-floor skylight lounge, steam room and rooftop jacuzzi open to the stars. A water feature greets you at the entrance, and spa-like bathrooms, a lavish master bath, walk-in wardrobes and a hardwood staircase complete the sense of a private resort.",
+        "Villas come semi-furnished with a premium modular kitchen, luxury bathroom fittings, energy-efficient air-conditioning, smart-home automation and 24/7 power back-up. Beyond your door: serene landscaped gardens, a barbecue station, a home theatre, EV charging and secure access with video surveillance — plus chef-on-call and nanny-on-call services for effortless living. This is conscious luxury, uncompromised — an address that teaches the calendar to unwind."
+      ],
+      "feature_heading": "Why Amara",
+      "specs": [
+        {
+          "v": "8",
+          "l": "Spa Villas Only"
+        },
+        {
+          "v": "3 BHK",
+          "l": "Grand Residences"
+        },
+        {
+          "v": "G+3",
+          "l": "Four Levels"
+        },
+        {
+          "v": "Private",
+          "l": "Walk-in Plunge Pool"
+        },
+        {
+          "v": "Private Lift",
+          "l": "& Steam Room"
+        },
+        {
+          "v": "GRIHA",
+          "l": "Certified Sustainable"
+        }
+      ],
+      "features": [
+        "A rare collection of only eight grand three-bedroom spa villas",
+        "Walk-in plunge pool stepped straight from the living room",
+        "Private lift serving all four levels of the villa",
+        "Rooftop jacuzzi & open courtyard, open to the stars",
+        "Steam room and a lavish spa-style master bath in every villa",
+        "Vaulted, dome-topped architecture with arched windows & wide balconies",
+        "Skylight lounge, walk-in wardrobes & a hardwood staircase",
+        "Semi-furnished with a premium modular kitchen & smart-home automation",
+        "GRIHA-certified biophilic design, 24/7 power back-up & EV charging"
+      ],
+      "location_label": "Why Socorro",
+      "location_points": [
+        {
+          "place": "CBD Porvorim",
+          "time": "~5 min"
+        },
+        {
+          "place": "Taj's Palmeira De Succoor",
+          "time": "~2 min"
+        },
+        {
+          "place": "Baga & Calangute Beach",
+          "time": "~15 min"
+        },
+        {
+          "place": "Luxury casinos",
+          "time": "~15 min"
+        },
+        {
+          "place": "Mopa International Airport",
+          "time": "~25 min"
+        }
+      ],
+      "location_note": "Socorro is a tranquil village in North Goa's Bardez belt, where paddy fields and misty hills meet designer boutiques and opulent mansions — minutes from Porvorim's central business district and an easy drive to the beaches, casinos and Mopa airport. Distances are indicative and to be verified by the buyer.",
+      "brokerage_note": "Villa layouts, plot sizes, specifications, pricing & registration details shared on enquiry.",
+      "hero_image": "exterior",
+      "card_image": "facade",
+      "gallery": [
+        {
+          "img": "exterior",
+          "label": "Vaulted Domes at Golden Hour",
+          "wide": true
+        },
+        {
+          "img": "facade",
+          "label": "Villa Facade",
+          "wide": true
+        },
+        {
+          "img": "living",
+          "label": "Living Room & Plunge Pool",
+          "wide": true
+        },
+        {
+          "img": "courtyard",
+          "label": "Kitchen & Courtyard Pool",
+          "wide": true
+        },
+        {
+          "img": "bedroom",
+          "label": "Primary Bedroom Suite",
+          "wide": true
+        },
+        {
+          "img": "bath",
+          "label": "Spa-style Bathroom",
+          "wide": true
+        }
+      ]
     }
   ]
 }
