@@ -1561,6 +1561,116 @@
           "wide": true
         }
       ]
+    },
+    {
+      "slug": "upper-crest",
+      "featured": false,
+      "name": "Upper Crest",
+      "ref": "MP-3AMAR-01",
+      "status": "New Launch",
+      "location": "Gogol, Margao",
+      "region": "South Goa",
+      "collection": "City Residences",
+      "price_display": "Price on Request",
+      "price_value": 14000000,
+      "price_note": "On Application",
+      "beds_display": "3",
+      "beds_value": 3,
+      "area_display": "3 BHK",
+      "area_value": 3,
+      "badges": [
+        "New Launch",
+        "3 BHK Apartments",
+        "Just 36 Homes"
+      ],
+      "short": "An exclusive eight-storey residential tower of just thirty-six three-bedroom apartments near Muth in Gogol, Margao — purely residential, with a clubhouse, rooftop sky walking track and terrace garden promenade, moments from Margao town.",
+      "description": [
+        "Upper Crest is a thoughtfully designed residential tower rising near Muth in Gogol, just off the Margao–Curtorim road — a quiet, well-connected pocket of South Goa moments from Margao town, the Eastern Bypass and Big Foot Circle. Conceived as an exclusive address of only thirty-six three-bedroom homes, it is a fully residential building with no commercial activity, so the privacy and calm of home is never infringed upon.",
+        "Every apartment is planned around light and air — windows oriented for maximum sunlight with generous wind channelling, wide balconies, French doors and enclosed utility balconies framing open views. The tower stands over two levels of stilt car parking (P1 + P2) beneath eight residential floors, served by two automatic elevators — one passenger and one service — with power back-up for lifts and common areas, 24-hour CCTV monitoring of key areas and a fire-fighting system throughout.",
+        "Interiors are finished to a high standard: vitrified flooring, laminated door shutters, UPVC windows, natural-stone window sills, granite kitchen platforms with stainless-steel sinks, European-style bathroom fittings, modular electrical switches and intercom to security — with provision for air-conditioning, water purifier, washing machine and dishwasher, plus fibre-optic cabling for high-speed internet. Shared amenities include a clubhouse with indoor games, a rooftop sky walking track, a terrace garden promenade, the 'Shunyaa' yoga point and a dedicated activity and party area — an elevated way of everyday living."
+      ],
+      "feature_heading": "Why Upper Crest",
+      "specs": [
+        {
+          "v": "3 BHK",
+          "l": "Apartments"
+        },
+        {
+          "v": "36",
+          "l": "Exclusive Homes"
+        },
+        {
+          "v": "P1+P2+8",
+          "l": "Storeys"
+        },
+        {
+          "v": "2",
+          "l": "Automatic Lifts"
+        },
+        {
+          "v": "Multi-level",
+          "l": "Car Parking"
+        },
+        {
+          "v": "Clubhouse",
+          "l": "Sky Track & Garden"
+        }
+      ],
+      "features": [
+        "Just 36 exclusive 3-bedroom apartments — purely residential, no commercial activity",
+        "Eight residential floors over two levels of stilt parking (P1 + P2)",
+        "Two automatic elevators — one passenger, one service — with power back-up",
+        "Clubhouse with indoor games plus a dedicated activity & party area",
+        "Rooftop sky walking track & a stunning terrace garden promenade",
+        "'Shunyaa' yoga point for calm, open-air mornings",
+        "24-hour CCTV of key areas, intercom to security & full fire-fighting system",
+        "Vitrified flooring, UPVC windows, granite kitchens & European-style fittings",
+        "Provision for AC, water purifier, washer & dishwasher; fibre-optic internet"
+      ],
+      "location_label": "Why Gogol, Margao",
+      "location_points": [
+        {
+          "place": "Margao town",
+          "time": "~6 min"
+        },
+        {
+          "place": "Smt. Parvatibai Chowgule College",
+          "time": "Nearby"
+        },
+        {
+          "place": "Eastern Bypass / Big Foot Circle",
+          "time": "~4 min"
+        },
+        {
+          "place": "Madgaon Railway Station",
+          "time": "~12 min"
+        },
+        {
+          "place": "Dabolim Airport",
+          "time": "~35 min"
+        }
+      ],
+      "location_note": "Gogol sits just off the Margao–Curtorim road near Muth, minutes from Margao town, the Eastern Bypass and Big Foot Circle, with the railway station and Dabolim airport within an easy drive. Distances are indicative and to be verified by the buyer.",
+      "brokerage_note": "Goa RERA registered. Floor plans, unit sizes, pricing & registration details shared on enquiry.",
+      "hero_image": "aerial",
+      "card_image": "exterior",
+      "gallery": [
+        {
+          "img": "aerial",
+          "label": "The Residential Tower",
+          "wide": true
+        },
+        {
+          "img": "exterior",
+          "label": "Street Elevation",
+          "wide": true
+        },
+        {
+          "img": "facade",
+          "label": "Front Elevation at Dusk",
+          "wide": true
+        }
+      ]
     }
   ]
 }
