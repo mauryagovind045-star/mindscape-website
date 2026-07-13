@@ -132,6 +132,7 @@ def jsonld(obj):
 # them instead of serving a stale cached copy.
 ASSET_VER = "7"
 GA_ID = ""  # GA4 Measurement ID (G-XXXXXXXXXX); set from site["ga_id"] at build time
+GTM_ID = ""  # Google Tag Manager container ID (GTM-XXXXXXX); set from site["gtm_id"] at build time
 
 
 def ga_snippet():
@@ -148,16 +149,48 @@ def ga_snippet():
     )
 
 
+def gtm_head():
+    """Google Tag Manager head snippet. Renders only when a container ID is configured.
+    Placed as high in <head> as possible, per Google's install guidance."""
+    if not GTM_ID:
+        return ""
+    return (
+        "<!-- Google Tag Manager -->\n"
+        "<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n"
+        "new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n"
+        "j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n"
+        "'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n"
+        "})(window,document,'script','dataLayer','" + GTM_ID + "');</script>\n"
+        "<!-- End Google Tag Manager -->"
+    )
+
+
+def gtm_noscript():
+    """Google Tag Manager <noscript> fallback. Goes immediately after <body>."""
+    if not GTM_ID:
+        return ""
+    return (
+        '<!-- Google Tag Manager (noscript) -->\n'
+        '<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=' + GTM_ID + '"\n'
+        'height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>\n'
+        '<!-- End Google Tag Manager (noscript) -->'
+    )
+
+
 def head(title, desc, root, page_js="", extra_head=""):
     v = ASSET_VER
     extra = (f'<script defer src="{root}assets/js/{page_js}?v={v}"></script>' if page_js else "")
     seo = f"\n{extra_head}" if extra_head else ""
     ga = ga_snippet()
     ga = f"{ga}\n" if ga else ""
+    gtm = gtm_head()
+    gtm = f"{gtm}\n" if gtm else ""
+    gtm_ns = gtm_noscript()
+    gtm_ns = f"\n{gtm_ns}" if gtm_ns else ""
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
-{ga}<meta charset="UTF-8" />
+{gtm}{ga}<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}" />{seo}
@@ -166,7 +199,7 @@ def head(title, desc, root, page_js="", extra_head=""):
 <script defer src="{root}assets/js/site.js?v={v}"></script>
 {extra}
 </head>
-<body>"""
+<body>{gtm_ns}"""
 
 
 def nav(site, lk, root, active, solid=False):
@@ -950,8 +983,9 @@ def main():
     with open(DATA_FILE, encoding="utf-8") as f:
         data = json.load(f)
     site, listings = data["site"], data["listings"]
-    global GA_ID
+    global GA_ID, GTM_ID
     GA_ID = site.get("ga_id", "")
+    GTM_ID = site.get("gtm_id", "")
     if not listings:
         sys.exit("No listings found in data/listings.json")
 
