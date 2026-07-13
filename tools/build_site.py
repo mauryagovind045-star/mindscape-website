@@ -131,16 +131,33 @@ def jsonld(obj):
 # Bump ASSET_VER whenever site.css / site.js change, so browsers re-fetch
 # them instead of serving a stale cached copy.
 ASSET_VER = "7"
+GA_ID = ""  # GA4 Measurement ID (G-XXXXXXXXXX); set from site["ga_id"] at build time
+
+
+def ga_snippet():
+    """Google Analytics 4 (gtag.js). Renders only when a Measurement ID is configured."""
+    if not GA_ID:
+        return ""
+    return (
+        '<!-- Google Analytics (GA4) -->\n'
+        '<script async src="https://www.googletagmanager.com/gtag/js?id=' + GA_ID + '"></script>\n'
+        '<script>window.dataLayer=window.dataLayer||[];'
+        'function gtag(){dataLayer.push(arguments);}'
+        "gtag('js',new Date());"
+        "gtag('config','" + GA_ID + "');</script>"
+    )
 
 
 def head(title, desc, root, page_js="", extra_head=""):
     v = ASSET_VER
     extra = (f'<script defer src="{root}assets/js/{page_js}?v={v}"></script>' if page_js else "")
     seo = f"\n{extra_head}" if extra_head else ""
+    ga = ga_snippet()
+    ga = f"{ga}\n" if ga else ""
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
+{ga}<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}" />{seo}
@@ -933,6 +950,8 @@ def main():
     with open(DATA_FILE, encoding="utf-8") as f:
         data = json.load(f)
     site, listings = data["site"], data["listings"]
+    global GA_ID
+    GA_ID = site.get("ga_id", "")
     if not listings:
         sys.exit("No listings found in data/listings.json")
 
