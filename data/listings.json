@@ -2003,6 +2003,191 @@
           "wide": true
         }
       ]
+    },
+    {
+      "slug": "royal-oceanic-bliss",
+      "featured": false,
+      "name": "Royal Oceanic Bliss",
+      "ref": "MP-4VVAR-01",
+      "status": "Under Construction",
+      "location": "Varca",
+      "region": "South Goa",
+      "collection": "Signature Villa Collection",
+      "price_display": "Price on Request",
+      "price_value": 60000000,
+      "price_note": "On Application",
+      "beds_display": "4",
+      "beds_value": 4,
+      "area_display": "~4,896 sq ft",
+      "area_value": 4896,
+      "badges": [
+        "Under Construction",
+        "4 BHK Pool Villas",
+        "Only 8 Villas"
+      ],
+      "short": "A limited collection of just eight neoclassical 4 BHK pool villas on ~1.3 acres in Varca, South Goa — grand arched facades, private pools and jacuzzi master baths, with a residents' clubhouse, gym and gazebo gardens minutes from Varca Beach.",
+      "description": [
+        "Royal Oceanic Bliss sits in Varca, on the quietest stretch of South Goa's Salcete coast — a village of white-sand beaches, seaside chapels and the luxury-resort belt that runs south towards Cavelossim, with Margao's markets and railway station an easy drive inland. This is the Goa of unhurried mornings and empty beaches, fifteen minutes from everything you need.",
+        "The collection is deliberately small: eight independent villas across roughly 1.3 acres, each a grand four-bedroom residence of about 4,896 sq ft in a neoclassical idiom — double-height arched windows, columned porte-cochère, terracotta roofs and walled garden courts. Inside, arched living rooms rise two storeys, the master bath is crowned by its own jacuzzi, and every villa keeps its own private pool and covered parking within its walls.",
+        "Life beyond your gate is equally considered: a branded entrance arch opens onto paved, palm-lined avenues, landscaped gardens with gazebos, and a residents' clubhouse with a billiards lounge and a fully equipped gymnasium. The project is under construction with completion targeted for December 2027 — villa layouts, specifications, pricing and registration details are shared on enquiry, along with a site visit at a time that suits you."
+      ],
+      "feature_heading": "Why Royal Oceanic Bliss",
+      "specs": [
+        {
+          "v": "8",
+          "l": "Independent Villas Only"
+        },
+        {
+          "v": "4 BHK",
+          "l": "Grand Residences"
+        },
+        {
+          "v": "~4,896",
+          "l": "Sq Ft Per Villa"
+        },
+        {
+          "v": "Private",
+          "l": "Pool & Garden Court"
+        },
+        {
+          "v": "Clubhouse",
+          "l": "Billiards & Gym"
+        },
+        {
+          "v": "Dec 2027",
+          "l": "Targeted Completion"
+        }
+      ],
+      "features": [
+        "A limited collection of just eight independent villas on ~1.3 acres",
+        "Grand 4 BHK residences of about 4,896 sq ft each",
+        "Neoclassical facades — double-height arches & columned porte-cochère",
+        "Private swimming pool within every villa's walled court",
+        "Jacuzzi-crowned master bath in each residence",
+        "Residents' clubhouse with billiards lounge & gymnasium",
+        "Landscaped gardens, gazebos & palm-lined paved avenues",
+        "Gated entrance arch on the quiet Varca coastal belt",
+        "Minutes from Varca Beach, an easy drive to Margao"
+      ],
+      "location_label": "Why Varca",
+      "location_points": [
+        {
+          "place": "Varca Beach",
+          "time": "~5 min"
+        },
+        {
+          "place": "Colva Beach",
+          "time": "~10 min"
+        },
+        {
+          "place": "Cavelossim & the resort belt",
+          "time": "~10 min"
+        },
+        {
+          "place": "Margao city centre",
+          "time": "~15 min"
+        },
+        {
+          "place": "Madgaon Railway Station",
+          "time": "~15 min"
+        },
+        {
+          "place": "Dabolim Airport",
+          "time": "~40 min"
+        }
+      ],
+      "location_note": "Varca is the serene heart of South Goa's Salcete coast — long white-sand beaches without the northern crowds, a five-star resort belt for company, and Margao's conveniences fifteen minutes inland. Distances are indicative and to be verified by the buyer.",
+      "brokerage_note": "Villa layouts, plot sizes, specifications, pricing & registration details shared on enquiry.",
+      "hero_image": "street-dusk",
+      "card_image": "facade",
+      "gallery": [
+        {
+          "img": "facade",
+          "label": "The Grand Villa Facade",
+          "wide": true
+        },
+        {
+          "img": "entrance",
+          "label": "The Gated Entrance"
+        },
+        {
+          "img": "aerial",
+          "label": "Eight Villas from Above",
+          "wide": true
+        },
+        {
+          "img": "street",
+          "label": "Palm-lined Avenues",
+          "wide": true
+        },
+        {
+          "img": "living",
+          "label": "Living Room"
+        },
+        {
+          "img": "dining",
+          "label": "Dining"
+        },
+        {
+          "img": "kitchen",
+          "label": "Kitchen"
+        },
+        {
+          "img": "bedroom",
+          "label": "Bedroom Suite"
+        },
+        {
+          "img": "bath",
+          "label": "Master Bath & Jacuzzi"
+        },
+        {
+          "img": "pool",
+          "label": "Private Pool Court"
+        },
+        {
+          "img": "gardens",
+          "label": "Gardens & Gazebos",
+          "wide": true
+        },
+        {
+          "img": "clubhouse",
+          "label": "Clubhouse Billiards Lounge"
+        },
+        {
+          "img": "night-aerial",
+          "label": "The Cluster by Night",
+          "wide": true
+        }
+      ],
+      "amenities_note": "Every villa is self-contained — pool, garden court and covered parking within its own walls — while the community adds a clubhouse life most villa projects skip.",
+      "amenities": [
+        {
+          "group": "Your Villa",
+          "items": [
+            "Private swimming pool",
+            "Jacuzzi in the master bath",
+            "Double-height arched living room",
+            "Columned porte-cochère parking",
+            "Walled private garden court"
+          ]
+        },
+        {
+          "group": "The Clubhouse",
+          "items": [
+            "Residents' clubhouse",
+            "Billiards lounge",
+            "Fully equipped gymnasium"
+          ]
+        },
+        {
+          "group": "Grounds & Arrival",
+          "items": [
+            "Gated entrance arch",
+            "Landscaped gardens with gazebos",
+            "Palm-lined paved internal avenues"
+          ]
+        }
+      ]
     }
   ]
 }
