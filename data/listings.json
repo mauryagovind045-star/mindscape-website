@@ -1864,6 +1864,145 @@
         ],
         "note": "With a private plunge pool, steam room, home theatre and chef- and nanny-on-call, each villa is built to command premium nightly tariffs in one of North Goa's most sought-after belts — five minutes from Porvorim and fifteen from Baga & Calangute. Indicative gross rental yields for comparable managed luxury villas here typically run ~6–8% p.a. with strong peak-season occupancy, while a scarcity of only eight sanctuaries supports long-term capital appreciation. Figures are indicative and depend on furnishing, management and occupancy — detailed rental projections and a managed-let plan are shared on enquiry."
       }
+    },
+    {
+      "slug": "namasyaa",
+      "featured": false,
+      "name": "Namasyaa",
+      "ref": "MP-3VBET-01",
+      "status": "Under Construction",
+      "location": "Betalbatim",
+      "region": "South Goa",
+      "collection": "Pool Villa Collection",
+      "price_display": "Price on Request",
+      "price_value": 35000000,
+      "price_note": "On Application",
+      "beds_display": "3",
+      "beds_value": 3,
+      "area_display": "G+2 Villa",
+      "area_value": 2,
+      "badges": [
+        "Under Construction",
+        "3 BHK Pool Villas",
+        "Betalbatim — near Colva"
+      ],
+      "short": "A boutique cluster of Indo-Portuguese-style 3 BHK pool villas in Betalbatim, South Goa — each with its own plunge pool and a rooftop pergola lounge in the palms, minutes from Colva Beach and an easy drive to Margao.",
+      "description": [
+        "Namasyaa sits in Betalbatim, one of South Goa's most quietly coveted coastal villages — a green, unhurried enclave off Colva Road where coconut groves still outnumber compound walls. Colva Beach and Betalbatim's famous sunset sands are both minutes away, and Margao's markets, schools and railway station are an easy drive inland.",
+        "The villas themselves are a study in the Indo-Portuguese vernacular done properly: terracotta-tiled roofs, arched balconies, bay windows and deep awnings over walled garden courts. Each residence is a three-bedroom home rising over three levels — living, dining and kitchen opening to a private plunge pool at the entrance court, bedrooms above, and the whole home crowned by a rooftop lounge under a vine-laced pergola, open to the palm canopy.",
+        "Currently under construction, Namasyaa is built for the way South Goa is actually lived in — slow mornings by your own pool, evenings on the roof terrace, and the beach a short stroll or spin away. Villa layouts, plot sizes, specifications and pricing are shared on enquiry, along with a site visit at a time that suits you."
+      ],
+      "feature_heading": "Why Namasyaa",
+      "specs": [
+        {
+          "v": "3 BHK",
+          "l": "Villa Residences"
+        },
+        {
+          "v": "Private",
+          "l": "Plunge Pool"
+        },
+        {
+          "v": "Rooftop",
+          "l": "Pergola Lounge"
+        },
+        {
+          "v": "G+2",
+          "l": "Three Levels"
+        },
+        {
+          "v": "Gated",
+          "l": "Walled Garden Courts"
+        },
+        {
+          "v": "~5 min",
+          "l": "To Colva Beach"
+        }
+      ],
+      "features": [
+        "Boutique cluster of Indo-Portuguese-style pool villas",
+        "Three-bedroom residences across three levels",
+        "Private plunge pool in each villa's walled court",
+        "Rooftop lounge under a vine-laced pergola",
+        "Terracotta roofs, arched balconies & bay windows",
+        "Walled, landscaped compound with gated entries",
+        "Betalbatim — the quiet green belt between Colva and the sunset sands",
+        "Minutes from Colva Beach, an easy drive to Margao"
+      ],
+      "location_label": "Why Betalbatim",
+      "location_points": [
+        {
+          "place": "Colva Beach",
+          "time": "~5 min"
+        },
+        {
+          "place": "Betalbatim (Sunset) Beach",
+          "time": "~5 min"
+        },
+        {
+          "place": "Margao city centre",
+          "time": "~15 min"
+        },
+        {
+          "place": "Madgaon Railway Station",
+          "time": "~15 min"
+        },
+        {
+          "place": "Dabolim Airport",
+          "time": "~30 min"
+        }
+      ],
+      "location_note": "Betalbatim is the green, low-rise village belt just north of Colva — South Goa's quieter answer to the northern beach towns, with Margao's conveniences fifteen minutes inland. Distances are indicative and to be verified by the buyer.",
+      "brokerage_note": "Villa layouts, plot sizes, specifications, pricing & registration details shared on enquiry.",
+      "hero_image": "aerial",
+      "card_image": "facade",
+      "gallery": [
+        {
+          "img": "facade",
+          "label": "The Villas from the Lane",
+          "wide": true
+        },
+        {
+          "img": "aerial-dusk",
+          "label": "The Cluster at Dusk",
+          "wide": true
+        },
+        {
+          "img": "pool",
+          "label": "Private Plunge Pool & Pergola",
+          "wide": true
+        },
+        {
+          "img": "roof-lounge",
+          "label": "Rooftop Pergola Lounge",
+          "wide": true
+        },
+        {
+          "img": "living",
+          "label": "Living Room"
+        },
+        {
+          "img": "kitchen",
+          "label": "Kitchen & Dining"
+        },
+        {
+          "img": "family",
+          "label": "Family Lounge"
+        },
+        {
+          "img": "bedroom",
+          "label": "Primary Bedroom"
+        },
+        {
+          "img": "pool-dusk",
+          "label": "Poolside at Dusk"
+        },
+        {
+          "img": "terraces",
+          "label": "Roof Terraces in the Palms",
+          "wide": true
+        }
+      ]
     }
   ]
 }
