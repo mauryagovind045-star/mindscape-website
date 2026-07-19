@@ -2188,6 +2188,375 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "kai-villas",
+      "featured": false,
+      "name": "Kai Villas",
+      "ref": "MP-3BVPEN-01",
+      "status": "New Launch",
+      "location": "Penha de França",
+      "region": "North Goa",
+      "collection": "Bali Villa Collection",
+      "price_display": "Price on Request",
+      "price_value": 35000000,
+      "price_note": "On Application",
+      "beds_display": "3",
+      "beds_value": 3,
+      "area_display": "Villa + Pool",
+      "area_value": 0,
+      "badges": [
+        "New Launch",
+        "3 BHK Bali-Style Pool Villas",
+        "Only 7 Villas"
+      ],
+      "short": "A gated lane of just seven Bali-style 3 BHK pool villas at Penha de França, on Porvorim's forested Panjim edge — tropical architecture, private pools and decks, with all of North Goa's beaches, dining and casinos within an easy half hour.",
+      "description": [
+        "Kai Villas sits at Penha de França — the leafy, forested pocket where Porvorim slopes down to the Mandovi, minutes from Mall de Goa and the bridges into Panjim. It is the rare North Goa address that puts the whole map within reach: Miramar and the Candolim–Calangute–Baga beach run, the river casinos, Reis Magos fort and the capital's dining are all an easy drive, while home stays wrapped in green.",
+        "The collection is a single gated lane of seven villas (with future phases to follow) — each a three-bedroom, Bali-style home with its own swimming pool and deck, landscaped garden and paved driveway. Interiors keep the tropical language honest: terrazzo and wooden floors, exposed-brick accents, gypsum-smooth walls, a modular kitchen with hob and chimney, and bathrooms with glass-partitioned wet and dry zones. Construction is quake-resistant RCC with heat-insulated external blocks and full damp-proofing.",
+        "The community is built for lock-and-leave ease: an entrance gate with security cabin, CCTV, intercom, Wi-Fi, well-lit commons with full power backup, private parking and housekeeping on tap — plus professional rental management for owners who want their villa earning while they're away. Layouts, specifications and pricing are shared on enquiry."
+      ],
+      "feature_heading": "Why Kai Villas",
+      "specs": [
+        {
+          "v": "7",
+          "l": "Villas · Phase One"
+        },
+        {
+          "v": "3 BHK",
+          "l": "Bali-Style Residences"
+        },
+        {
+          "v": "Private",
+          "l": "Pool & Deck"
+        },
+        {
+          "v": "Gated",
+          "l": "Security Cabin & CCTV"
+        },
+        {
+          "v": "Managed",
+          "l": "Rentals Available"
+        },
+        {
+          "v": "~30 min",
+          "l": "To North Goa's Best"
+        }
+      ],
+      "features": [
+        "A single gated lane of just seven Bali-style villas",
+        "Private swimming pool and deck with every villa",
+        "Landscaped gardens and paved driveways",
+        "Terrazzo & wooden floors with exposed-brick accents",
+        "Modular kitchen with hob and chimney",
+        "Glass-partitioned wet/dry bathrooms",
+        "Quake-resistant RCC structure, heat-insulated walls",
+        "Housekeeping, intercom, Wi-Fi & full common-area power backup",
+        "Professional rental management available for owners"
+      ],
+      "location_label": "Why Penha de França",
+      "location_points": [
+        {
+          "place": "Mall de Goa, Porvorim",
+          "time": "~10 min"
+        },
+        {
+          "place": "Panjim city centre",
+          "time": "~15 min"
+        },
+        {
+          "place": "Mandovi river casinos",
+          "time": "~20 min"
+        },
+        {
+          "place": "Candolim–Calangute–Baga beaches",
+          "time": "~30 min"
+        },
+        {
+          "place": "Mopa International Airport",
+          "time": "~30 min"
+        }
+      ],
+      "location_note": "Penha de França is Porvorim's quiet riverside edge — forested lanes above the Mandovi, minutes from the capital yet apart from its noise, with the whole North Goa coast within a half-hour arc. Distances are indicative and to be verified by the buyer.",
+      "brokerage_note": "Villa layouts, plot sizes, specifications, pricing & registration details shared on enquiry.",
+      "hero_image": "facade",
+      "card_image": "facade",
+      "gallery": [
+        {
+          "img": "facade",
+          "label": "The Bali-Style Facade & Pool",
+          "wide": true
+        },
+        {
+          "img": "living",
+          "label": "Living Room & Stairwell",
+          "wide": true
+        },
+        {
+          "img": "bedroom",
+          "label": "Bedroom One"
+        },
+        {
+          "img": "bedroom-2",
+          "label": "Bedroom Two"
+        },
+        {
+          "img": "bedroom-3",
+          "label": "Bedroom Three"
+        },
+        {
+          "img": "terrace",
+          "label": "Villa Terrace"
+        },
+        {
+          "img": "terrace-suite",
+          "label": "Bedroom to Terrace"
+        },
+        {
+          "img": "bath",
+          "label": "Master Bath"
+        },
+        {
+          "img": "shower",
+          "label": "Rain Shower"
+        },
+        {
+          "img": "entry",
+          "label": "The Entry Avenue",
+          "wide": true
+        }
+      ],
+      "amenities_note": "Kai keeps the promise simple: a tropical home that runs itself — pool, garden and services handled, whether you live in it or let it.",
+      "amenities": [
+        {
+          "group": "Your Villa",
+          "items": [
+            "Private swimming pool & deck",
+            "Landscaped private garden",
+            "Paved driveway & private car park",
+            "Ambient & mood exterior lighting",
+            "Modular kitchen with hob & chimney"
+          ]
+        },
+        {
+          "group": "Comfort & Detail",
+          "items": [
+            "Terrazzo / wooden flooring",
+            "Exposed-brick feature walls",
+            "Glass-partitioned wet & dry baths",
+            "Electric water heaters",
+            "Satellite-TV cabling & modular switches"
+          ]
+        },
+        {
+          "group": "Community & Care",
+          "items": [
+            "Entrance gate with security cabin",
+            "CCTV surveillance & intercom",
+            "Wi-Fi & well-lit common areas",
+            "100% power backup for common areas",
+            "Housekeeping & rental management on call"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "casa-solaris",
+      "featured": false,
+      "name": "Casa Solaris",
+      "ref": "MP-4BVSIO-02",
+      "status": "Ready to Move",
+      "location": "Siolim",
+      "region": "North Goa",
+      "collection": "Resort Villa Collection",
+      "price_display": "Price on Request",
+      "price_value": 70000000,
+      "price_note": "On Application",
+      "beds_display": "4 – 5",
+      "beds_value": 4,
+      "area_display": "3,494 – 4,077 sq ft",
+      "area_value": 3494,
+      "badges": [
+        "Ready to Move",
+        "4 & 5 Bedroom Pool Villas",
+        "Only 10 Villas"
+      ],
+      "short": "A ready-to-move gated community of just ten sunlit pool villas at Maina–Sodiem, Siolim — 4 and 5 bedroom homes of 3,494–4,077 sq ft with a lift in every villa, skylit living spaces and private pools, minutes from Assagao's dining and Morjim's sands. RERA PRGO05242225.",
+      "description": [
+        "Casa Solaris takes its name from the sun — and builds the whole home around it. Skylights and expansive glazing pour daylight into the ground-floor living and dining spaces, which open through a veranda to your own pool and garden. Around you: the paddy fields and low hills of Siolim, with Assagao's restaurant belt and the sands of Morjim and Vagator a short drive away.",
+        "Only ten villas make up the community, each rising three levels with a private lift — four or five bedrooms depending on the plan, with balconies and terraces at every turn. RERA carpet areas run from 2,238 to 2,963 sq ft (built-up 3,494 to 4,076.5 sq ft) across seven distinct layouts, so there is a plan to fit how you actually live. Every villa carries its own pool filtration, water tanks and STP, three-phase electricals and anti-skid flooring on a quake-resistant RCC frame.",
+        "The community is gated with round-the-clock security, and the villas are ready to move — no waiting on possession. The project is RERA-registered (PRGO05242225, Survey No. 244/1-A, Maina–Sodiem, Siolim). Floor plans, specifications and pricing are shared on enquiry, along with a site visit at a time that suits you."
+      ],
+      "feature_heading": "Why Casa Solaris",
+      "specs": [
+        {
+          "v": "10",
+          "l": "Villas Only"
+        },
+        {
+          "v": "4 – 5",
+          "l": "Bedrooms Per Villa"
+        },
+        {
+          "v": "Lift",
+          "l": "In Every Villa"
+        },
+        {
+          "v": "Private",
+          "l": "Pool & Garden"
+        },
+        {
+          "v": "Ready",
+          "l": "To Move In"
+        },
+        {
+          "v": "RERA",
+          "l": "PRGO05242225"
+        }
+      ],
+      "features": [
+        "A gated community of just ten villas in Siolim's green belt",
+        "Ready to move — immediate possession",
+        "4 and 5 bedroom layouts across seven plan variants",
+        "Private lift serving all three levels of every villa",
+        "Skylit living & dining opening to veranda, pool and garden",
+        "Individual pool filtration, water tanks & STP per villa",
+        "Round-the-clock gated security",
+        "RERA-registered: PRGO05242225",
+        "Minutes from Assagao's dining and Morjim & Vagator beaches"
+      ],
+      "sizes": {
+        "label": "The Seven Layouts",
+        "headline": "Ten villas, seven distinct plans — RERA carpet areas from 2,238 to 2,963 sq ft.",
+        "rows": [
+          {
+            "v": "2,963",
+            "l": "Villas 1 & 2 · Built-up 3,887 sq ft"
+          },
+          {
+            "v": "2,745",
+            "l": "Villas 3 & 4 · Built-up 4,076 sq ft"
+          },
+          {
+            "v": "2,526",
+            "l": "Villa 5 · Built-up 3,842 sq ft"
+          },
+          {
+            "v": "2,526",
+            "l": "Villas 6, 7 & 8 · Built-up 3,494 sq ft"
+          },
+          {
+            "v": "2,392",
+            "l": "Villa 9 · Built-up 3,563 sq ft"
+          },
+          {
+            "v": "2,238",
+            "l": "Villa 10 · Built-up 3,574 sq ft"
+          }
+        ],
+        "note": "Figures are RERA carpet areas in sq ft with built-up areas as stated in the project plans; Villa 1's plan pairs four bedrooms with a servant's room, while Villa 10 runs five bedrooms across its three levels. Exact plan drawings for every villa are shared on enquiry."
+      },
+      "location_label": "Why Siolim",
+      "location_points": [
+        {
+          "place": "Assagao's restaurant belt",
+          "time": "~10 min"
+        },
+        {
+          "place": "Vagator Beach",
+          "time": "~15 min"
+        },
+        {
+          "place": "Morjim Beach",
+          "time": "~15 min"
+        },
+        {
+          "place": "Thivim Railway Station",
+          "time": "~25 min"
+        },
+        {
+          "place": "Mopa International Airport",
+          "time": "~30 min"
+        }
+      ],
+      "location_note": "Siolim is North Goa's sweet spot — the quiet, green riverside village between Assagao's dining scene and the Morjim–Vagator coast, with hospitals and schools within a few kilometres and both Thivim station and Mopa airport within ~21 km. Distances are indicative and to be verified by the buyer.",
+      "brokerage_note": "Floor plans, specifications, pricing & registration details shared on enquiry.",
+      "hero_image": "living",
+      "card_image": "living",
+      "gallery": [
+        {
+          "img": "living",
+          "label": "Skylit Living Room",
+          "wide": true
+        },
+        {
+          "img": "siteplan",
+          "label": "The Ten-Villa Site Plan",
+          "wide": true
+        },
+        {
+          "img": "dining",
+          "label": "Dining Nook"
+        },
+        {
+          "img": "kitchen",
+          "label": "Kitchen Island"
+        },
+        {
+          "img": "bedroom",
+          "label": "Bedroom Suite"
+        },
+        {
+          "img": "bedroom-2",
+          "label": "Second Bedroom"
+        },
+        {
+          "img": "bath",
+          "label": "Bathroom"
+        },
+        {
+          "img": "lounge",
+          "label": "Lounge Corner"
+        },
+        {
+          "img": "sitting",
+          "label": "Sitting Area"
+        },
+        {
+          "img": "veranda",
+          "label": "Veranda & Garden View"
+        }
+      ],
+      "amenities_note": "Every Casa Solaris villa is engineered to run independently — its own lift, pool plant, water and sewage systems — inside a gated, guarded community.",
+      "amenities": [
+        {
+          "group": "Your Villa",
+          "items": [
+            "Private pool with individual filtration",
+            "Lift serving all three levels",
+            "Skylights over living & dining",
+            "Veranda, balconies & roof terrace",
+            "Individual water tanks & STP"
+          ]
+        },
+        {
+          "group": "Build Quality",
+          "items": [
+            "Quake-resistant RCC framed structure",
+            "Anti-skid flooring",
+            "Three-phase electricals",
+            "Premium plumbing & sanitisation"
+          ]
+        },
+        {
+          "group": "Community",
+          "items": [
+            "Gated entry, round-the-clock security",
+            "Only ten homes in the community",
+            "RERA-registered project (PRGO05242225)"
+          ]
+        }
+      ]
     }
   ]
 }

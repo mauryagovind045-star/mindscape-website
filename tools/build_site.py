@@ -458,6 +458,26 @@ def amenities_block(l, root):
       </div>"""
 
 
+def sizes_block(l, root):
+    """Unit-size variants table. Data-driven via optional 'sizes' field:
+    {label, note, rows: [{v, l}]} — reuses the rental/ry-stat styling."""
+    s = l.get("sizes")
+    if not s:
+        return ""
+    tiles = "".join(f'<div class="ry-stat"><b>{e(r["v"])}</b><small>{e(r["l"])}</small></div>'
+                    for r in s.get("rows", []))
+    note = e(s.get("note", ""))
+    return f"""
+      <div class="rental reveal">
+        <div class="ry-head">
+          <div class="kf-title"><span class="diamond"></span>{e(s.get("label", "Villa Sizes"))}</div>
+          {f'<h3>{e(s["headline"])}</h3>' if s.get("headline") else ''}
+        </div>
+        <div class="ry-stats">{tiles}</div>
+        {f'<p class="ry-note">{note}</p>' if note else ''}
+      </div>"""
+
+
 def rental_block(l, root):
     """Rental-yield / investment case. Data-driven via optional 'rental' field."""
     r = l.get("rental")
@@ -760,6 +780,7 @@ def build_detail(site, l, listings):
     body = f"""
 <section class="props" style="padding:70px 0 110px;border-top:0"><div class="wrap">
   {feature_block(l, root, site, mode='detail')}
+  {sizes_block(l, root)}
   {amenities_block(l, root)}
   {rental_block(l, root)}
   {inspiration_block(l, root)}
