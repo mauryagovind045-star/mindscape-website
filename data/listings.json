@@ -2557,6 +2557,191 @@
           ]
         }
       ]
+    },
+    {
+      "slug": "palmeira-grove",
+      "featured": false,
+      "name": "Palmeira Grove",
+      "ref": "MP-2BATIV-01",
+      "status": "New Launch",
+      "location": "Tivim",
+      "region": "North Goa",
+      "collection": "Garden Residences",
+      "price_display": "Price on Request",
+      "price_value": 12000000,
+      "price_note": "On Application",
+      "beds_display": "2",
+      "beds_value": 2,
+      "area_display": "1,033 – 1,281 sq ft",
+      "area_value": 1033,
+      "badges": [
+        "New Launch",
+        "Spacious 2 BHK Apartments",
+        "Pool, Gym & Clubhouse"
+      ],
+      "short": "A serene gated community of spacious 2 BHK apartments in the green village of Tivim, North Goa — open living-dining layouts flowing to planted balconies, with a swimming pool, gym, clubhouse and pickleball court, 5 minutes from Tivim railway station and ~30 minutes from Mopa airport. RERA PRGO04262700.",
+      "description": [
+        "Palmeira Grove sits in Tivim, one of North Goa's last genuinely village-paced pockets — paddy greens, coconut groves and old Goan houses — yet two kilometres from Tivim railway station and about half an hour from Mopa International Airport. Mapusa's markets are fifteen minutes away, and the Assagao–Vagator–Morjim belt is within an easy twenty-to-twenty-five-minute drive.",
+        "The apartments are thoughtfully planned 2 BHKs in two sizes — RERA carpet areas of 68 and 89 sq mt (roughly 732 and 958 sq ft), with built-up areas of 1,033 to 1,281 sq ft — arranged across Blocks A and B with four homes per floor. Open living and dining spaces connect through large glass doors to planted balconies, pulling in daylight, cross-ventilation and views of the surrounding greenery.",
+        "The community is built around everyday life rather than just a lobby: a swimming pool, gym, clubhouse, pickleball court, walking path, garden reading area and family picnic lawn, backed by practical infrastructure — CCTV security, EV charging points, 100% common-area power backup, sewage treatment plant and organic composter. The project is RERA-registered (PRGO04262700, Survey No 278/1–5, Tivim, Bardez). Floor plans, specifications and pricing are shared on enquiry, along with a site visit at a time that suits you."
+      ],
+      "feature_heading": "Why Palmeira Grove",
+      "specs": [
+        {
+          "v": "2 BHK",
+          "l": "Spacious Apartments"
+        },
+        {
+          "v": "2",
+          "l": "Layout Sizes"
+        },
+        {
+          "v": "Pool",
+          "l": "Gym & Clubhouse"
+        },
+        {
+          "v": "5 min",
+          "l": "To Tivim Station"
+        },
+        {
+          "v": "~30 min",
+          "l": "To Mopa Airport"
+        },
+        {
+          "v": "RERA",
+          "l": "PRGO04262700"
+        }
+      ],
+      "features": [
+        "Serene gated community in Tivim's green belt, North Goa",
+        "Spacious 2 BHK apartments in two layout sizes",
+        "Open living-dining flowing to large planted balconies",
+        "Swimming pool, gym, clubhouse & pickleball court",
+        "Walking path, garden reading area & family picnic lawn",
+        "EV charging points & 100% common-area power backup",
+        "CCTV security, STP & organic composter",
+        "Tivim railway station ~2 km; Mopa airport ~28 km",
+        "RERA-registered: PRGO04262700"
+      ],
+      "sizes": {
+        "label": "The Two Layouts",
+        "headline": "Four homes per floor across Blocks A & B — two 2 BHK sizes to choose from.",
+        "rows": [
+          {
+            "v": "732",
+            "l": "Type 1 · Built-up 1,033 sq ft · Saleable 1,119 sq ft"
+          },
+          {
+            "v": "958",
+            "l": "Type 2 · Built-up 1,281 sq ft · Saleable 1,367 sq ft"
+          }
+        ],
+        "note": "Figures are RERA carpet areas in sq ft, converted from 68 and 89 sq mt as stated in the project plans (built-up 96 and 119 sq mt; saleable 104 and 127 sq mt). Detailed floor plans for each block are shared on enquiry."
+      },
+      "location_label": "Why Tivim",
+      "location_points": [
+        {
+          "place": "Tivim Railway Station",
+          "time": "~5 min"
+        },
+        {
+          "place": "Mapusa Market",
+          "time": "~15 min"
+        },
+        {
+          "place": "Assagao's restaurant belt",
+          "time": "~22 min"
+        },
+        {
+          "place": "Morjim Beach",
+          "time": "~20 min"
+        },
+        {
+          "place": "Mopa International Airport",
+          "time": "~30 min"
+        }
+      ],
+      "location_note": "Tivim is the quiet, green gateway to North Goa — a traditional village setting with its own railway station 2 km away, Mapusa's markets and hospitals within 8 km, the Assagao–Vagator belt around 13–15 km, and Mopa International Airport about 28 km. Distances are indicative and to be verified by the buyer.",
+      "brokerage_note": "Floor plans, specifications, pricing & registration details shared on enquiry.",
+      "hero_image": "pool",
+      "card_image": "exterior",
+      "gallery": [
+        {
+          "img": "pool",
+          "label": "The Pool & Blocks at Sunset",
+          "wide": true
+        },
+        {
+          "img": "exterior",
+          "label": "The Building"
+        },
+        {
+          "img": "balcony",
+          "label": "Planted Balcony Lounge"
+        },
+        {
+          "img": "living",
+          "label": "Living Room"
+        },
+        {
+          "img": "dining",
+          "label": "Dining Space"
+        },
+        {
+          "img": "primary",
+          "label": "Primary Bedroom"
+        },
+        {
+          "img": "bedroom",
+          "label": "Second Bedroom"
+        },
+        {
+          "img": "reading",
+          "label": "Reading Corner"
+        },
+        {
+          "img": "floorplan",
+          "label": "Typical Floor Plan · Blocks A & B",
+          "wide": true
+        },
+        {
+          "img": "location",
+          "label": "Tivim's Riverside Greens"
+        }
+      ],
+      "amenities_note": "Palmeira Grove pairs resort-style amenities with the practical infrastructure that makes daily life in Goa easy — power backup, EV charging and round-the-clock security.",
+      "amenities": [
+        {
+          "group": "Leisure",
+          "items": [
+            "Swimming pool",
+            "Gym",
+            "Clubhouse",
+            "Pickleball court",
+            "Walking path",
+            "Garden reading area",
+            "Family picnic area"
+          ]
+        },
+        {
+          "group": "Everyday Infrastructure",
+          "items": [
+            "EV charging points",
+            "100% power backup for common areas",
+            "Provision for battery / invertor",
+            "Sewage treatment plant",
+            "Organic composter"
+          ]
+        },
+        {
+          "group": "Security & Registration",
+          "items": [
+            "CCTV with security",
+            "Gated residential community",
+            "RERA-registered project (PRGO04262700)"
+          ]
+        }
+      ]
     }
   ]
 }
