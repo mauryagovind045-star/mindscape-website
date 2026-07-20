@@ -130,7 +130,7 @@ def jsonld(obj):
 
 # Bump ASSET_VER whenever site.css / site.js change, so browsers re-fetch
 # them instead of serving a stale cached copy.
-ASSET_VER = "7"
+ASSET_VER = "8"
 GA_ID = ""  # GA4 Measurement ID (G-XXXXXXXXXX); set from site["ga_id"] at build time
 GTM_ID = ""  # Google Tag Manager container ID (GTM-XXXXXXX); set from site["gtm_id"] at build time
 
@@ -458,6 +458,27 @@ def amenities_block(l, root):
       </div>"""
 
 
+def enquiry_cta(l, root, site):
+    """Price & location enquiry CTA — rendered below every property, since
+    pricing and the precise location are shared on request, not published."""
+    wa_text = (f"Hi Mindscape, please share the price and exact location for "
+               f"{l['name']} (Ref {l['ref']}), {l['location']}, {l['region']}.")
+    return f"""
+      <div class="enquiry-cta reveal" id="enquire">
+        <div class="eq-copy">
+          <span class="eyebrow"><span class="diamond"></span>Price &amp; Location</span>
+          <h3>Pricing &amp; the precise location for {e(l['name'])} are shared on request.</h3>
+          <p>Tell us what you're looking for and we'll send current pricing, availability
+          and the exact location — usually the same day, with no obligation.</p>
+        </div>
+        <div class="eq-actions">
+          <a href="#contact" class="btn solid"><span>Request Price &amp; Location</span></a>
+          <a href="{wa_link(site, wa_text)}" target="_blank" rel="noopener" class="btn"><span>WhatsApp Us</span></a>
+          <a href="tel:{e(site['phone_href'])}" class="btn"><span>Call {e(site['phone_display'])}</span></a>
+        </div>
+      </div>"""
+
+
 def sizes_block(l, root):
     """Unit-size variants table. Data-driven via optional 'sizes' field:
     {label, note, rows: [{v, l}]} — reuses the rental/ry-stat styling."""
@@ -496,11 +517,13 @@ def rental_block(l, root):
       </div>"""
 
 
-def property_card(l, root):
+def property_card(l, root, site):
     slug = l["slug"]
     img = img_path(root, slug, l["card_image"])
     specs = "".join(f'<div class="s"><b>{e(s["v"])}</b><small>{e(s["l"])}</small></div>' for s in l["specs"][:3])
     text = f"{l['name']} {l['location']} {l['region']} {l['short']}".lower()
+    wa_text = (f"Hi Mindscape, please share the price and exact location for "
+               f"{l['name']} (Ref {l['ref']}), {l['location']}, {l['region']}.")
     return f"""
       <article class="pcard" data-location="{e(l['location'].lower())}" data-price="{l['price_value']}" data-beds="{l['beds_value']}" data-text="{e(text)}">
         <a href="{root}properties/{slug}/" class="pcard-imgwrap">
@@ -513,7 +536,13 @@ def property_card(l, root):
           <div class="pcard-price">{e(l['price_display'])} <small>{e(l['price_note'])}</small></div>
           <p class="pcard-desc">{e(l['short'])}</p>
           <div class="pcard-specs">{specs}</div>
-          <a href="{root}properties/{slug}/" class="btn-arrow">View details →</a>
+          <div class="pcard-cta">
+            <p class="pcard-cta-line">Price &amp; exact location on request.</p>
+            <div class="pcard-cta-row">
+              <a href="{wa_link(site, wa_text)}" target="_blank" rel="noopener" class="btn solid btn-sm"><span>Enquire Price &amp; Location</span></a>
+              <a href="{root}properties/{slug}/" class="btn-arrow">View details →</a>
+            </div>
+          </div>
         </div>
       </article>"""
 
@@ -719,9 +748,8 @@ def build_listings(site, listings):
     locs = sorted({l["location"] for l in listings})
     loc_opts = '<option value="">All locations</option>' + "".join(
         f'<option value="{e(x.lower())}">{e(x)}</option>' for x in locs)
-    price_opts = "".join(f'<option value="{v}">{e(t)}</option>' for v, t in PRICE_BANDS)
     bed_opts = "".join(f'<option value="{v}">{e(t)}</option>' for v, t in BED_BANDS)
-    cards = "".join(property_card(l, root) for l in listings)
+    cards = "".join(property_card(l, root, site) for l in listings)
 
     header_block = f"""
 <section class="page-header"><div class="glow"></div><div class="wrap">
@@ -739,7 +767,6 @@ def build_listings(site, listings):
       <input type="search" id="f-search" placeholder="Villa name, area…" autocomplete="off" />
     </div>
     <div class="filter-field"><label for="f-location">Location</label><select id="f-location">{loc_opts}</select></div>
-    <div class="filter-field"><label for="f-price">Price</label><select id="f-price">{price_opts}</select></div>
     <div class="filter-field"><label for="f-beds">Bedrooms</label><select id="f-beds">{bed_opts}</select></div>
     <button class="filter-reset" id="f-reset">Reset</button>
   </div>
@@ -752,7 +779,7 @@ def build_listings(site, listings):
 </div></section>"""
 
     title = f"Properties — {site['name']}"
-    desc = "Browse Mindscape Properties' curated collection of premium villas and homes across Goa. Filter by location, price and bedrooms."
+    desc = "Browse Mindscape Properties' curated collection of premium villas and homes across Goa. Filter by location and bedrooms; pricing shared on request."
     og_img = abs_url(site, img_path("", listings[0]["slug"], listings[0]["card_image"]))
     seo = seo_tags(site, "properties/", title, desc, og_img)
     return (head(title, desc, root, page_js="listings.js", extra_head=seo)
@@ -780,6 +807,7 @@ def build_detail(site, l, listings):
     body = f"""
 <section class="props" style="padding:70px 0 110px;border-top:0"><div class="wrap">
   {feature_block(l, root, site, mode='detail')}
+  {enquiry_cta(l, root, site)}
   {sizes_block(l, root)}
   {amenities_block(l, root)}
   {rental_block(l, root)}

@@ -25,9 +25,9 @@
       "location": "Siolim",
       "region": "North Goa",
       "collection": "Signature Collection",
-      "price_display": "₹6.5 Cr",
+      "price_display": "Price on Request",
       "price_value": 65000000,
-      "price_note": "Guide Price · Negotiable",
+      "price_note": "On Application",
       "beds_display": "3 / 4",
       "beds_value": 4,
       "area_display": "2,611",
@@ -147,9 +147,9 @@
       "location": "Anjuna",
       "region": "North Goa",
       "collection": "Signature Collection",
-      "price_display": "₹7.10 Cr",
+      "price_display": "Price on Request",
       "price_value": 71000000,
-      "price_note": "Guide Price · Negotiable",
+      "price_note": "On Application",
       "beds_display": "3",
       "beds_value": 3,
       "area_display": "3,013",
@@ -281,9 +281,9 @@
       "location": "Aldona",
       "region": "North Goa",
       "collection": "Signature Collection",
-      "price_display": "₹5.20 Cr",
+      "price_display": "Price on Request",
       "price_value": 52000000,
-      "price_note": "Guide Price · Negotiable",
+      "price_note": "On Application",
       "beds_display": "4",
       "beds_value": 4,
       "area_display": "3,229",
@@ -407,9 +407,9 @@
       "location": "Morjim",
       "region": "North Goa",
       "collection": "Signature Collection",
-      "price_display": "₹7 Cr",
+      "price_display": "Price on Request",
       "price_value": 70000000,
-      "price_note": "Guide Price · Negotiable",
+      "price_note": "On Application",
       "beds_display": "3",
       "beds_value": 3,
       "area_display": "2,562",
@@ -811,7 +811,7 @@
       "location": "Bambolim",
       "region": "North Goa",
       "collection": "Holiday Homes",
-      "price_display": "From ₹1.04 Cr",
+      "price_display": "Price on Request",
       "price_value": 10400000,
       "price_note": "2 BHK · Possession May 2028",
       "beds_display": "2",
@@ -1321,7 +1321,7 @@
       "location": "Alto Porvorim",
       "region": "North Goa",
       "collection": "Holiday Homes",
-      "price_display": "₹1.33 – 2.04 Cr",
+      "price_display": "Price on Request",
       "price_value": 13285000,
       "price_note": "2 & 3 BHK · Ready to Move In",
       "beds_display": "2 – 3",
@@ -1337,7 +1337,7 @@
       "description": [
         "Elite Square is a gated, ready-to-move-in residential enclave of contemporary 2 and 3 BHK apartments set on the fringes of Porvorim, one of North Goa's most upmarket and best-connected addresses. Laid out across four low-rise blocks around landscaped gardens, a fountain plaza and a resort-style swimming pool, it commands open views of gorgeous natural greenery while keeping the city moments away.",
         "The homes are designed around light and space — a spacious living room set apart from the dining area, well-proportioned bedrooms with ample natural light, and private covered terraces that open to the serenity of nature. Apartments come fitted with a modular kitchen, air-conditioning and fans, with 2 BHK homes from ~117 sq m and 3 BHK homes at ~141 sq m of built-up area.",
-        "A full suite of amenities serves the whole family — a fully-equipped gymnasium, yoga and meditation zone, badminton and half-basketball courts, indoor games, a children's play area, a party hall and clubhouse, and a senior-citizens' zone. The gated complex adds 24-hour security, CCTV, video phones, power back-up, EV charging and an earthquake-resistant structure. With shopping, malls, schools, banks and hospitals right outside the gate, daily life is effortless. Ready to move in today, 2 BHK homes start at ₹1.33 crore and 3 BHK homes from ₹2.04 crore — indicative and exclusive of stamp duty, registration and statutory charges."
+        "A full suite of amenities serves the whole family — a fully-equipped gymnasium, yoga and meditation zone, badminton and half-basketball courts, indoor games, a children's play area, a party hall and clubhouse, and a senior-citizens' zone. The gated complex adds 24-hour security, CCTV, video phones, power back-up, EV charging and an earthquake-resistant structure. With shopping, malls, schools, banks and hospitals right outside the gate, daily life is effortless. The 2 and 3 BHK homes are ready to move in today — current pricing is shared on request, exclusive of stamp duty, registration and statutory charges."
       ],
       "feature_heading": "Why Elite Square",
       "specs": [
@@ -1350,12 +1350,12 @@
           "l": "Sq Ft SBUA"
         },
         {
-          "v": "₹1.33 Cr+",
-          "l": "2 BHK From"
+          "v": "2 BHK",
+          "l": "1,265 Sq Ft SBUA"
         },
         {
-          "v": "₹2.04 Cr+",
-          "l": "3 BHK From"
+          "v": "3 BHK",
+          "l": "1,518 Sq Ft SBUA"
         },
         {
           "v": "Ready",
@@ -1367,7 +1367,7 @@
         }
       ],
       "features": [
-        "Ready to move in — 2 BHK from ₹1.33 Cr, 3 BHK from ₹2.04 Cr",
+        "Ready to move in — 2 & 3 BHK homes, immediate possession",
         "Contemporary 2 & 3 BHK apartments in upmarket Porvorim",
         "Gated enclave of four low-rise blocks around landscaped gardens",
         "Resort-style swimming pool & fountain plaza",

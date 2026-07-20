@@ -189,6 +189,16 @@ section{position:relative}
 .ry-stat b{font-family:var(--serif);font-size:33px;font-weight:400;color:var(--gold);line-height:1}
 .ry-stat small{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--dim)}
 .ry-note{color:var(--muted);font-size:12.5px;line-height:1.66;max-width:880px}
+.btn.btn-sm{padding:12px 20px;font-size:10.5px;letter-spacing:.14em;gap:8px}
+.enquiry-cta{margin-top:40px;padding:44px 46px;border:1px solid var(--gold);background:linear-gradient(158deg,var(--dark-2),var(--black));display:flex;align-items:center;justify-content:space-between;gap:38px;flex-wrap:wrap}
+.enquiry-cta .eyebrow{display:flex;align-items:center;gap:9px;color:var(--gold);font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+.enquiry-cta h3{font-family:var(--serif);font-weight:400;font-size:26px;color:var(--ivory);line-height:1.26;margin:12px 0 10px;max-width:620px}
+.enquiry-cta p{color:var(--muted);font-size:13.5px;line-height:1.6;max-width:560px}
+.eq-actions{display:flex;flex-direction:column;gap:12px;flex-shrink:0}
+.eq-actions .btn{justify-content:center;min-width:230px}
+.pcard-cta{margin-top:auto;padding-top:18px;border-top:1px solid var(--edge-soft)}
+.pcard-cta-line{color:var(--gold);font-size:11px;letter-spacing:.13em;text-transform:uppercase;margin-bottom:13px}
+.pcard-cta-row{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
 .inspo{margin-top:56px;padding-top:46px;border-top:1px solid var(--edge-soft)}
 .inspo-head{max-width:660px;margin-bottom:32px}
 .inspo-note{color:var(--dim);font-size:13.5px;line-height:1.65;margin-top:6px}
@@ -474,6 +484,10 @@ footer{background:var(--black);border-top:1px solid var(--edge-soft);padding:80p
   .am-grid{grid-template-columns:1fr 1fr}
   .ry-stats{grid-template-columns:1fr 1fr}
   .rental{padding:36px 22px}
+  .enquiry-cta{padding:32px 22px;gap:24px}
+  .enquiry-cta h3{font-size:22px}
+  .eq-actions{width:100%}
+  .eq-actions .btn{min-width:0;width:100%}
   .form-shell{padding:32px 24px}
   .field.row2{grid-template-columns:1fr;gap:0}
   .hero{padding-bottom:56px}
