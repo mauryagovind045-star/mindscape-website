@@ -11,6 +11,7 @@
   const cards = Array.from(grid.querySelectorAll(".pcard"));
   const fLoc = document.getElementById("f-location");
   const fPrice = document.getElementById("f-price");
+  const fTerm = document.getElementById("f-term");   // rentals page: monthly / nightly
   const fBeds = document.getElementById("f-beds");
   const fSearch = document.getElementById("f-search");
   const reset = document.getElementById("f-reset");
@@ -20,6 +21,7 @@
   function apply() {
     const loc = (fLoc && fLoc.value) || "";
     const price = (fPrice && fPrice.value) || "";      // "min-max", max may be empty
+    const term = (fTerm && fTerm.value) || "";
     const beds = parseInt((fBeds && fBeds.value) || "0", 10) || 0;
     const q = ((fSearch && fSearch.value) || "").trim().toLowerCase();
 
@@ -40,6 +42,7 @@
       const ok =
         (!loc || cLoc === loc) &&
         (cPrice >= min && cPrice <= max) &&
+        (!term || (card.dataset.term || "") === term) &&
         (!beds || cBeds >= beds) &&
         (!q || cText.indexOf(q) !== -1);
 
@@ -51,11 +54,12 @@
     if (noResults) noResults.classList.toggle("show", shown === 0);
   }
 
-  [fLoc, fPrice, fBeds].forEach((el) => el && el.addEventListener("change", apply));
+  [fLoc, fPrice, fTerm, fBeds].forEach((el) => el && el.addEventListener("change", apply));
   if (fSearch) fSearch.addEventListener("input", apply);
   if (reset) reset.addEventListener("click", () => {
     if (fLoc) fLoc.value = "";
     if (fPrice) fPrice.value = "";
+    if (fTerm) fTerm.value = "";
     if (fBeds) fBeds.value = "";
     if (fSearch) fSearch.value = "";
     apply();

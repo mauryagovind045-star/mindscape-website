@@ -47,6 +47,31 @@ end to end.
 5. **Preview** (see `workflows/build_site.md`) and confirm the new card appears,
    filters work, and the detail page looks right.
 
+## Rental listings
+
+The site also has a **Rentals** section (`/rentals/`), generated the same way from
+the `rentals` array in `data/listings.json`. To add a rental home:
+
+1. Same as a sale listing: pick a slug, put photos in `assets/properties/<slug>/`
+   (slugs must be unique across `listings` **and** `rentals` — the build fails on
+   duplicates).
+2. Add the listing object to the `rentals` array instead of `listings`.
+   Same fields as a sale listing, plus / adjusted:
+   - `status` — `"For Rent"`
+   - `term` — `"Monthly"` (long stays) or `"Nightly"` (holiday lets); drives the
+     Stay filter on the rentals grid
+   - `price_display` / `price_note` — e.g. `"₹1.6 L"` + `"per month"`, or
+     `"Price on Request"` + `"per night"`
+   - `price_value` — the rent as a number (used only for future filtering)
+   - `brokerage_display` (optional) — overrides the site-wide sale brokerage line,
+     e.g. `"One month's rent + GST"`
+   - `rental` (investment-case block) is ignored on rental pages — omit it.
+3. Rebuild with `python3 tools/build_site.py` — it writes `rentals/index.html`
+   and `rentals/<slug>/index.html`, and adds both to the sitemap.
+
+With zero rentals the grid page still builds, showing an enquiry-led
+"being curated" state — so the nav link is always safe.
+
 ## Notes & gotchas
 - The generator is deterministic — safe to re-run any time. It only writes HTML;
   it never touches your photos or data.

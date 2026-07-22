@@ -15,6 +15,132 @@
     "linkedin": "#",
     "gtm_id": "GTM-M8RT9NFK"
   },
+  "rentals": [
+      {
+          "slug": "assagao-pool-villa",
+          "name": "Assagao Pool Villa",
+          "ref": "MP-R-3BASG-01",
+          "status": "For Rent",
+          "term": "Monthly",
+          "location": "Assagao",
+          "region": "North Goa",
+          "collection": "Rental Collection",
+          "price_display": "Price on Request",
+          "price_value": 250000,
+          "price_note": "per month",
+          "beds_display": "3",
+          "beds_value": 3,
+          "area_display": "—",
+          "area_value": 0,
+          "badges": [
+              "For Rent",
+              "Private Pool",
+              "Gated Community"
+          ],
+          "short": "A fully furnished three-bedroom pool villa with a private garden and staff quarters, inside a gated community in Assagao — North Goa's most sought-after village address.",
+          "description": [
+              "A two-storey villa in a secure gated community in the heart of Assagao, wrapped around its own swimming pool, timber deck and landscaped lawn. Spacious halls on both the ground and first floor — the upper one opening to a balcony — give the home rare breathing room, with a separate dining area and kitchen.",
+              "Three furnished bedrooms, a dedicated servant's quarter, and interiors that are genuinely move-in ready: walk in with your suitcases, and the house does the rest. Minutes from Assagao's cafés and restaurants, and a short drive to Anjuna and Vagator."
+          ],
+          "specs": [
+              {
+                  "v": "3",
+                  "l": "Bedrooms"
+              },
+              {
+                  "v": "2",
+                  "l": "Halls · GF & FF"
+              },
+              {
+                  "v": "Private",
+                  "l": "Pool & Deck"
+              },
+              {
+                  "v": "Lawn",
+                  "l": "Private Garden"
+              },
+              {
+                  "v": "Staff",
+                  "l": "Servant Quarter"
+              },
+              {
+                  "v": "Fully",
+                  "l": "Furnished"
+              }
+          ],
+          "feature_heading": "Why this home",
+          "features": [
+              "Fully furnished, move-in ready",
+              "Private swimming pool with deck",
+              "Landscaped garden & private lawn",
+              "Spacious halls on both floors",
+              "First-floor hall opens to a balcony",
+              "Separate dining area & kitchen",
+              "Servant's quarter for live-in staff",
+              "Secure gated community in Assagao"
+          ],
+          "location_label": "Why Assagao",
+          "location_points": [
+              {
+                  "place": "Assagao cafés & restaurants",
+                  "time": "Walkable"
+              },
+              {
+                  "place": "Anjuna Beach",
+                  "time": "~10 min"
+              },
+              {
+                  "place": "Vagator Beach",
+                  "time": "~12 min"
+              },
+              {
+                  "place": "Chapora & Siolim",
+                  "time": "~15 min"
+              },
+              {
+                  "place": "Mopa Intl. Airport",
+                  "time": "~35 min"
+              }
+          ],
+          "location_note": "Drive times are indicative and to be verified by the tenant.",
+          "brokerage_display": "On Request",
+          "brokerage_note": "Maintenance charges extra · terms on request",
+          "hero_image": "pool",
+          "card_image": "exterior",
+          "gallery": [
+              {
+                  "img": "living",
+                  "label": "Living, dining & open kitchen",
+                  "wide": true
+              },
+              {
+                  "img": "primary",
+                  "label": "First-floor suite & lounge"
+              },
+              {
+                  "img": "bedroom",
+                  "label": "Bedroom with Goan art"
+              },
+              {
+                  "img": "bedroom2",
+                  "label": "Garden-view bedroom"
+              },
+              {
+                  "img": "bedroom3",
+                  "label": "Guest bedroom"
+              },
+              {
+                  "img": "bedroom4",
+                  "label": "Bedroom with ensuite"
+              },
+              {
+                  "img": "den",
+                  "label": "TV den",
+                  "wide": true
+              }
+          ]
+      }
+  ],
   "listings": [
     {
       "slug": "casa-solis",

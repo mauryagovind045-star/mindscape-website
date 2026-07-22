@@ -4,8 +4,10 @@ build_site.py — Mindscape Properties static-site generator.
 
 Reads data/listings.json (the single source of truth) and writes:
   index.html                          the home page (featured listing)
-  properties/index.html               the listings grid (filters + search)
+  properties/index.html               the sale listings grid (filters + search)
   properties/<slug>/index.html        one real page per property (clean URL)
+  rentals/index.html                  the rentals grid (monthly & nightly)
+  rentals/<slug>/index.html           one real page per rental home
 
 Shared CSS/JS live in assets/css/site.css and assets/js/*.js — this script
 only writes HTML, so re-running it is safe and deterministic.
@@ -39,6 +41,7 @@ PRICE_BANDS = [
     ("100000000-", "₹10 Cr +"),
 ]
 BED_BANDS = [("", "Any"), ("2", "2+"), ("3", "3+"), ("4", "4+"), ("5", "5+")]
+TERM_BANDS = [("", "Any term"), ("monthly", "Monthly / long stay"), ("nightly", "Nightly / holiday")]
 
 
 def e(s):
@@ -91,6 +94,7 @@ def links(root, on_home):
     return {
         "home": home,
         "properties": f"{root}properties/",
+        "rentals": f"{root}rentals/",
         "journal": f"{root}journal/",
         "about": "#about" if on_home else f"{root}#about",
         "approach": "#approach" if on_home else f"{root}#approach",
@@ -130,7 +134,7 @@ def jsonld(obj):
 
 # Bump ASSET_VER whenever site.css / site.js change, so browsers re-fetch
 # them instead of serving a stale cached copy.
-ASSET_VER = "8"
+ASSET_VER = "9"
 GA_ID = ""  # GA4 Measurement ID (G-XXXXXXXXXX); set from site["ga_id"] at build time
 GTM_ID = ""  # Google Tag Manager container ID (GTM-XXXXXXX); set from site["gtm_id"] at build time
 
@@ -214,6 +218,7 @@ def nav(site, lk, root, active, solid=False):
     </a>
     <nav class="nav-links" id="navLinks">
       <a href="{lk['properties']}"{cls('properties')}>Properties</a>
+      <a href="{lk['rentals']}"{cls('rentals')}>Rentals</a>
       <a href="{lk['journal']}"{cls('journal')}>Journal</a>
       <a href="{lk['about']}"{cls('about')}>About</a>
       <a href="{lk['approach']}"{cls('approach')}>Our Approach</a>
@@ -225,13 +230,31 @@ def nav(site, lk, root, active, solid=False):
 </header>"""
 
 
-def contact_section(site, property_name=""):
+def contact_section(site, property_name="", rental=False):
     data_attr = f' data-property="{e(property_name)}"' if property_name else ""
-    intro = ("Ask us anything about this property — a private viewing, floor plans, "
-             "or the title documents." if property_name else
-             "Tell us what you're looking for. We'll bring you the few properties "
-             "genuinely worth your time — no noise, no pressure.")
-    heading = "Enquire about this home." if property_name else "Find your place<br>on this coast."
+    if rental:
+        intro = ("Ask us anything about this home — availability, monthly terms, "
+                 "or a short-stay booking." if property_name else
+                 "Tell us where you'd like to stay, for how long, and your budget — "
+                 "we'll shortlist the rentals genuinely worth your time.")
+        heading = "Enquire about this rental." if property_name else "Rent your place<br>on this coast."
+    else:
+        intro = ("Ask us anything about this property — a private viewing, floor plans, "
+                 "or the title documents." if property_name else
+                 "Tell us what you're looking for. We'll bring you the few properties "
+                 "genuinely worth your time — no noise, no pressure.")
+        heading = "Enquire about this home." if property_name else "Find your place<br>on this coast."
+    if rental:
+        intent_opts = ('<option>Buying a property</option><option>Selling a property</option>'
+                       '<option selected>Renting / leasing</option><option>Just exploring</option>')
+        budget_opts = ('<option>Under ₹50k / month</option><option>₹50k – 1 L / month</option>'
+                       '<option>₹1 – 2 L / month</option><option>₹2 L + / month</option>'
+                       '<option>Short stay / holiday</option><option>Not sure yet</option>')
+    else:
+        intent_opts = ('<option>Buying a property</option><option>Selling a property</option>'
+                       '<option>Renting / leasing</option><option>Just exploring</option>')
+        budget_opts = ('<option>Under ₹2 Cr</option><option>₹2 – 5 Cr</option><option>₹5 – 10 Cr</option>'
+                       '<option>₹10 Cr +</option><option>Not sure yet</option>')
     return f"""
 <section class="contact" id="contact">
   <div class="contact-glow"></div>
@@ -271,15 +294,9 @@ def contact_section(site, property_name=""):
             <input type="email" id="email" name="email" placeholder="you@email.com" required /></div>
           <div class="field row2">
             <div><label for="intent">I'm interested in</label>
-              <select id="intent" name="intent">
-                <option>Buying a property</option><option>Selling a property</option>
-                <option>Renting / leasing</option><option>Just exploring</option>
-              </select></div>
+              <select id="intent" name="intent">{intent_opts}</select></div>
             <div><label for="budget">Budget</label>
-              <select id="budget" name="budget">
-                <option>Under ₹2 Cr</option><option>₹2 – 5 Cr</option><option>₹5 – 10 Cr</option>
-                <option>₹10 Cr +</option><option>Not sure yet</option>
-              </select></div>
+              <select id="budget" name="budget">{budget_opts}</select></div>
           </div>
           <div class="field"><label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Tell us about the home you're looking for — location, style, timeline…"></textarea></div>
@@ -305,6 +322,7 @@ def footer(site, lk, root):
       </div>
       <div class="foot-col"><h4>Explore</h4>
         <a href="{lk['properties']}">Properties</a>
+        <a href="{lk['rentals']}">Rentals</a>
         <a href="{lk['journal']}">Journal</a>
         <a href="{lk['about']}">About Us</a>
         <a href="{lk['approach']}">Our Approach</a>
@@ -345,7 +363,7 @@ LIGHTBOX = """
 # --------------------------------------------------------------------------- #
 #  Property blocks                                                            #
 # --------------------------------------------------------------------------- #
-def feature_block(l, root, site, mode, detail_href=""):
+def feature_block(l, root, site, mode, detail_href="", rental=False):
     slug = l["slug"]
     badges = "".join(f'<span class="fbadge">{e(b)}</span>' for b in l["badges"])
     specs = "".join(f'<div class="spec"><b>{e(s["v"])}</b><small>{e(s["l"])}</small></div>' for s in l["specs"])
@@ -365,8 +383,13 @@ def feature_block(l, root, site, mode, detail_href=""):
         cta = (f'<a href="{detail_href}" class="btn solid"><span>View Full Details</span></a>'
                f'<a href="#contact" class="btn"><span>Arrange a Viewing</span></a>')
     else:
-        wa_text = (f"Hi Mindscape, I'm interested in {l['name']} (Ref {l['ref']}), "
-                   f"{l['location']}, {l['region']}. Please share more details.")
+        if rental:
+            wa_text = (f"Hi Mindscape, I'd like to enquire about renting {l['name']} "
+                       f"(Ref {l['ref']}), {l['location']}, {l['region']}. "
+                       f"Please share the rent and availability.")
+        else:
+            wa_text = (f"Hi Mindscape, I'm interested in {l['name']} (Ref {l['ref']}), "
+                       f"{l['location']}, {l['region']}. Please share more details.")
         cta = (f'<a href="#contact" class="btn solid"><span>Arrange a Viewing</span></a>'
                f'<a href="{wa_link(site, wa_text)}" target="_blank" rel="noopener" class="btn"><span>WhatsApp Us</span></a>'
                f'<a href="tel:{e(site["phone_href"])}" class="btn"><span>Call {e(site["phone_display"])}</span></a>')
@@ -408,7 +431,7 @@ def feature_block(l, root, site, mode, detail_href=""):
         </div>
         <div class="feature-cta">
           {cta}
-          <div class="brokerage">Brokerage {e(site['brokerage'])}<br>{e(l['brokerage_note'])}</div>
+          <div class="brokerage">Brokerage {e(l.get('brokerage_display', site['brokerage']))}<br>{e(l['brokerage_note'])}</div>
         </div>
       </div>
     </article>"""
@@ -458,21 +481,34 @@ def amenities_block(l, root):
       </div>"""
 
 
-def enquiry_cta(l, root, site):
+def enquiry_cta(l, root, site, rental=False):
     """Price & location enquiry CTA — rendered below every property, since
     pricing and the precise location are shared on request, not published."""
-    wa_text = (f"Hi Mindscape, please share the price and exact location for "
-               f"{l['name']} (Ref {l['ref']}), {l['location']}, {l['region']}.")
+    if rental:
+        wa_text = (f"Hi Mindscape, please share the rent, availability and exact location for "
+                   f"{l['name']} (Ref {l['ref']}), {l['location']}, {l['region']}.")
+        eyebrow = "Rent &amp; Availability"
+        heading = f"Rent, availability &amp; the precise location for {e(l['name'])} are shared on request."
+        para = ("Tell us your dates or move-in month and we'll send the current rent, "
+                "availability and the exact location — usually the same day, with no obligation.")
+        btn = "Request Rent &amp; Availability"
+    else:
+        wa_text = (f"Hi Mindscape, please share the price and exact location for "
+                   f"{l['name']} (Ref {l['ref']}), {l['location']}, {l['region']}.")
+        eyebrow = "Price &amp; Location"
+        heading = f"Pricing &amp; the precise location for {e(l['name'])} are shared on request."
+        para = ("Tell us what you're looking for and we'll send current pricing, availability "
+                "and the exact location — usually the same day, with no obligation.")
+        btn = "Request Price &amp; Location"
     return f"""
       <div class="enquiry-cta reveal" id="enquire">
         <div class="eq-copy">
-          <span class="eyebrow"><span class="diamond"></span>Price &amp; Location</span>
-          <h3>Pricing &amp; the precise location for {e(l['name'])} are shared on request.</h3>
-          <p>Tell us what you're looking for and we'll send current pricing, availability
-          and the exact location — usually the same day, with no obligation.</p>
+          <span class="eyebrow"><span class="diamond"></span>{eyebrow}</span>
+          <h3>{heading}</h3>
+          <p>{para}</p>
         </div>
         <div class="eq-actions">
-          <a href="#contact" class="btn solid"><span>Request Price &amp; Location</span></a>
+          <a href="#contact" class="btn solid"><span>{btn}</span></a>
           <a href="{wa_link(site, wa_text)}" target="_blank" rel="noopener" class="btn"><span>WhatsApp Us</span></a>
           <a href="tel:{e(site['phone_href'])}" class="btn"><span>Call {e(site['phone_display'])}</span></a>
         </div>
@@ -517,16 +553,27 @@ def rental_block(l, root):
       </div>"""
 
 
-def property_card(l, root, site):
+def property_card(l, root, site, rental=False):
     slug = l["slug"]
     img = img_path(root, slug, l["card_image"])
     specs = "".join(f'<div class="s"><b>{e(s["v"])}</b><small>{e(s["l"])}</small></div>' for s in l["specs"][:3])
     text = f"{l['name']} {l['location']} {l['region']} {l['short']}".lower()
-    wa_text = (f"Hi Mindscape, please share the price and exact location for "
-               f"{l['name']} (Ref {l['ref']}), {l['location']}, {l['region']}.")
+    section = "rentals" if rental else "properties"
+    if rental:
+        wa_text = (f"Hi Mindscape, please share the rent, availability and exact location for "
+                   f"{l['name']} (Ref {l['ref']}), {l['location']}, {l['region']}.")
+        cta_line = "Rent, availability &amp; exact location on request."
+        cta_btn = "Enquire Rent &amp; Availability"
+        term_attr = f' data-term="{e(l.get("term", "").lower())}"'
+    else:
+        wa_text = (f"Hi Mindscape, please share the price and exact location for "
+                   f"{l['name']} (Ref {l['ref']}), {l['location']}, {l['region']}.")
+        cta_line = "Price &amp; exact location on request."
+        cta_btn = "Enquire Price &amp; Location"
+        term_attr = ""
     return f"""
-      <article class="pcard" data-location="{e(l['location'].lower())}" data-price="{l['price_value']}" data-beds="{l['beds_value']}" data-text="{e(text)}">
-        <a href="{root}properties/{slug}/" class="pcard-imgwrap">
+      <article class="pcard" data-location="{e(l['location'].lower())}" data-price="{l['price_value']}" data-beds="{l['beds_value']}"{term_attr} data-text="{e(text)}">
+        <a href="{root}{section}/{slug}/" class="pcard-imgwrap">
           <div class="pcard-img" style="background-image:url('{img}')"></div>
           <span class="pcard-tag">{e(l['status'])}</span>
           <span class="pcard-loc"><span class="diamond" style="width:5px;height:5px"></span>{e(l['location'])}</span>
@@ -537,10 +584,10 @@ def property_card(l, root, site):
           <p class="pcard-desc">{e(l['short'])}</p>
           <div class="pcard-specs">{specs}</div>
           <div class="pcard-cta">
-            <p class="pcard-cta-line">Price &amp; exact location on request.</p>
+            <p class="pcard-cta-line">{cta_line}</p>
             <div class="pcard-cta-row">
-              <a href="{wa_link(site, wa_text)}" target="_blank" rel="noopener" class="btn solid btn-sm"><span>Enquire Price &amp; Location</span></a>
-              <a href="{root}properties/{slug}/" class="btn-arrow">View details →</a>
+              <a href="{wa_link(site, wa_text)}" target="_blank" rel="noopener" class="btn solid btn-sm"><span>{cta_btn}</span></a>
+              <a href="{root}{section}/{slug}/" class="btn-arrow">View details →</a>
             </div>
           </div>
         </div>
@@ -789,6 +836,122 @@ def build_listings(site, listings):
             + "\n</body>\n</html>\n")
 
 
+WA_RENTAL = "Hi Mindscape, I'm looking for a rental home in Goa. Can you help?"
+
+
+def build_rentals_index(site, rentals):
+    root = "../"
+    lk = links(root, on_home=False)
+
+    header_block = f"""
+<section class="page-header"><div class="glow"></div><div class="wrap">
+  <div class="breadcrumb reveal in"><a href="{lk['home']}">Home</a><span class="sep">/</span><span>Rentals</span></div>
+  <span class="eyebrow reveal in">Rental Collection</span>
+  <h1 class="reveal in d1">Homes to <em>rent.</em></h1>
+  <p class="reveal in d2">Long stays by the month or holiday villas by the night — every rental is personally inspected, so what you see is what you move into.</p>
+</div></section>"""
+
+    if rentals:
+        locs = sorted({l["location"] for l in rentals})
+        loc_opts = '<option value="">All locations</option>' + "".join(
+            f'<option value="{e(x.lower())}">{e(x)}</option>' for x in locs)
+        bed_opts = "".join(f'<option value="{v}">{e(t)}</option>' for v, t in BED_BANDS)
+        term_opts = "".join(f'<option value="{v}">{e(t)}</option>' for v, t in TERM_BANDS)
+        cards = "".join(property_card(l, root, site, rental=True) for l in rentals)
+        body = f"""
+<section class="listings"><div class="wrap">
+  <div class="filters">
+    <div class="filter-field grow">
+      <label for="f-search">Search</label>
+      <input type="search" id="f-search" placeholder="Villa name, area…" autocomplete="off" />
+    </div>
+    <div class="filter-field"><label for="f-location">Location</label><select id="f-location">{loc_opts}</select></div>
+    <div class="filter-field"><label for="f-term">Stay</label><select id="f-term">{term_opts}</select></div>
+    <div class="filter-field"><label for="f-beds">Bedrooms</label><select id="f-beds">{bed_opts}</select></div>
+    <button class="filter-reset" id="f-reset">Reset</button>
+  </div>
+  <div class="results-count" id="resultsCount"></div>
+  <div class="listings-grid" id="listingsGrid">{cards}</div>
+  <div class="no-results" id="noResults">
+    <h3>No matches — yet.</h3>
+    <p>Try widening your filters, or tell us what you're after and we'll source it for you.</p>
+  </div>
+</div></section>"""
+    else:
+        body = f"""
+<section class="listings"><div class="wrap">
+  <div class="no-results show">
+    <h3>The first rental homes are being curated.</h3>
+    <p>Tell us where you'd like to stay, for how long, and your budget — we'll shortlist
+    the right homes for you personally, usually the same day.</p>
+    <a href="#contact" class="btn solid" style="margin-top:22px"><span>Tell Us What You Need</span></a>
+  </div>
+</div></section>"""
+
+    title = f"Rentals — Homes to Rent in Goa · {site['name']}"
+    desc = ("Rent a home in Goa with Mindscape Properties — long-term monthly rentals and "
+            "holiday villas, personally inspected. Filter by location, stay type and bedrooms.")
+    og_stub = rentals[0] if rentals else None
+    og_img = (abs_url(site, img_path("", og_stub["slug"], og_stub["card_image"]))
+              if og_stub else abs_url(site, "assets/mindscape-logo-dark-600x200.png"))
+    seo = seo_tags(site, "rentals/", title, desc, og_img)
+    return (head(title, desc, root, page_js="listings.js", extra_head=seo)
+            + nav(site, lk, root, active="rentals", solid=True)
+            + header_block + body + contact_section(site, rental=True) + footer(site, lk, root)
+            + whatsapp_fab(site, WA_RENTAL)
+            + "\n</body>\n</html>\n")
+
+
+def build_rental_detail(site, l):
+    root = "../../"
+    lk = links(root, on_home=False)
+
+    term = l.get("term", "")
+    term_line = f" · {term}" if term else ""
+    breadcrumb = f"""
+<section class="page-header" style="padding-bottom:34px"><div class="glow"></div><div class="wrap">
+  <div class="breadcrumb reveal in">
+    <a href="{lk['home']}">Home</a><span class="sep">/</span>
+    <a href="{lk['rentals']}">Rentals</a><span class="sep">/</span><span>{e(l['name'])}</span>
+  </div>
+  <span class="eyebrow reveal in">{e(l['status'])}{e(term_line)} · {e(l['location'])}, {e(l['region'])}</span>
+  <h1 class="reveal in d1">{e(l['name'])}</h1>
+  <p class="reveal in d2">{e(l['short'])}</p>
+</div></section>"""
+
+    body = f"""
+<section class="props" style="padding:70px 0 110px;border-top:0"><div class="wrap">
+  {feature_block(l, root, site, mode='detail', rental=True)}
+  {enquiry_cta(l, root, site, rental=True)}
+  {sizes_block(l, root)}
+  {amenities_block(l, root)}
+  {inspiration_block(l, root)}
+  <div class="props-foot reveal"><a href="{lk['rentals']}" class="btn"><span>Back to All Rentals</span></a></div>
+</div></section>"""
+
+    title = f"{l['name']} for Rent — {l['location']}, Goa · {site['name']}"
+    desc = l["short"]
+    wa_text = (f"Hi Mindscape, I'd like to enquire about renting {l['name']} "
+               f"(Ref {l['ref']}), {l['location']}, {l['region']}. "
+               f"Please share the rent and availability.")
+    canon = f"rentals/{l['slug']}/"
+    og_img = abs_url(site, img_path("", l["slug"], l["hero_image"]))
+    prod_ld = jsonld({
+        "@context": "https://schema.org", "@type": "Accommodation",
+        "name": l["name"], "url": abs_url(site, canon), "image": og_img,
+        "description": l["short"],
+        "address": {"@type": "PostalAddress", "addressLocality": l["location"],
+                    "addressRegion": l["region"], "addressCountry": "IN"},
+    })
+    seo = seo_tags(site, canon, title, desc, og_img, og_type="article") + "\n" + prod_ld
+    return (head(title, desc, root, extra_head=seo)
+            + nav(site, lk, root, active="rentals", solid=True)
+            + breadcrumb + body + LIGHTBOX
+            + contact_section(site, property_name=l["name"], rental=True) + footer(site, lk, root)
+            + whatsapp_fab(site, wa_text)
+            + "\n</body>\n</html>\n")
+
+
 def build_detail(site, l, listings):
     root = "../../"
     lk = links(root, on_home=False)
@@ -1004,9 +1167,10 @@ def build_post(site, post, posts):
             + "\n</body>\n</html>\n")
 
 
-def build_sitemap(site, listings, posts):
-    urls = ["", "properties/", "journal/"]
+def build_sitemap(site, listings, posts, rentals):
+    urls = ["", "properties/", "rentals/", "journal/"]
     urls += [f"properties/{l['slug']}/" for l in listings]
+    urls += [f"rentals/{r['slug']}/" for r in rentals]
     urls += [f"journal/{p['slug']}/" for p in posts]
     body = "".join(f"  <url><loc>{e(abs_url(site, u))}</loc></url>\n" for u in urls)
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -1032,23 +1196,36 @@ def main():
     with open(DATA_FILE, encoding="utf-8") as f:
         data = json.load(f)
     site, listings = data["site"], data["listings"]
+    rentals = data.get("rentals", [])
     global GA_ID, GTM_ID
     GA_ID = site.get("ga_id", "")
     GTM_ID = site.get("gtm_id", "")
     if not listings:
         sys.exit("No listings found in data/listings.json")
+    # Sale + rental photos share assets/properties/<slug>/, so slugs must be
+    # unique across both arrays.
+    slugs = [l["slug"] for l in listings] + [r["slug"] for r in rentals]
+    dupes = {s for s in slugs if slugs.count(s) > 1}
+    if dupes:
+        sys.exit(f"Duplicate slug(s) across listings + rentals: {', '.join(sorted(dupes))}")
 
     posts = []
     if os.path.exists(BLOG_FILE):
         with open(BLOG_FILE, encoding="utf-8") as f:
             posts = json.load(f).get("posts", [])
 
-    print(f"Building {site['name']} — {len(listings)} listing(s), {len(posts)} post(s):")
+    print(f"Building {site['name']} — {len(listings)} listing(s), "
+          f"{len(rentals)} rental(s), {len(posts)} post(s):")
     write(os.path.join(ROOT_DIR, "index.html"), build_home(site, listings))
     write(os.path.join(ROOT_DIR, "properties", "index.html"), build_listings(site, listings))
     for l in listings:
         write(os.path.join(ROOT_DIR, "properties", l["slug"], "index.html"),
               build_detail(site, l, listings))
+
+    write(os.path.join(ROOT_DIR, "rentals", "index.html"), build_rentals_index(site, rentals))
+    for r in rentals:
+        write(os.path.join(ROOT_DIR, "rentals", r["slug"], "index.html"),
+              build_rental_detail(site, r))
 
     if posts:
         write(os.path.join(ROOT_DIR, "journal", "index.html"), build_blog_index(site, posts))
@@ -1056,7 +1233,7 @@ def main():
             write(os.path.join(ROOT_DIR, "journal", p["slug"], "index.html"),
                   build_post(site, p, posts))
 
-    write(os.path.join(ROOT_DIR, "sitemap.xml"), build_sitemap(site, listings, posts))
+    write(os.path.join(ROOT_DIR, "sitemap.xml"), build_sitemap(site, listings, posts, rentals))
     write(os.path.join(ROOT_DIR, "robots.txt"), build_robots(site))
     print("Done.")
 
