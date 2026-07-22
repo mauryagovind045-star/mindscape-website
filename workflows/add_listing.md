@@ -60,8 +60,9 @@ the `rentals` array in `data/listings.json`. To add a rental home:
    - `status` — `"For Rent"`
    - `term` — `"Monthly"` (long stays) or `"Nightly"` (holiday lets); drives the
      Stay filter on the rentals grid
-   - `price_display` / `price_note` — e.g. `"₹1.6 L"` + `"per month"`, or
-     `"Price on Request"` + `"per night"`
+   - `price_display` / `price_note` — **rents are always shown** (unlike sale
+     listings, which stay "Price on Request"): e.g. `"₹2.5 L"` +
+     `"per month + maintenance"`, or `"₹25,000"` + `"per night"`
    - `price_value` — the rent as a number (used only for future filtering)
    - `brokerage_display` (optional) — overrides the site-wide sale brokerage line,
      e.g. `"One month's rent + GST"`

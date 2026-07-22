@@ -386,7 +386,7 @@ def feature_block(l, root, site, mode, detail_href="", rental=False):
         if rental:
             wa_text = (f"Hi Mindscape, I'd like to enquire about renting {l['name']} "
                        f"(Ref {l['ref']}), {l['location']}, {l['region']}. "
-                       f"Please share the rent and availability.")
+                       f"Please share the availability.")
         else:
             wa_text = (f"Hi Mindscape, I'm interested in {l['name']} (Ref {l['ref']}), "
                        f"{l['location']}, {l['region']}. Please share more details.")
@@ -485,13 +485,13 @@ def enquiry_cta(l, root, site, rental=False):
     """Price & location enquiry CTA — rendered below every property, since
     pricing and the precise location are shared on request, not published."""
     if rental:
-        wa_text = (f"Hi Mindscape, please share the rent, availability and exact location for "
+        wa_text = (f"Hi Mindscape, please share the availability and exact location for "
                    f"{l['name']} (Ref {l['ref']}), {l['location']}, {l['region']}.")
-        eyebrow = "Rent &amp; Availability"
-        heading = f"Rent, availability &amp; the precise location for {e(l['name'])} are shared on request."
-        para = ("Tell us your dates or move-in month and we'll send the current rent, "
-                "availability and the exact location — usually the same day, with no obligation.")
-        btn = "Request Rent &amp; Availability"
+        eyebrow = "Availability &amp; Location"
+        heading = f"Availability &amp; the precise location for {e(l['name'])} are shared on request."
+        para = ("Tell us your dates or move-in month and we'll confirm availability "
+                "and the exact location — usually the same day, with no obligation.")
+        btn = "Check Availability"
     else:
         wa_text = (f"Hi Mindscape, please share the price and exact location for "
                    f"{l['name']} (Ref {l['ref']}), {l['location']}, {l['region']}.")
@@ -560,10 +560,10 @@ def property_card(l, root, site, rental=False):
     text = f"{l['name']} {l['location']} {l['region']} {l['short']}".lower()
     section = "rentals" if rental else "properties"
     if rental:
-        wa_text = (f"Hi Mindscape, please share the rent, availability and exact location for "
+        wa_text = (f"Hi Mindscape, please share the availability and exact location for "
                    f"{l['name']} (Ref {l['ref']}), {l['location']}, {l['region']}.")
-        cta_line = "Rent, availability &amp; exact location on request."
-        cta_btn = "Enquire Rent &amp; Availability"
+        cta_line = "Availability &amp; exact location on request."
+        cta_btn = "Check Availability"
         term_attr = f' data-term="{e(l.get("term", "").lower())}"'
     else:
         wa_text = (f"Hi Mindscape, please share the price and exact location for "
