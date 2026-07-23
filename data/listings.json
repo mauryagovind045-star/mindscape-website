@@ -16,130 +16,130 @@
     "gtm_id": "GTM-M8RT9NFK"
   },
   "rentals": [
-      {
-          "slug": "assagao-pool-villa",
-          "name": "Assagao Pool Villa",
-          "ref": "MP-R-3BASG-01",
-          "status": "For Rent",
-          "term": "Monthly",
-          "location": "Assagao",
-          "region": "North Goa",
-          "collection": "Rental Collection",
-          "price_display": "₹2.5 L",
-          "price_value": 250000,
-          "price_note": "per month + maintenance",
-          "beds_display": "3",
-          "beds_value": 3,
-          "area_display": "—",
-          "area_value": 0,
-          "badges": [
-              "For Rent",
-              "Private Pool",
-              "Gated Community"
-          ],
-          "short": "A fully furnished three-bedroom pool villa with a private garden and staff quarters, inside a gated community in Assagao — North Goa's most sought-after village address.",
-          "description": [
-              "A two-storey villa in a secure gated community in the heart of Assagao, wrapped around its own swimming pool, timber deck and landscaped lawn. Spacious halls on both the ground and first floor — the upper one opening to a balcony — give the home rare breathing room, with a separate dining area and kitchen.",
-              "Three furnished bedrooms, a dedicated servant's quarter, and interiors that are genuinely move-in ready: walk in with your suitcases, and the house does the rest. Minutes from Assagao's cafés and restaurants, and a short drive to Anjuna and Vagator."
-          ],
-          "specs": [
-              {
-                  "v": "3",
-                  "l": "Bedrooms"
-              },
-              {
-                  "v": "2",
-                  "l": "Halls · GF & FF"
-              },
-              {
-                  "v": "Private",
-                  "l": "Pool & Deck"
-              },
-              {
-                  "v": "Lawn",
-                  "l": "Private Garden"
-              },
-              {
-                  "v": "Staff",
-                  "l": "Servant Quarter"
-              },
-              {
-                  "v": "Fully",
-                  "l": "Furnished"
-              }
-          ],
-          "feature_heading": "Why this home",
-          "features": [
-              "Fully furnished, move-in ready",
-              "Private swimming pool with deck",
-              "Landscaped garden & private lawn",
-              "Spacious halls on both floors",
-              "First-floor hall opens to a balcony",
-              "Separate dining area & kitchen",
-              "Servant's quarter for live-in staff",
-              "Secure gated community in Assagao"
-          ],
-          "location_label": "Why Assagao",
-          "location_points": [
-              {
-                  "place": "Assagao cafés & restaurants",
-                  "time": "Walkable"
-              },
-              {
-                  "place": "Anjuna Beach",
-                  "time": "~10 min"
-              },
-              {
-                  "place": "Vagator Beach",
-                  "time": "~12 min"
-              },
-              {
-                  "place": "Chapora & Siolim",
-                  "time": "~15 min"
-              },
-              {
-                  "place": "Mopa Intl. Airport",
-                  "time": "~35 min"
-              }
-          ],
-          "location_note": "Drive times are indicative and to be verified by the tenant.",
-          "brokerage_display": "On Request",
-          "brokerage_note": "Maintenance charges extra · terms on request",
-          "hero_image": "pool",
-          "card_image": "exterior",
-          "gallery": [
-              {
-                  "img": "living",
-                  "label": "Living, dining & open kitchen",
-                  "wide": true
-              },
-              {
-                  "img": "primary",
-                  "label": "First-floor suite & lounge"
-              },
-              {
-                  "img": "bedroom",
-                  "label": "Bedroom with Goan art"
-              },
-              {
-                  "img": "bedroom2",
-                  "label": "Garden-view bedroom"
-              },
-              {
-                  "img": "bedroom3",
-                  "label": "Guest bedroom"
-              },
-              {
-                  "img": "bedroom4",
-                  "label": "Bedroom with ensuite"
-              },
-              {
-                  "img": "den",
-                  "label": "TV den",
-                  "wide": true
-              }
-          ]
-      }
+    {
+      "slug": "assagao-pool-villa",
+      "name": "Assagao Pool Villa",
+      "ref": "MP-R-3BASG-01",
+      "status": "For Rent",
+      "term": "Monthly",
+      "location": "Assagao",
+      "region": "North Goa",
+      "collection": "Rental Collection",
+      "price_display": "₹2.5 L",
+      "price_value": 250000,
+      "price_note": "per month + maintenance",
+      "beds_display": "3",
+      "beds_value": 3,
+      "area_display": "—",
+      "area_value": 0,
+      "badges": [
+        "For Rent",
+        "Private Pool",
+        "Gated Community"
+      ],
+      "short": "A fully furnished three-bedroom pool villa with a private garden and staff quarters, inside a gated community in Assagao — North Goa's most sought-after village address.",
+      "description": [
+        "A two-storey villa in a secure gated community in the heart of Assagao, wrapped around its own swimming pool, timber deck and landscaped lawn. Spacious halls on both the ground and first floor — the upper one opening to a balcony — give the home rare breathing room, with a separate dining area and kitchen.",
+        "Three furnished bedrooms, a dedicated servant's quarter, and interiors that are genuinely move-in ready: walk in with your suitcases, and the house does the rest. Minutes from Assagao's cafés and restaurants, and a short drive to Anjuna and Vagator."
+      ],
+      "specs": [
+        {
+          "v": "3",
+          "l": "Bedrooms"
+        },
+        {
+          "v": "2",
+          "l": "Halls · GF & FF"
+        },
+        {
+          "v": "Private",
+          "l": "Pool & Deck"
+        },
+        {
+          "v": "Lawn",
+          "l": "Private Garden"
+        },
+        {
+          "v": "Staff",
+          "l": "Servant Quarter"
+        },
+        {
+          "v": "Fully",
+          "l": "Furnished"
+        }
+      ],
+      "feature_heading": "Why this home",
+      "features": [
+        "Fully furnished, move-in ready",
+        "Private swimming pool with deck",
+        "Landscaped garden & private lawn",
+        "Spacious halls on both floors",
+        "First-floor hall opens to a balcony",
+        "Separate dining area & kitchen",
+        "Servant's quarter for live-in staff",
+        "Secure gated community in Assagao"
+      ],
+      "location_label": "Why Assagao",
+      "location_points": [
+        {
+          "place": "Assagao cafés & restaurants",
+          "time": "Walkable"
+        },
+        {
+          "place": "Anjuna Beach",
+          "time": "~10 min"
+        },
+        {
+          "place": "Vagator Beach",
+          "time": "~12 min"
+        },
+        {
+          "place": "Chapora & Siolim",
+          "time": "~15 min"
+        },
+        {
+          "place": "Mopa Intl. Airport",
+          "time": "~35 min"
+        }
+      ],
+      "location_note": "Drive times are indicative and to be verified by the tenant.",
+      "brokerage_display": "On Request",
+      "brokerage_note": "Maintenance charges extra · terms on request",
+      "hero_image": "pool",
+      "card_image": "exterior",
+      "gallery": [
+        {
+          "img": "living",
+          "label": "Living, dining & open kitchen",
+          "wide": true
+        },
+        {
+          "img": "primary",
+          "label": "First-floor suite & lounge"
+        },
+        {
+          "img": "bedroom",
+          "label": "Bedroom with Goan art"
+        },
+        {
+          "img": "bedroom2",
+          "label": "Garden-view bedroom"
+        },
+        {
+          "img": "bedroom3",
+          "label": "Guest bedroom"
+        },
+        {
+          "img": "bedroom4",
+          "label": "Bedroom with ensuite"
+        },
+        {
+          "img": "den",
+          "label": "TV den",
+          "wide": true
+        }
+      ]
+    }
   ],
   "listings": [
     {
@@ -2866,6 +2866,217 @@
             "Gated residential community",
             "RERA-registered project (PRGO04262700)"
           ]
+        }
+      ]
+    },
+    {
+      "slug": "raghavan-green-valley",
+      "featured": false,
+      "name": "Raghavan Green Valley",
+      "ref": "MP-4RVSOC-02",
+      "status": "New Launch",
+      "location": "Socorro",
+      "region": "North Goa",
+      "collection": "Row Villa Collection",
+      "price_display": "Price on Request",
+      "price_value": 45000000,
+      "price_note": "On Application",
+      "beds_display": "3 / 4",
+      "beds_value": 4,
+      "area_display": "3,108 – 4,481 sq ft",
+      "area_value": 3108,
+      "badges": [
+        "New Launch",
+        "Private Lift",
+        "Gated Community"
+      ],
+      "short": "3 & 4 BHK row villas and independent villas with private lifts and rooftop terraces, in an established gated community in Socorro (Porvorim) overlooking untouched paddy fields.",
+      "description": [
+        "Raghavan Green Valley is the newest phase of an established gated community in Socorro — the green edge of Porvorim where paddy fields, mesmeric sunsets and birdsong at dawn are part of the address. The site sits just off Guirim junction, minutes between Mapusa and Panaji, with everyday conveniences a short drive away.",
+        "The homes are three-and-four-bedroom row villas and independent villas, each rising from stilt-level covered parking through two living floors to a private rooftop terrace — with a lift inside every villa serving all levels. Wide balconies with flower boxes, arched Goan facades and laterite-stone bases give the homes their character; the independent villas add a private garden and plunge pool.",
+        "Residents share a large common swimming pool, an amphitheatre set in common greens, a multipurpose court, indoor games and a community hall. The project is built to tread lightly too — waste-water recycling, passive cooling design, groundwater recharging and electric-vehicle charging are all part of the plan. RERA-registered, and the latest chapter of a community that has been loved and lived in for years."
+      ],
+      "feature_heading": "Why Raghavan Green Valley",
+      "specs": [
+        {
+          "v": "3 / 4",
+          "l": "Bedrooms"
+        },
+        {
+          "v": "3,108+",
+          "l": "Sq Ft Built-up"
+        },
+        {
+          "v": "Private",
+          "l": "Lift in Every Villa"
+        },
+        {
+          "v": "Rooftop",
+          "l": "Open Terraces"
+        },
+        {
+          "v": "Gated",
+          "l": "Established Community"
+        },
+        {
+          "v": "Common",
+          "l": "Pool, Court & Greens"
+        }
+      ],
+      "features": [
+        "3 & 4 bedroom row villas plus independent villas",
+        "Private lift serving every level of each home",
+        "Stilt-level covered parking for two cars",
+        "Rooftop terraces with paddy-field & sunset views",
+        "Independent villas with private garden & plunge pool",
+        "Latest phase of an established, well-maintained gated community",
+        "Common pool, amphitheatre, multipurpose court & community hall",
+        "Waste-water recycling, groundwater recharge & EV charging",
+        "RERA-registered project"
+      ],
+      "amenities": [
+        {
+          "group": "Community & Leisure",
+          "items": [
+            "Common swimming pool",
+            "Amphitheatre & common greens",
+            "Multipurpose court",
+            "Community hall",
+            "Indoor games",
+            "Landscaped outdoors"
+          ]
+        },
+        {
+          "group": "Safety & Convenience",
+          "items": [
+            "Gated complex",
+            "24 x 7 security",
+            "CCTV surveillance",
+            "Private lift in every villa",
+            "Covered stilt parking"
+          ]
+        },
+        {
+          "group": "Sustainability",
+          "items": [
+            "Waste-water recycling",
+            "Passive cooling design",
+            "Groundwater recharging",
+            "Electric-vehicle charging"
+          ]
+        }
+      ],
+      "amenities_note": "The community is designed around shared greens — an amphitheatre, lawns and a large common pool — while each villa stays self-sufficient with its own lift, parking and rooftop terrace.",
+      "sizes": {
+        "label": "Villas & Layouts",
+        "headline": "Nine layouts across row villas and independent villas — built-up areas from about 3,108 to 4,481 sq ft.",
+        "rows": [
+          {
+            "v": "2,244",
+            "l": "Row Villa X · Built-up 3,249 sq ft"
+          },
+          {
+            "v": "2,215",
+            "l": "Row Villa Y · Built-up 3,229 sq ft"
+          },
+          {
+            "v": "2,083",
+            "l": "Row Villa E1 · Built-up 3,108 sq ft"
+          },
+          {
+            "v": "2,238",
+            "l": "Row Villa E2 · Built-up 3,630 sq ft"
+          },
+          {
+            "v": "2,667",
+            "l": "Row Villa F1 · Built-up 4,481 sq ft"
+          },
+          {
+            "v": "2,453",
+            "l": "Row Villa F2 · Built-up 3,562 sq ft"
+          },
+          {
+            "v": "2,002",
+            "l": "Independent Villa B1 · Built-up 3,218 sq ft"
+          },
+          {
+            "v": "1,975",
+            "l": "Independent Villa B2 · Built-up 3,734 sq ft"
+          },
+          {
+            "v": "1,975",
+            "l": "Independent Villa B3 · Built-up 3,551 sq ft"
+          }
+        ],
+        "note": "Figures are carpet areas in sq ft, converted from the project floor plans; built-up figures are super built-up areas as stated in the plans. Exact unit availability on enquiry."
+      },
+      "location_label": "Why Socorro",
+      "location_points": [
+        {
+          "place": "Porvorim CBD",
+          "time": "~5 min"
+        },
+        {
+          "place": "Guirim junction (NH-66)",
+          "time": "~2 min"
+        },
+        {
+          "place": "Mapusa",
+          "time": "~10 min"
+        },
+        {
+          "place": "Panaji",
+          "time": "~15 min"
+        },
+        {
+          "place": "Baga & Calangute beaches",
+          "time": "~15 min"
+        },
+        {
+          "place": "Mopa International Airport",
+          "time": "~25 min"
+        }
+      ],
+      "location_note": "Socorro is a tranquil village on the green edge of Porvorim, where paddy fields and heritage homes sit minutes from the CBD, schools and hospitals — with Mapusa, Panaji and the beaches an easy drive away. Drive times are indicative and to be verified by the buyer.",
+      "brokerage_note": "RERA: PRGO11190964 / AGGO11190566 · Floor plans & title docs on request",
+      "hero_image": "pool",
+      "card_image": "exterior",
+      "gallery": [
+        {
+          "img": "facade",
+          "label": "Row villas along the internal street",
+          "wide": true
+        },
+        {
+          "img": "twilight",
+          "label": "Row villas & pergola garden at dusk",
+          "wide": true
+        },
+        {
+          "img": "villas",
+          "label": "Twin row villas"
+        },
+        {
+          "img": "living",
+          "label": "Living, dining & kitchen"
+        },
+        {
+          "img": "dining",
+          "label": "Show villa — dining area"
+        },
+        {
+          "img": "bedroom",
+          "label": "Bedroom"
+        },
+        {
+          "img": "greens",
+          "label": "Amphitheatre & common greens",
+          "wide": true
+        },
+        {
+          "img": "location",
+          "label": "Actual paddy-field view from the villas",
+          "wide": true
         }
       ]
     }
