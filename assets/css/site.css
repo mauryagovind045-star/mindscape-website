@@ -128,6 +128,11 @@ section{position:relative}
 .pillar h3{font-size:27px;margin-bottom:14px}
 .pillar p{color:var(--dim);font-size:15px;max-width:280px}
 .pillar .idx{position:absolute;top:52px;right:40px;font-family:var(--serif);font-style:italic;color:var(--dark-text);font-size:20px}
+.services .pillar:hover{background:var(--dark-2)}
+.svc-list{margin-top:22px;padding-top:22px;border-top:1px solid var(--edge-soft);display:grid;gap:12px}
+.svc-list li{list-style:none;display:flex;gap:12px;align-items:flex-start;color:var(--muted);font-size:14.5px;line-height:1.5}
+.svc-list .diamond{margin:6px 0 0;flex:none}
+.services .props-foot{margin-top:0;border-top:0;padding-top:34px}
 
 /* ---------- Featured / detail property ---------- */
 .props{background:var(--dark-2);border-top:1px solid var(--edge-soft)}
