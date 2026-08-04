@@ -256,6 +256,144 @@
           "wide": true
         }
       ]
+    },
+    {
+      "slug": "highland-villa",
+      "name": "The Highland Villa",
+      "ref": "MP-R-4BPRV-02",
+      "status": "For Rent",
+      "term": "Monthly",
+      "location": "Porvorim",
+      "region": "North Goa",
+      "collection": "Rental Collection",
+      "price_display": "₹2.3 L",
+      "price_value": 230000,
+      "price_note": "per month",
+      "beds_display": "4",
+      "beds_value": 4,
+      "area_display": "2,753 sq ft",
+      "area_value": 2753,
+      "badges": [
+        "For Rent",
+        "Fully Furnished",
+        "Gated Community"
+      ],
+      "short": "A premium independent 4-bedroom villa in a gated Porvorim community — fully furnished European-style interiors, a private compound wall with landscaped garden, and clubhouse, pool, tennis and mini-golf amenities at your doorstep.",
+      "description": [
+        "Set on a 328 sq m plot behind its own compound wall and landscaped garden, this independent villa offers 2,753 sq ft of fully furnished, European-styled living — coffered ceilings, chandeliers, a fireplace lounge, and a formal dining room flowing into a breakfast-bar kitchen. Four bedrooms include a generous master suite and a delightful children's room with a hand-painted world-map mural and window-seat bay.",
+        "The gated community reads like a resort: clubhouse and gym, swimming pool, tennis and basketball courts, a mini golf course, children's play area, a two-mile walkway and 24x7 CCTV security — with parking for three cars, backup services, and a pickleball court on the way. Panaji is 6 km away, Mall De Goa six minutes, and the GCA Stadium three."
+      ],
+      "specs": [
+        {
+          "v": "4",
+          "l": "Bedrooms"
+        },
+        {
+          "v": "2,753",
+          "l": "Sq Ft Built-up"
+        },
+        {
+          "v": "328",
+          "l": "Sq M Plot"
+        },
+        {
+          "v": "3",
+          "l": "Car Parks"
+        },
+        {
+          "v": "Resort",
+          "l": "Community Amenities"
+        },
+        {
+          "v": "Fully",
+          "l": "Furnished"
+        }
+      ],
+      "feature_heading": "Why this home",
+      "features": [
+        "Independent villa in a premium gated community",
+        "Fully furnished, European-design interiors",
+        "Private compound wall with landscaped garden",
+        "Clubhouse, gym & swimming pool",
+        "Tennis & basketball courts · mini golf course",
+        "Children's play area & 2-mile walkway",
+        "24x7 security with CCTV surveillance",
+        "Parking for 3 cars · backup services",
+        "Upcoming pickleball court"
+      ],
+      "location_label": "Why Porvorim",
+      "location_points": [
+        {
+          "place": "GCA Stadium",
+          "time": "~3 min"
+        },
+        {
+          "place": "Mall De Goa",
+          "time": "~6 min"
+        },
+        {
+          "place": "Panaji",
+          "time": "~6 km"
+        },
+        {
+          "place": "Candolim & Calangute beaches",
+          "time": "~20 km"
+        },
+        {
+          "place": "Mopa Intl. Airport",
+          "time": "~25 km"
+        }
+      ],
+      "location_note": "Drive times are indicative and to be verified by the tenant.",
+      "brokerage_display": "On Request",
+      "brokerage_note": "Security deposit ₹6.9 L (interest-free) · 11-month leave & licence",
+      "hero_image": "living",
+      "card_image": "exterior",
+      "gallery": [
+        {
+          "img": "lounge",
+          "label": "Fireplace lounge & formal dining",
+          "wide": true
+        },
+        {
+          "img": "dining",
+          "label": "Dining room & breakfast-bar kitchen"
+        },
+        {
+          "img": "primary",
+          "label": "Master bedroom"
+        },
+        {
+          "img": "bedroom",
+          "label": "Guest bedroom"
+        },
+        {
+          "img": "kids",
+          "label": "Children's room with world-map mural",
+          "wide": true
+        },
+        {
+          "img": "hallway",
+          "label": "Gallery hallway"
+        },
+        {
+          "img": "verandah",
+          "label": "Entrance verandah"
+        },
+        {
+          "img": "entrance",
+          "label": "Front entrance & stone feature"
+        },
+        {
+          "img": "patio",
+          "label": "Covered patio & al-fresco dining",
+          "wide": true
+        },
+        {
+          "img": "driveway",
+          "label": "Private driveway"
+        }
+      ]
     }
   ],
   "listings": [
