@@ -139,6 +139,123 @@
           "wide": true
         }
       ]
+    },
+    {
+      "slug": "porvorim-garden-villa",
+      "name": "Porvorim Garden Villa",
+      "ref": "MP-R-4BPRV-01",
+      "status": "For Rent",
+      "term": "Monthly",
+      "location": "Porvorim",
+      "region": "North Goa",
+      "collection": "Rental Collection",
+      "price_display": "₹1.5 L",
+      "price_value": 150000,
+      "price_note": "per month",
+      "beds_display": "4",
+      "beds_value": 4,
+      "area_display": "2,379 sq ft",
+      "area_value": 2379,
+      "badges": [
+        "For Rent",
+        "Fully Furnished",
+        "900 sq ft Lawn"
+      ],
+      "short": "A fully furnished four-bedroom villa across three floors in a gated Porvorim community — glass-facade living room, a 900 sq ft rear lawn, society pool and daily housekeeping, with green views from every room.",
+      "description": [
+        "Spread over three floors on a 221 sq m plot, the villa opens with a glass-facade living and dining room that looks straight onto its 900 sq ft rear lawn and paved patio with outdoor furniture. The open kitchen — complete with a wine rack — a guest restroom and dedicated parking round out the ground floor.",
+        "Three bedrooms sit on the first floor (one ensuite, two sharing a common bath), while the entire second floor belongs to the master suite with its oversized bathroom and a private terrace made for parties and barbecues. Tasteful woodwork throughout, six air-conditioned rooms, blackout curtains and a full set of appliances make it genuinely move-in ready — with daily housekeeping and access to the society swimming pool. The scenic Torda creek route keeps the drive home green, yet Mall De Goa and the highway are just 3 km away."
+      ],
+      "specs": [
+        {
+          "v": "4",
+          "l": "Bedrooms · 3 Floors"
+        },
+        {
+          "v": "2,379",
+          "l": "Sq Ft Built-up"
+        },
+        {
+          "v": "900",
+          "l": "Sq Ft Rear Lawn"
+        },
+        {
+          "v": "Society",
+          "l": "Swimming Pool"
+        },
+        {
+          "v": "Daily",
+          "l": "Housekeeping"
+        },
+        {
+          "v": "Fully",
+          "l": "Furnished"
+        }
+      ],
+      "feature_heading": "Why this home",
+      "features": [
+        "Glass-facade living & dining room",
+        "900 sq ft rear lawn with paved patio & outdoor furniture",
+        "Second-floor master suite with huge bathroom",
+        "Private terrace — perfect for parties & BBQs",
+        "Open kitchen with wine rack & glass cooktop",
+        "6 ACs, washing machine & water purifier included",
+        "Daily housekeeping with sanitisation protocol",
+        "Dedicated parking slot · society pool access",
+        "Green views from every room"
+      ],
+      "location_label": "Why Porvorim",
+      "location_points": [
+        {
+          "place": "Mall De Goa & NH-66 highway",
+          "time": "~3 km"
+        },
+        {
+          "place": "Scenic Torda creek route",
+          "time": "At your doorstep"
+        },
+        {
+          "place": "Panjim",
+          "time": "~15 min"
+        },
+        {
+          "place": "Calangute & Candolim beaches",
+          "time": "~20 min"
+        },
+        {
+          "place": "Mopa Intl. Airport",
+          "time": "~40 min"
+        }
+      ],
+      "location_note": "Drive times are indicative and to be verified by the tenant.",
+      "brokerage_display": "One month's rent",
+      "brokerage_note": "Maintenance & utilities as applicable",
+      "hero_image": "terrace",
+      "card_image": "exterior",
+      "gallery": [
+        {
+          "img": "living",
+          "label": "Glass-facade living room",
+          "wide": true
+        },
+        {
+          "img": "dining",
+          "label": "Dining & open kitchen"
+        },
+        {
+          "img": "nook",
+          "label": "Garden-view seating nook"
+        },
+        {
+          "img": "bedroom",
+          "label": "Green-view bedroom"
+        },
+        {
+          "img": "garden",
+          "label": "Landscaped walkways",
+          "wide": true
+        }
+      ]
     }
   ],
   "listings": [
