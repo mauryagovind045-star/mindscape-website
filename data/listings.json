@@ -381,10 +381,6 @@
           "label": "Entrance verandah"
         },
         {
-          "img": "entrance",
-          "label": "Front entrance & stone feature"
-        },
-        {
           "img": "patio",
           "label": "Covered patio & al-fresco dining",
           "wide": true
