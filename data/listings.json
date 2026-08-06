@@ -3330,6 +3330,144 @@
           "wide": true
         }
       ]
+    },
+    {
+      "slug": "kama-olaulim",
+      "featured": false,
+      "name": "Kama, Olaulim",
+      "ref": "MP-4VOLA-01",
+      "status": "Under Construction",
+      "location": "Olaulim",
+      "region": "North Goa",
+      "collection": "Pool Villa Collection",
+      "price_display": "Price on Request",
+      "price_value": 42500000,
+      "price_note": "On Application",
+      "beds_display": "3 – 4",
+      "beds_value": 4,
+      "area_display": "4,167 – 5,340 sq ft",
+      "area_value": 4167,
+      "badges": [
+        "Under Construction",
+        "3 & 4 BHK Pool Villas",
+        "Olaulim — on the Mandovi belt"
+      ],
+      "short": "Terracotta-hued 3 & 4 BHK pool villas in the riverside village of Olaulim — arched glass facades, private pools fed by sculptural stone waterfalls, and tropical backyards overlooking a natural stream, ten minutes from Moira.",
+      "description": [
+        "Olaulim is one of North Goa's last genuinely quiet addresses — a village of paddy fields and coconut groves on the banks of the Mandovi, minutes from Moira and Mapusa yet a world away from the tourist belt. Kama takes its cues from the place: an architecture inspired by dawn, in warm terracotta tones set against cool greys and blacks, built in laterite block with local stone and timber throughout.",
+        "Each villa opens through double-height arched glass onto its own pool and a landscaped tropical backyard that runs down to a natural stream. Interiors are semi-furnished with the option to fully furnish — Kota and lime-washed finishes, natural stone, IPS and micro-cement floors, modular kitchens, home automation and air-conditioning, with a bathtub in the master bath and staff quarters in every villa. The gated community adds a security cabin, CCTV, power backup, WiFi and private parking with EV-charging provision.",
+        "Villas span roughly 4,167 to 5,340 sq ft in three and four-bedroom layouts. Layouts, specifications and pricing are shared on enquiry, along with a site visit at a time that suits you."
+      ],
+      "feature_heading": "Why Kama",
+      "specs": [
+        {
+          "v": "3 & 4",
+          "l": "BHK Pool Villas"
+        },
+        {
+          "v": "4,167+",
+          "l": "Sq Ft Built-up"
+        },
+        {
+          "v": "Private",
+          "l": "Pool Per Villa"
+        },
+        {
+          "v": "Stream",
+          "l": "Tropical Backyards"
+        },
+        {
+          "v": "Staff",
+          "l": "Quarters Each Villa"
+        },
+        {
+          "v": "Gated",
+          "l": "Secure Community"
+        }
+      ],
+      "features": [
+        "Private pool with each villa",
+        "Landscaped tropical backyards overlooking a natural stream",
+        "Double-height arched glass facades",
+        "Laterite-block walls with local stone & timber",
+        "Kota, lime-wash, IPS & micro-cement finishes",
+        "Home automation & air-conditioned homes",
+        "Modular kitchen · bathtub in master bath",
+        "Staff quarters in each villa",
+        "Security cabin, CCTV & power backup",
+        "Private parking with EV-charging provision"
+      ],
+      "location_label": "Why Olaulim",
+      "location_points": [
+        {
+          "place": "Moira",
+          "time": "~10 min"
+        },
+        {
+          "place": "NH-66",
+          "time": "~14 min"
+        },
+        {
+          "place": "Mapusa",
+          "time": "~15 min"
+        },
+        {
+          "place": "Assagao",
+          "time": "~25 min"
+        },
+        {
+          "place": "Mopa Intl. Airport",
+          "time": "~30 min"
+        },
+        {
+          "place": "Dabolim Airport",
+          "time": "~45 min"
+        }
+      ],
+      "location_note": "Drive times are indicative and to be verified by the buyer.",
+      "hero_image": "pool",
+      "card_image": "exterior",
+      "gallery": [
+        {
+          "img": "community",
+          "label": "Villas along the stream",
+          "wide": true
+        },
+        {
+          "img": "facade",
+          "label": "Arched facade & stone waterfall"
+        },
+        {
+          "img": "aerial",
+          "label": "Private pool & lawn"
+        },
+        {
+          "img": "living",
+          "label": "Living room"
+        },
+        {
+          "img": "dining",
+          "label": "Dining framed by glass & palms"
+        },
+        {
+          "img": "kitchen",
+          "label": "Kitchen island"
+        },
+        {
+          "img": "bedroom",
+          "label": "Bedroom in earthy tones",
+          "wide": true
+        },
+        {
+          "img": "bath",
+          "label": "Master bath tub"
+        },
+        {
+          "img": "elevation",
+          "label": "Terracotta elevation"
+        }
+      ],
+      "brokerage_note": "Floor plans & title docs on request"
     }
   ]
 }
