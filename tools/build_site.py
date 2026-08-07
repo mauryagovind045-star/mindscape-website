@@ -96,6 +96,7 @@ def links(root, on_home):
         "properties": f"{root}properties/",
         "rentals": f"{root}rentals/",
         "journal": f"{root}journal/",
+        "services": f"{root}services/",
         "about": "#about" if on_home else f"{root}#about",
         "approach": "#approach" if on_home else f"{root}#approach",
         "contact": "#contact",
@@ -220,8 +221,12 @@ def nav(site, lk, root, active, solid=False):
       <a href="{lk['properties']}"{cls('properties')}>Properties</a>
       <a href="{lk['rentals']}"{cls('rentals')}>Rentals</a>
       <a href="{lk['journal']}"{cls('journal')}>Journal</a>
+      <div class="nav-item"><a href="{lk['services']}"{cls('services')}>Services</a><div class="drop">
+        <a href="{lk['services']}#property-liaisoning">Property Liaisoning</a>
+        <a href="{lk['services']}#fire-liaisoning">Fire Liaisoning &amp; NOC</a>
+        <a href="{lk['services']}#civil-contracts">Civil Contracts</a>
+      </div></div>
       <a href="{lk['about']}"{cls('about')}>About</a>
-      <a href="{lk['approach']}"{cls('approach')}>Our Approach</a>
       <a href="{lk['contact']}"{cls('contact')}>Contact</a>
     </nav>
     <div class="nav-cta"><a href="{lk['contact']}" class="btn"><span>Get in Touch</span></a></div>
@@ -324,6 +329,7 @@ def footer(site, lk, root):
         <a href="{lk['properties']}">Properties</a>
         <a href="{lk['rentals']}">Rentals</a>
         <a href="{lk['journal']}">Journal</a>
+        <a href="{lk['services']}">Services</a>
         <a href="{lk['about']}">About Us</a>
         <a href="{lk['approach']}">Our Approach</a>
         <a href="{lk['contact']}">Contact</a>
@@ -511,6 +517,51 @@ def enquiry_cta(l, root, site, rental=False):
           <a href="#contact" class="btn solid"><span>{btn}</span></a>
           <a href="{wa_link(site, wa_text)}" target="_blank" rel="noopener" class="btn"><span>WhatsApp Us</span></a>
           <a href="tel:{e(site['phone_href'])}" class="btn"><span>Call {e(site['phone_display'])}</span></a>
+        </div>
+      </div>"""
+
+
+def download_block(l, root):
+    """Gated document download (e.g. floor plans). Data-driven via optional
+    'download' field on a listing: {label, file, heading, sub}. The document
+    link is revealed only after the visitor submits name, phone, email and
+    budget — the lead is delivered through the same Web3Forms inbox as the
+    enquiry form (see assets/js/site.js)."""
+    dl = l.get("download")
+    if not dl:
+        return ""
+    budget_opts = ('<option value="">Select budget</option><option>Under ₹2 Cr</option>'
+                   '<option>₹2 – 5 Cr</option><option>₹5 – 10 Cr</option>'
+                   '<option>₹10 Cr+</option><option>Exploring options</option>')
+    return f"""
+      <div class="download-gate reveal" id="floorplans">
+        <div class="dg-copy">
+          <span class="eyebrow"><span class="diamond"></span>Project Documents</span>
+          <h3>{e(dl.get('heading', 'Download the floor plans'))}</h3>
+          <p>{e(dl.get('sub', 'Share a few details and the download unlocks instantly. Your details stay private — we use them only to follow up on your interest.'))}</p>
+        </div>
+        <form id="downloadForm" class="dg-form" novalidate
+              data-property="{e(l['name'])}" data-file="{root}{e(dl['file'])}"
+              data-label="{e(dl.get('label', 'Floor Plans (PDF)'))}">
+          <div class="field row2">
+            <div><label for="dlName">Full Name <span class="req">*</span></label>
+              <input type="text" id="dlName" name="name" placeholder="Your name" required /></div>
+            <div><label for="dlPhone">Phone <span class="req">*</span></label>
+              <input type="tel" id="dlPhone" name="phone" placeholder="+91" required /></div>
+          </div>
+          <div class="field row2">
+            <div><label for="dlEmail">Email <span class="req">*</span></label>
+              <input type="email" id="dlEmail" name="email" placeholder="you@email.com" required /></div>
+            <div><label for="dlBudget">Budget <span class="req">*</span></label>
+              <select id="dlBudget" name="budget" required>{budget_opts}</select></div>
+          </div>
+          <input type="checkbox" name="botcheck" class="hpot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button type="submit" class="btn solid"><span>Unlock Download</span></button>
+          <div class="form-status" id="dlStatus" role="status" aria-live="polite"></div>
+        </form>
+        <div class="dg-ready" id="dlReady" hidden>
+          <p>Your download is ready:</p>
+          <a class="btn solid" id="dlLink" href="#" target="_blank" rel="noopener"><span>Download {e(dl.get('label', 'Floor Plans (PDF)'))}</span></a>
         </div>
       </div>"""
 
@@ -729,9 +780,30 @@ def build_home(site, listings):
   </div>
 </div></div></section>"""
 
+    services_home = f"""
+<section class="sec pillars services" id="services"><div class="wrap">
+  <div class="sec-head"><div>
+    <div class="lead-mark reveal"><span class="diamond"></span><span class="coord">04 · Services</span></div>
+    <h2 class="reveal d1">Beyond brokerage —<br>we get the paperwork done.</h2>
+  </div><p class="reveal d2">From village panchayat to fire department, our engineers handle the approvals, NOCs and construction so your project never stalls at a desk.</p></div>
+</div><div class="wrap"><div class="pillar-grid">
+  <div class="pillar reveal"><span class="idx">i</span><span class="diamond"></span><h3>Property Liaisoning</h3><p>End-to-end liaison for permissions and approvals on your land or home.</p>
+    <ul class="svc-list"><li><span class="diamond"></span>Panchayat approvals &amp; NOCs</li><li><span class="diamond"></span>Town &amp; Country Planning (TCP)</li><li><span class="diamond"></span>Health Department clearances</li><li><span class="diamond"></span>Municipality permissions</li></ul>
+  </div>
+  <div class="pillar reveal d1"><span class="idx">ii</span><span class="diamond"></span><h3>Fire Liaisoning</h3><p>Complete fire-safety compliance for residential and commercial projects.</p>
+    <ul class="svc-list"><li><span class="diamond"></span>Fire NOC — new &amp; renewal</li><li><span class="diamond"></span>Fire Department liaison</li><li><span class="diamond"></span>Fire-safety compliance guidance</li></ul>
+  </div>
+  <div class="pillar reveal d2"><span class="idx">iii</span><span class="diamond"></span><h3>Civil Contracts</h3><p>Engineer-led civil contracting — built right, on spec and on schedule.</p>
+    <ul class="svc-list"><li><span class="diamond"></span>Residential construction</li><li><span class="diamond"></span>Renovation &amp; structural works</li><li><span class="diamond"></span>Site supervision by civil engineers</li></ul>
+  </div>
+</div></div><div class="wrap"><div class="props-foot reveal">
+  <a href="{lk['services']}" class="btn solid"><span>Explore Services in Detail</span></a><a href="#contact" class="btn"><span>Discuss Your Requirement</span></a>
+  <div>One team for approvals, compliance and construction — across Goa.</div>
+</div></div></section>"""
+
     values = """
 <section class="sec values"><div class="wrap">
-  <div class="lead-mark reveal"><span class="diamond"></span><span class="coord">04 · What Guides Us</span></div>
+  <div class="lead-mark reveal"><span class="diamond"></span><span class="coord">05 · What Guides Us</span></div>
   <div class="val-grid">
     <div class="val reveal"><span class="n">01</span><h3>Integrity</h3></div>
     <div class="val reveal d1"><span class="n">02</span><h3>Expertise</h3></div>
@@ -783,7 +855,7 @@ def build_home(site, listings):
     return (head(title, desc, root, extra_head=seo)
             + nav(site, lk, root, active="home")
             + hero + strip + pillars + featured_section + LIGHTBOX
-            + about + values + quote + contact_section(site) + footer(site, lk, root)
+            + about + services_home + values + quote + contact_section(site) + footer(site, lk, root)
             + whatsapp_fab(site, WA_GENERIC)
             + "\n</body>\n</html>\n")
 
@@ -975,6 +1047,7 @@ def build_detail(site, l, listings):
   {amenities_block(l, root)}
   {rental_block(l, root)}
   {inspiration_block(l, root)}
+  {download_block(l, root)}
   <div class="props-foot reveal"><a href="{lk['properties']}" class="btn"><span>Back to All Properties</span></a></div>
 </div></section>"""
 

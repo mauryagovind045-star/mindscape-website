@@ -554,3 +554,12 @@ footer{background:var(--black);border-top:1px solid var(--edge-soft);padding:80p
   .steps{grid-template-columns:1fr}
   .step{border-right:0}
 }
+
+/* Gated document download (floor plans) */
+.download-gate{margin-top:40px;padding:44px 46px;border:1px solid var(--gold);background:linear-gradient(158deg,var(--dark-2),var(--black))}
+.download-gate .eyebrow{display:flex;align-items:center;gap:9px;color:var(--gold);font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+.download-gate h3{font-family:var(--serif);font-weight:400;font-size:26px;color:var(--ivory);line-height:1.26;margin:12px 0 10px;max-width:620px}
+.download-gate .dg-copy p{color:var(--muted);font-size:13.5px;line-height:1.6;max-width:620px;margin-bottom:28px}
+.download-gate .dg-form{max-width:640px}
+.download-gate .dg-ready p{color:var(--muted);font-size:14px;margin-bottom:16px}
+@media(max-width:640px){.download-gate{padding:34px 24px}}

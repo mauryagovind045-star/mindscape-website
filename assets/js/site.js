@@ -124,6 +124,69 @@ const CONTACT_EMAIL = "mindscapeproperties55@gmail.com";
     });
   }
 
+  // Gated document download (floor plans etc.) — reveals the file link only
+  // after a lead (name, phone, email, budget) is delivered via Web3Forms.
+  const dlForm = document.getElementById("downloadForm");
+  if (dlForm) {
+    const dlStatus = document.getElementById("dlStatus");
+    const dlReady = document.getElementById("dlReady");
+    const dlLink = document.getElementById("dlLink");
+    const dlProperty = dlForm.dataset.property || "";
+    const dlFile = dlForm.dataset.file || "#";
+    const dlKey = "mindscape_dl_" + dlProperty.replace(/\W+/g, "_").toLowerCase();
+
+    const unlock = () => {
+      if (dlLink) dlLink.href = dlFile;
+      dlForm.hidden = true;
+      if (dlReady) dlReady.hidden = false;
+    };
+    try { if (localStorage.getItem(dlKey)) unlock(); } catch (e) {}
+
+    const dlShow = (msg, ok) => {
+      if (!dlStatus) return;
+      dlStatus.textContent = msg;
+      dlStatus.className = "form-status show " + (ok ? "ok" : "err");
+    };
+
+    dlForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(dlForm).entries());
+      if (!data.name || !data.name.trim() || !data.phone || !data.phone.trim() ||
+          !data.email || !data.email.trim() || !data.budget) {
+        dlShow("Please fill in your name, phone, email and budget to unlock the download.", false);
+        return;
+      }
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(data.email)) {
+        dlShow("That email doesn’t look right — mind checking it?", false);
+        return;
+      }
+      const btn = dlForm.querySelector("button[type=submit] span");
+      const original = btn ? btn.textContent : "";
+      if (btn) btn.textContent = "Unlocking…";
+      try {
+        const fd = new FormData(dlForm);
+        fd.append("access_key", WEB3FORMS_KEY);
+        fd.append("subject", "Floor plan download — " + dlProperty);
+        fd.append("from_name", "Mindscape Website");
+        fd.append("property", dlProperty);
+        fd.append("document", dlForm.dataset.label || "Floor Plans");
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST", headers: { Accept: "application/json" }, body: fd,
+        });
+        if (res.ok) {
+          try { localStorage.setItem(dlKey, "1"); } catch (e2) {}
+          unlock();
+        } else {
+          dlShow("Something went wrong. Please email us at " + CONTACT_EMAIL + " and we’ll send the plans.", false);
+        }
+      } catch (err) {
+        dlShow("Network issue. Please email us at " + CONTACT_EMAIL + " and we’ll send the plans.", false);
+      } finally {
+        if (btn) btn.textContent = original;
+      }
+    });
+  }
+
   // Gallery lightbox
   const galleryItems = Array.from(document.querySelectorAll(".gallery a"));
   const lb = document.getElementById("lightbox");

@@ -45,8 +45,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="../../properties/" class="active">Properties</a>
       <a href="../../rentals/">Rentals</a>
       <a href="../../journal/">Journal</a>
+      <div class="nav-item"><a href="../../services/">Services</a><div class="drop">
+        <a href="../../services/#property-liaisoning">Property Liaisoning</a>
+        <a href="../../services/#fire-liaisoning">Fire Liaisoning &amp; NOC</a>
+        <a href="../../services/#civil-contracts">Civil Contracts</a>
+      </div></div>
       <a href="../../#about">About</a>
-      <a href="../../#approach">Our Approach</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-cta"><a href="#contact" class="btn"><span>Get in Touch</span></a></div>
@@ -120,6 +124,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
   
   
+  
+      <div class="download-gate reveal" id="floorplans">
+        <div class="dg-copy">
+          <span class="eyebrow"><span class="diamond"></span>Project Documents</span>
+          <h3>Download the Kama floor plans</h3>
+          <p>Villa A &amp; B layouts, floor-by-floor, with room dimensions. Share a few details and the download unlocks instantly — we use them only to follow up on your interest.</p>
+        </div>
+        <form id="downloadForm" class="dg-form" novalidate
+              data-property="Kama, Olaulim" data-file="../../assets/properties/kama-olaulim/docs/kama-olaulim-floor-plans-x7k2.pdf"
+              data-label="Floor Plans (PDF)">
+          <div class="field row2">
+            <div><label for="dlName">Full Name <span class="req">*</span></label>
+              <input type="text" id="dlName" name="name" placeholder="Your name" required /></div>
+            <div><label for="dlPhone">Phone <span class="req">*</span></label>
+              <input type="tel" id="dlPhone" name="phone" placeholder="+91" required /></div>
+          </div>
+          <div class="field row2">
+            <div><label for="dlEmail">Email <span class="req">*</span></label>
+              <input type="email" id="dlEmail" name="email" placeholder="you@email.com" required /></div>
+            <div><label for="dlBudget">Budget <span class="req">*</span></label>
+              <select id="dlBudget" name="budget" required><option value="">Select budget</option><option>Under ₹2 Cr</option><option>₹2 – 5 Cr</option><option>₹5 – 10 Cr</option><option>₹10 Cr+</option><option>Exploring options</option></select></div>
+          </div>
+          <input type="checkbox" name="botcheck" class="hpot" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <button type="submit" class="btn solid"><span>Unlock Download</span></button>
+          <div class="form-status" id="dlStatus" role="status" aria-live="polite"></div>
+        </form>
+        <div class="dg-ready" id="dlReady" hidden>
+          <p>Your download is ready:</p>
+          <a class="btn solid" id="dlLink" href="#" target="_blank" rel="noopener"><span>Download Floor Plans (PDF)</span></a>
+        </div>
+      </div>
   <div class="props-foot reveal"><a href="../../properties/" class="btn"><span>Back to All Properties</span></a></div>
 </div></section>
 <div class="lightbox" id="lightbox" role="dialog" aria-label="Photo viewer">
@@ -192,6 +227,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="../../properties/">Properties</a>
         <a href="../../rentals/">Rentals</a>
         <a href="../../journal/">Journal</a>
+        <a href="../../services/">Services</a>
         <a href="../../#about">About Us</a>
         <a href="../../#approach">Our Approach</a>
         <a href="#contact">Contact</a>

@@ -3467,7 +3467,13 @@
           "label": "Terracotta elevation"
         }
       ],
-      "brokerage_note": "Floor plans & title docs on request"
+      "brokerage_note": "Floor plans & title docs on request",
+      "download": {
+        "label": "Floor Plans (PDF)",
+        "file": "assets/properties/kama-olaulim/docs/kama-olaulim-floor-plans-x7k2.pdf",
+        "heading": "Download the Kama floor plans",
+        "sub": "Villa A & B layouts, floor-by-floor, with room dimensions. Share a few details and the download unlocks instantly — we use them only to follow up on your interest."
+      }
     }
   ]
 }
