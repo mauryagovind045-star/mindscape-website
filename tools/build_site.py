@@ -70,6 +70,7 @@ WA_SVG = ('<svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><p
           ' 11.821 0 00-3.48-8.413z"/></svg>')
 
 WA_GENERIC = "Hi Mindscape, I'd like to know more about your Goa properties."
+HOME_GRID_COUNT = 5  # property cards shown on the home page (featured listing first)
 
 
 def wa_digits(site):
@@ -749,13 +750,15 @@ def build_home(site, listings):
   <div class="pillar reveal d2"><span class="idx">iii</span><span class="diamond"></span><h3>Personal</h3><p>Boutique service, every client. One dedicated advisor from first viewing to final signature.</p></div>
 </div></div></section>"""
 
+    home_listings = ([featured] + [l for l in listings if l["slug"] != featured["slug"]])[:HOME_GRID_COUNT]
+    home_cards = "".join(property_card(l, root, site) for l in home_listings)
     featured_section = f"""
 <section class="sec props" id="properties"><div class="wrap">
   <div class="sec-head"><div>
     <div class="lead-mark reveal"><span class="diamond"></span><span class="coord">02 · Signature Collection</span></div>
-    <h2 class="reveal d1">This month's<br>featured residence.</h2>
+    <h2 class="reveal d1">Curated homes,<br>engineer-verified.</h2>
   </div><p class="reveal d2">Personally inspected and engineer-verified — structure, title, and land assessed before we ever list it.</p></div>
-  {feature_block(featured, root, site, mode='home', detail_href=detail_href)}
+  <div class="listings-grid">{home_cards}</div>
   <div class="props-foot reveal">
     <a href="{lk['properties']}" class="btn"><span>View All Properties</span></a>
     <div>More residences from the Signature Collection are added regularly.</div>
