@@ -70,7 +70,7 @@ WA_SVG = ('<svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><p
           ' 11.821 0 00-3.48-8.413z"/></svg>')
 
 WA_GENERIC = "Hi Mindscape, I'd like to know more about your Goa properties."
-HOME_GRID_COUNT = 5  # property cards shown on the home page (featured listing first)
+HOME_GRID_COUNT = 6  # property cards shown on the home page (featured listing first)
 
 
 def wa_digits(site):
