@@ -780,7 +780,7 @@
       "featured": false,
       "name": "Villa Quagga",
       "ref": "MP-3BVMOR-01",
-      "status": "For Sale",
+      "status": "Sold Out",
       "location": "Morjim",
       "region": "North Goa",
       "collection": "Signature Collection",
@@ -792,7 +792,7 @@
       "area_display": "2,562",
       "area_value": 2562,
       "badges": [
-        "For Sale",
+        "Sold Out",
         "Private Pool",
         "Fully Furnished"
       ],
