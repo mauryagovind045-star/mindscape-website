@@ -3474,6 +3474,114 @@
         "heading": "Download the Kama floor plans",
         "sub": "Villa A & B layouts, floor-by-floor, with room dimensions. Share a few details and the download unlocks instantly — we use them only to follow up on your interest."
       }
+    },
+    {
+      "slug": "davorlim-commercial-plot",
+      "featured": false,
+      "name": "Davorlim Commercial Plot",
+      "ref": "MP-CPDAV-01",
+      "status": "For Sale",
+      "location": "Davorlim, Margao",
+      "region": "South Goa",
+      "collection": "Land & Development Sites",
+      "price_display": "Price on Request",
+      "price_value": 150000000,
+      "price_note": "5,000 sq m · Outright sale",
+      "beds_display": "—",
+      "beds_value": 0,
+      "area_display": "5,000 sq m plot",
+      "area_value": 53820,
+      "badges": [
+        "Commercial Zoning",
+        "Sanad Converted",
+        "39 m Road Frontage"
+      ],
+      "short": "A 5,000 sq m Sanad-converted, commercial-zoned land parcel on Margao's doorstep — 39 metres of continuous frontage on a major arterial road, 100% FAR, and the depth to pair a showroom or retail block with a rear residential or mixed-use component. Offered for outright acquisition.",
+      "description": [
+        "Set in Davorlim, directly within Margao city's commercial catchment, this is a rare, ready-to-develop land holding in South Goa's primary commercial hub. The plot measures roughly 39 × 129 metres — a clean 5,000 sq m rectangle — with its full 39-metre width fronting a major route, giving showroom-grade visibility rather than a side-street address, and city-adjacent demand from retail chains, showroom brands and mixed-use developers without the acquisition premium of the beach belt.",
+        "The land is Sanad-converted and commercially zoned, with 100% permissible FAR — approximately 5,000 sq m of total built-up area across all floors. The 129-metre depth is the real opportunity: enough to split the parcel into a front commercial block and a rear residential, hospitality or mixed component, subject to TCP confirmation. Formats that fit include an auto, furniture or appliance showroom; standalone or multi-brand retail anchored to the Margao catchment; a luxury villa project on the rear plot; or a mixed-use development combining commercial frontage with homes or hospitality behind.",
+        "Title is clean and documented: the survey plan (Survey No. 30/4, Davorlim Village, Salcete Taluka) shows frontage along the road to the south, and the full due-diligence file — sale deed chain, Form I & XIV and mutation entries, Sanad conversion order, survey and demarcation plans, TCP zoning certificate and encumbrance certificate with litigation search — is available on request. The asking price is quoted per sq m and is negotiable; the indicative total is shared on enquiry and remains subject to final terms and site verification."
+      ],
+      "feature_heading": "Why this land",
+      "specs": [
+        {
+          "v": "5,000",
+          "l": "Sq M Plot Area"
+        },
+        {
+          "v": "39 m",
+          "l": "Road Frontage"
+        },
+        {
+          "v": "100%",
+          "l": "Permissible FAR"
+        },
+        {
+          "v": "39 × 129",
+          "l": "Metres · Plot Dimensions"
+        },
+        {
+          "v": "Commercial",
+          "l": "Zoning"
+        },
+        {
+          "v": "Sanad",
+          "l": "Converted Title"
+        }
+      ],
+      "features": [
+        "5,000 sq m commercial-zoned land, Sanad-converted",
+        "39 m of continuous frontage on a major arterial road",
+        "100% FAR — approx. 5,000 sq m of total built-up area",
+        "129 m plot depth — split into front commercial & rear component",
+        "Suits showroom, retail, luxury villa or mixed-use formats",
+        "Minutes from Margao, South Goa's primary commercial hub",
+        "Survey No. 30/4, Davorlim Village, Salcete Taluka",
+        "Full due-diligence file available — deeds, Sanad, zoning, EC",
+        "Outright sale · asking price negotiable"
+      ],
+      "location_label": "Why Davorlim",
+      "location_points": [
+        {
+          "place": "Margao city centre",
+          "time": "~10 min"
+        },
+        {
+          "place": "Margao Railway Station",
+          "time": "~10 min"
+        },
+        {
+          "place": "Colva Beach",
+          "time": "~20 min"
+        },
+        {
+          "place": "Verna Industrial Estate",
+          "time": "~20 min"
+        },
+        {
+          "place": "Dabolim Airport",
+          "time": "~35 min"
+        }
+      ],
+      "location_note": "Davorlim sits on Margao's growth corridor — a city-adjacent village with direct arterial-road access to South Goa's commercial capital, its railway junction and the Colva–Benaulim beach belt. Drive times are indicative and to be verified by the buyer.",
+      "brokerage_note": "Plot dimensions, zoning, FAR and title status are as represented by the owner and subject to independent verification with TCP and Sub-Registrar records. Full documentation shared on enquiry.",
+      "hero_image": "land",
+      "card_image": "land",
+      "gallery": [
+        {
+          "img": "land",
+          "label": "The Plot from the Road Frontage",
+          "wide": true
+        },
+        {
+          "img": "site",
+          "label": "Open Land, Treeline to the Rear"
+        },
+        {
+          "img": "survey",
+          "label": "Survey Plan · Survey No. 30/4"
+        }
+      ]
     }
   ]
 }
